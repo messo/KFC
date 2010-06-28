@@ -19,14 +19,6 @@
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>eventServlet</servlet-name>
-		<servlet-class>hu.sch.kfc.server.EventServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>eventServlet</servlet-name>
-		<url-pattern>/kfc/event</url-pattern>
-	</servlet-mapping>
-	<servlet>
 		<servlet-name>groupServlet</servlet-name>
 		<servlet-class>hu.sch.kfc.server.GroupServiceImpl</servlet-class>
 	</servlet>

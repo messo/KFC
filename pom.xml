@@ -7,6 +7,13 @@
 	<packaging>war</packaging>
 	<version>0.1-SNAPSHOT</version>
 
+	<developers>
+		<developer>
+			<name>Bálint Kriván</name>
+			<email>balint@krivan.hu</email>
+		</developer>
+	</developers>
+
 	<properties>
 		<!-- Verziók beállítása -->
 		<gwt.version>2.1.0.M1</gwt.version>
@@ -14,7 +21,7 @@
 
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
-		
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -39,15 +46,7 @@
 			<version>${gwt.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		<!-- Grizzly COMET -->
-		<dependency>
-			<groupId>com.sun.grizzly</groupId>
-			<artifactId>grizzly-comet</artifactId>
-			<version>1.9.19-beta5</version>
-      <scope>provided</scope>
-		</dependency>
-		
+
 		<!-- Atmosphere -->
 		<dependency>
 			<groupId>org.atmosphere</groupId>
@@ -59,7 +58,7 @@
 			<artifactId>atmosphere-jersey</artifactId>
 			<version>${atmosphere.version}</version>
 		</dependency>
-		
+
 		<!-- test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -70,15 +69,14 @@
 	</dependencies>
 
 	<build>
-		<!--<outputDirectory>war/WEB-INF/classes</outputDirectory>-->
-    <plugins>
+		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
 				<version>1.3.1.google</version>
 				<executions>
 					<execution>
-            <phase>generate-sources</phase>
+						<phase>generate-sources</phase>
 						<goals>
 							<goal>generateAsync</goal>
 							<goal>compile</goal>
@@ -91,19 +89,18 @@
 					<!-- Explicit adjuk meg, hogy hol vannak az RPC service-k -->
 					<servicePattern>hu/sch/kfc/client/service/*Service.java</servicePattern>
 					<hostedWebapp>${project.build.directory}/${project.build.finalName}</hostedWebapp>
-          <logLevel>INFO</logLevel>
-          <!--<debugPort>9997</debugPort>-->
+					<logLevel>INFO</logLevel>
+					<generateDirectory>${basedir}/src/main/generated</generateDirectory>
 				</configuration>
 			</plugin>
-      
-      <!--<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-        <configuration>
-				  <webXml>target/web.xml</webXml>
-				  <warSourceExcludes>.gwt-tmp/**</warSourceExcludes>
-        </configuration>
-		  </plugin>-->
+
+			<!--
+				<plugin> <groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId> <configuration>
+				<webXml>target/web.xml</webXml>
+				<warSourceExcludes>.gwt-tmp/**</warSourceExcludes> </configuration>
+				</plugin>
+			-->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -127,11 +124,6 @@
 			<id>google-gwt-maven</id>
 			<name>Google's GWT Repo</name>
 			<url>http://google-web-toolkit.googlecode.com/svn/2.1.0.M1/gwt/maven/</url>
-		</repository>
-		<repository>
-			<id>java-net-glassfish</id>
-			<name>Java.net Glassfish Repo</name>
-			<url>http://download.java.net/maven/glassfish/</url>
 		</repository>
 	</repositories>
 
