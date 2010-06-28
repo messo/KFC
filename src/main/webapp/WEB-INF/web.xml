@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>KFC</display-name>
+
+	<servlet>
+		<servlet-name>JerseyAtmosphere</servlet-name>
+		<servlet-class>org.atmosphere.cpr.AtmosphereServlet</servlet-class>
+		<init-param>
+			<param-name>org.atmosphere.useNative</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JerseyAtmosphere</servlet-name>
+		<url-pattern>/kfc/channel/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>eventServlet</servlet-name>
+		<servlet-class>hu.sch.kfc.server.EventServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>eventServlet</servlet-name>
+		<url-pattern>/kfc/event</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>groupServlet</servlet-name>
+		<servlet-class>hu.sch.kfc.server.GroupServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>groupServlet</servlet-name>
+		<url-pattern>/kfc/group</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>programServlet</servlet-name>
+		<servlet-class>hu.sch.kfc.server.ProgramServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>programServlet</servlet-name>
+		<url-pattern>/kfc/program</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>likeServlet</servlet-name>
+		<servlet-class>hu.sch.kfc.server.LikeServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>likeServlet</servlet-name>
+		<url-pattern>/kfc/like</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>KFC.html</welcome-file>
+	</welcome-file-list>
+</web-app>
