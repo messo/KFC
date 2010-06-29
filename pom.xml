@@ -90,7 +90,6 @@
 					<servicePattern>hu/sch/kfc/client/service/*Service.java</servicePattern>
 					<hostedWebapp>${project.build.directory}/${project.build.finalName}</hostedWebapp>
 					<logLevel>INFO</logLevel>
-					<generateDirectory>${basedir}/src/main/generated</generateDirectory>
 				</configuration>
 			</plugin>
 

@@ -26,5 +26,16 @@ FAQ
   belül a Development Mode, ahol nyomon lehet követni az eseményeket, nem mellesleg, ha módosítás történik
   a kliens rétegben, akkor a böngészőn belül csak frissíteni kell és máris éles a dolog. Ha servleteken
   történik a módosítás, akkor meg a Development Mode-ban a kis frissítés ikonra (Reload web server) kell
-  nyomni (TODO: ez egyelőre nem tudom miért, de nem működik. Le kell állítani a dev mode-ot és újra el kell
-  indítani, hogy a szervletek is frissüljenek).
+  nyomni.
+  
+  Egyelőre a 3.6-os Eclipse-el és a hozzá tartozó pluginnal nem akar működni rendesen, nem akarja a
+  src/main/webapp tartalmát bemásolni a helyére, így csak akkor megy rendesen ha tolunk egy `gwt war:exploded`-et.
+  Amíg ezt nem sikerül működésre bírni, addig a 3.5-öt javaslom.
+
+4. Leszedtem a repóból, megnyitom Eclipse-ben és panaszkodik, hogy: "Missing asynchronous interface ..."
+--------------------------------------------------------------------------------------------------------
+
+  Igen, ezeket először le kell generálni (a gwt-maven-plugin segítségével, így az amúgy könnyen írható 
+  async interfészekkel nem kell törődnünk, azokat tudjuk generáltatni), a következő paranccsal:
+    $ mvn gwt:generateAsync
+  ezután már ott kell lenniük a helyükön a fájloknak.
