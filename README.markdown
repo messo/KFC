@@ -6,10 +6,10 @@ FAQ
 
   Nagyon egyszerű, írjuk be a konzolba, hogy:
     $ mvn compile war:exploded gwt:run
-  Ekkor a következő történik: lefordulnak az osztályok, de előtte a gwt:compile is meghívódik, ami
-  generál nekünk Async osztályokat is. Ezután a war:exploded bemásolja a target/KFC-<verzió>/
+  Ekkor a következő történik: lefordulnak az osztályok, de előtte a `gwt:compile` is meghívódik, ami
+  generál nekünk Async osztályokat is. Ezután a `war:exploded` bemásolja a target/KFC-<verzió>/
   mappába a src/main/webapp/-ben lévő dolgokat, tehát a target/KFC-<verzió>/ mappában már egy működő
-  alkalmazás található. Innen futtatja az alkalmazásunkat a gwt:run
+  alkalmazás található. Innen futtatja az alkalmazásunkat a `gwt:run`
 
 2. Hogy tudom kitolni saját webszerverre?
 -----------------------------------------
