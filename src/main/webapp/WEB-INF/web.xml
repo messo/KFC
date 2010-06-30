@@ -34,14 +34,6 @@
 		<servlet-name>programServlet</servlet-name>
 		<url-pattern>/kfc/program</url-pattern>
 	</servlet-mapping>
-	<servlet>
-		<servlet-name>likeServlet</servlet-name>
-		<servlet-class>hu.sch.kfc.server.LikeServiceImpl</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>likeServlet</servlet-name>
-		<url-pattern>/kfc/like</url-pattern>
-	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>KFC.html</welcome-file>
 	</welcome-file-list>

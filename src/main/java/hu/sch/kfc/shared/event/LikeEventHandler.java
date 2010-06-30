@@ -1,4 +1,4 @@
-package hu.sch.kfc.client.event;
+package hu.sch.kfc.shared.event;
 
 import com.google.gwt.event.shared.EventHandler;
 

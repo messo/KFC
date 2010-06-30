@@ -1,13 +1,11 @@
 package hu.sch.kfc.client;
 
 import hu.sch.kfc.client.atmosphere.AtmosphereClient;
-import hu.sch.kfc.client.event.LikeEvent;
-import hu.sch.kfc.client.event.LikeEventHandler;
 import hu.sch.kfc.client.place.ApplicationPlace;
-import hu.sch.kfc.client.service.EventService;
-import hu.sch.kfc.client.service.EventServiceAsync;
 import hu.sch.kfc.client.ui.MainActivityMapper;
 import hu.sch.kfc.client.ui.Shell;
+import hu.sch.kfc.shared.event.LikeEvent;
+import hu.sch.kfc.shared.event.LikeEventHandler;
 import com.google.gwt.app.place.ActivityManager;
 import com.google.gwt.app.place.PlaceChangeEvent;
 import com.google.gwt.app.place.PlaceController;
@@ -27,9 +25,6 @@ import com.google.gwt.user.client.ui.RootPanel;
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class KFC implements EntryPoint {
-
-    private EventServiceAsync eventService = GWT.create(EventService.class);
-    protected int like = 0;
 
     /**
      * This is the entry point method.
@@ -135,7 +130,7 @@ public class KFC implements EntryPoint {
             
             @Override
             public void onLikeEvent(LikeEvent event) {
-                shell.setLikeLabel(++like);
+                shell.setLikeLabel(event.getLiked());
             }
         });
         AtmosphereClient client = new AtmosphereClient(eventBus);

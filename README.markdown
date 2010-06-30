@@ -29,7 +29,7 @@ FAQ
   nyomni.
   
   Egyelőre a 3.6-os Eclipse-el és a hozzá tartozó pluginnal nem akar működni rendesen, nem akarja a
-  src/main/webapp tartalmát bemásolni a helyére, így csak akkor megy rendesen ha tolunk egy `gwt war:exploded`-et.
+  src/main/webapp tartalmát bemásolni a helyére, így csak akkor megy rendesen ha tolunk egy `mvn war:exploded`-et.
   Amíg ezt nem sikerül működésre bírni, addig a 3.5-öt javaslom.
 
 4. Leszedtem a repóból, megnyitom Eclipse-ben és panaszkodik, hogy: "Missing asynchronous interface ..."

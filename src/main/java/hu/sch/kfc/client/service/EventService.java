@@ -1,14 +1,14 @@
 package hu.sch.kfc.client.service;
 
-import hu.sch.kfc.shared.Event;
+import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 /**
  * The client side stub for the RPC service.
  */
-@RemoteServiceRelativePath("atmosphere")
+@RemoteServiceRelativePath("event")
 public interface EventService extends RemoteService {
 
-    Event getEvent();
+    GwtEvent<?> getEvent();
 }

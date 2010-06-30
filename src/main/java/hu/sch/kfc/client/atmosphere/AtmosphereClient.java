@@ -1,7 +1,7 @@
 package hu.sch.kfc.client.atmosphere;
 
-import hu.sch.kfc.client.event.LikeEvent;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.http.client.RequestException;
 import com.google.gwt.user.client.rpc.StatusCodeException;
@@ -30,8 +30,8 @@ public class AtmosphereClient {
             }
 
             @Override
-            public void onMessage() {
-                AtmosphereClient.this.eventBus.fireEvent(new LikeEvent());
+            public void onEvent(GwtEvent<?> e) {
+                AtmosphereClient.this.eventBus.fireEvent(e);
             }
         });
         
