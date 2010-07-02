@@ -5,11 +5,10 @@ FAQ
 ------------------------
 
   Nagyon egyszerű, írjuk be a konzolba, hogy:
-    $ mvn compile war:exploded gwt:run
-  Ekkor a következő történik: lefordulnak az osztályok, de előtte a `gwt:compile` is meghívódik, ami
-  generál nekünk Async osztályokat is. Ezután a `war:exploded` bemásolja a target/KFC-<verzió>/
-  mappába a src/main/webapp/-ben lévő dolgokat, tehát a target/KFC-<verzió>/ mappában már egy működő
-  alkalmazás található. Innen futtatja az alkalmazásunkat a `gwt:run`
+    $ mvn war:exploded gwt:run
+  Ekkor a következő történik: a `war:exploded` bemásolja a target/KFC-<verzió>/ mappába a
+  src/main/webapp/-ben lévő dolgokat, majd a `gwt:run` futtatja az egészet, persze előtte lefordítja,
+  amit le kell fordítani ;)
 
 2. Hogy tudom kitolni saját webszerverre?
 -----------------------------------------
@@ -17,6 +16,9 @@ FAQ
   A konzolba írjuk be, hogy:
     $ mvn package
   Ekkor a target/KFC-<verzió>/ mappában lesz egy war csomag. Ezt deployoljuk a webszerverünkre és voilà.
+  
+  Megj: Jelenleg az egész Jetty-hez van kötve a jetty-env.xml miatt, ha felvesztek egy ilyen resource-t
+  a célkonténeren is, akkor szerintem nem lehet para.
 
 3. Okés, tudom tesztelni, de hogy tudok rendesen fejleszteni?
 -------------------------------------------------------------

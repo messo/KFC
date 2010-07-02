@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import hu.sch.kfc.client.service.ProgramService;
+import hu.sch.kfc.server.domain.Message;
 import hu.sch.kfc.shared.Program;
 import hu.sch.kfc.shared.Group;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
@@ -15,8 +19,15 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 @SuppressWarnings("serial")
 public class ProgramServiceImpl extends RemoteServiceServlet implements ProgramService {
 
+    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("KFC-PU");
+    private EntityManager em = emf.createEntityManager();
+    
     @Override
     public List<Program> getEventsForGroup(Group g) {
+        
+        Message m = em.find(Message.class, 1L);
+        System.err.println(m==null? "null" : m.toString());
+        
         List<Program> events = new ArrayList<Program>(2);
 
         Calendar c = Calendar.getInstance();

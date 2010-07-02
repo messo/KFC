@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project-modules id="moduleCoreId" project-version="1.5.0">
   <wb-module deploy-name="KFC">
     <property name="context-root" value="KFC"/>
     <wb-resource deploy-path="/" source-path="src/main/webapp"/>
-    <property name="java-output-path" value="/target/classes"/>
+    <property name="java-output-path" value="/target/KFC-0.1-SNAPSHOT/WEB-INF/classes"/>
+    <dependent-module archiveName="activation-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/activation/activation/1.1/activation-1.1.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
     <dependent-module archiveName="asm-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/asm/asm/3.1/asm-3.1.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
@@ -25,6 +27,9 @@
     <dependent-module archiveName="atmosphere-runtime-0.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/atmosphere/atmosphere-runtime/0.6/atmosphere-runtime-0.6.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
+    <dependent-module archiveName="derby-10.6.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/apache/derby/derby/10.6.1.0/derby-10.6.1.0.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
     <dependent-module archiveName="gwt-servlet-2.1.0.M1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/gwt/gwt-servlet/2.1.0.M1/gwt-servlet-2.1.0.M1.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
@@ -37,8 +42,17 @@
     <dependent-module archiveName="jsr311-api-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
+    <dependent-module archiveName="mail-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/mail/mail/1.4/mail-1.4.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="persistence-api-1.0.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="toplink-essentials-2.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/toplink/essentials/toplink-essentials/2.1-SNAPSHOT/toplink-essentials-2.1-SNAPSHOT.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
     <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
-    <wb-resource deploy-path="/WEB-INF/classes" source-path="target/generated-sources"/>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="target/generated-sources/gwt"/>
     <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
   </wb-module>
 </project-modules>
