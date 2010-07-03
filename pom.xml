@@ -166,6 +166,9 @@
 						<buildcommand>com.google.gdt.eclipse.core.webAppProjectValidator</buildcommand>
 						<buildcommand>com.google.gwt.eclipse.core.gwtProjectValidator</buildcommand>
 					</additionalBuildcommands>
+					<additionalProjectFacets>
+						<jpt.jpa>1.0</jpt.jpa>
+					</additionalProjectFacets>
 					<excludes>
 						<!-- ezeket a GPE biztosítja -->
 						<exclude>com.google.gwt:gwt-user</exclude>
