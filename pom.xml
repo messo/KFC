@@ -59,12 +59,6 @@
 			<version>${jetty.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>javax.mail</groupId>
-			<artifactId>mail</artifactId>
-			<version>1.4</version>
-			<scope>runtime</scope>
-		</dependency>
 
 		<!-- Atmosphere -->
 		<dependency>
@@ -78,15 +72,23 @@
 			<version>${atmosphere.version}</version>
 		</dependency>
 
+		<!-- EclipseLink -->
 		<dependency>
-			<groupId>toplink.essentials</groupId>
-			<artifactId>toplink-essentials</artifactId>
-			<version>2.1-SNAPSHOT</version>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.jpa</artifactId>
+			<version>2.1.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.derby</groupId>
-			<artifactId>derby</artifactId>
-			<version>10.6.1.0</version>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>javax.persistence</artifactId>
+			<version>2.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- MySQL Connector -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.13</version>
 			<scope>runtime</scope>
 		</dependency>
 
@@ -195,6 +197,10 @@
 			<id>java.net</id>
 			<url>http://download.java.net/maven/1/</url>
 			<layout>legacy</layout>
+		</repository>
+		<repository>
+			<id>EclipseLink Repo</id>
+			<url>http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo</url>
 		</repository>
 
 	</repositories>
