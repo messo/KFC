@@ -1,7 +1,7 @@
-<?xml version="1.0"  encoding="ISO-8859-1"?>
+<?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
-<Configure class="org.mortbay.jetty.webapp.WebAppContext">
-  <New id="message" class="org.mortbay.jetty.plus.naming.Resource">
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+  <New id="message" class="org.eclipse.jetty.plus.jndi.Resource">
     <Arg>jdbc/kfc</Arg>
     <Arg>
       <New class="org.apache.derby.jdbc.EmbeddedDataSource">

@@ -10,7 +10,7 @@ import com.google.gwt.app.place.ActivityManager;
 import com.google.gwt.app.place.PlaceChangeEvent;
 import com.google.gwt.app.place.PlaceController;
 import com.google.gwt.app.place.Activity.Display;
-import com.google.gwt.app.util.IsWidget;
+import com.google.gwt.app.place.IsWidget;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;

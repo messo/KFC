@@ -16,10 +16,13 @@
 
 	<properties>
 		<!-- Verziók beállítása -->
-		<gwt.version>2.1.0.M1</gwt.version>
+		<gwt.version>2.1.0.M2</gwt.version>
 		<atmosphere.version>0.6</atmosphere.version>
-		<!-- Ez egyezzen meg a GWT-ben lévő Jetty verizójával -->
-		<jetty.version>6.1.11</jetty.version>
+		<!--
+			Ez egyezzen meg a GWT-ben lévő Jetty verizójával, legalábbis
+			szerintem úgy a tuti :)
+		-->
+		<jetty.version>7.0.2.v20100331</jetty.version>
 
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
@@ -42,12 +45,6 @@
 			<version>${gwt.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.google.gwt</groupId>
-			<artifactId>gwt-bikeshed</artifactId>
-			<version>${gwt.version}</version>
-			<scope>provided</scope>
-		</dependency>
 		<!-- Launcher miatt kell -->
 		<dependency>
 			<groupId>com.google.gwt</groupId>
@@ -55,19 +52,18 @@
 			<version>${gwt.version}</version>
 			<scope>provided</scope>
 		</dependency>
-
-		<!-- Jetty-hez a JNDI-hoz -->
+		<!-- Launcher miatt, ez nincs benne a gwt-devben -->
 		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
+			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-plus</artifactId>
 			<version>${jetty.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jetty-naming</artifactId>
-			<version>${jetty.version}</version>
-			<scope>provided</scope>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+			<scope>runtime</scope>
 		</dependency>
 
 		<!-- Atmosphere -->
@@ -91,12 +87,6 @@
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derby</artifactId>
 			<version>10.6.1.0</version>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.mail</groupId>
-			<artifactId>mail</artifactId>
-			<version>1.4</version>
 			<scope>runtime</scope>
 		</dependency>
 
@@ -141,6 +131,12 @@
 					<!-- Saját launcher használata -->
 					<server>hu.sch.kfc.dev.JettyLauncher</server>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>${jetty.version}</version>
 			</plugin>
 
 			<plugin>
@@ -190,7 +186,7 @@
 		<repository>
 			<id>google-gwt-maven</id>
 			<name>Google's GWT Repo</name>
-			<url>http://google-web-toolkit.googlecode.com/svn/2.1.0.M1/gwt/maven/</url>
+			<url>http://google-web-toolkit.googlecode.com/svn/${gwt.version}/gwt/maven/</url>
 		</repository>
 		<repository>
 			<id>java.net</id>

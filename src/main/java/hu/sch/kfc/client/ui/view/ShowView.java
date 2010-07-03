@@ -2,7 +2,7 @@ package hu.sch.kfc.client.ui.view;
 
 import hu.sch.kfc.shared.Program;
 import java.util.List;
-import com.google.gwt.app.util.IsWidget;
+import com.google.gwt.app.place.IsWidget;
 
 
 public interface ShowView extends IsWidget {
