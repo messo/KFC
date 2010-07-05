@@ -20,7 +20,7 @@ public class MainActivityMapper implements ActivityMapper<ApplicationPlace> {
         if (place instanceof ListPlace) {
             return new ListActivity(placeController);
         } else if (place instanceof ShowPlace) {
-            return new ShowActivity(placeController, ((ShowPlace)place).getGroup());
+            return new ShowActivity(placeController, ((ShowPlace)place).getGroupToken());
         }
 
         return null;

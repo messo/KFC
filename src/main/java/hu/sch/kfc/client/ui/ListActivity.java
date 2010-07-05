@@ -1,6 +1,7 @@
 package hu.sch.kfc.client.ui;
 
 import java.util.List;
+import hu.sch.kfc.client.cache.Cache;
 import hu.sch.kfc.client.place.ApplicationPlace;
 import hu.sch.kfc.client.place.ShowPlace;
 import hu.sch.kfc.client.service.GroupService;
@@ -52,7 +53,10 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
 
                 @Override
                 public void onSuccess(List<Group> result) {
-                    Group.addToCache(groups = result);
+                    groups = result;
+                    for(Group g : result) {
+                        Cache.put(g);
+                    }
                     view.setGroups(groups);
                 }
 
@@ -69,7 +73,7 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
 
     @Override
     public void groupClicked(Group g) {
-        placeController.goTo(new ShowPlace(g));
+        placeController.goTo(new ShowPlace(g.getToken()));
     }
 
 }

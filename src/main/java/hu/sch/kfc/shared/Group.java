@@ -1,43 +1,21 @@
 package hu.sch.kfc.shared;
 
+import hu.sch.kfc.client.cache.Cacheable;
 import java.io.Serializable;
-import java.util.HashMap;
 import java.util.List;
 
 /**
  * Egy kört reprezentál, amely rendezvényeket szervezhet, és lehet tőlük kaját rendelni.
- *
- * @author  messo
- * @since   0.1
+ * 
+ * @author messo
+ * @since 0.1
  */
 @SuppressWarnings("serial")
-public class Group implements Serializable {
+public class Group implements Serializable, Cacheable<Group> {
 
     private String name;
     private String token;
-
-    private static HashMap<String, Group> groupsByToken = new HashMap<String, Group>();
-
-    /**
-     * Visszatér egy Group példánnyal, ha cachelve van a token alapján,
-     * egyébként null
-     *
-     * @param token
-     * @return cachelt objektum vagy null.
-     */
-    public static Group getCachedInstanceByToken(String token) {
-        return groupsByToken.get(token);
-    }
-
-    public static void addToCache(List<Group> groups) {
-        for (Group g : groups) {
-            groupsByToken.put(g.getToken(), g);
-        }
-    }
-
-    public static void addToCache(Group g) {
-        groupsByToken.put(g.getToken(), g);
-    }
+    private List<Program> programs = null;
 
     public Group() {
     }
@@ -49,7 +27,7 @@ public class Group implements Serializable {
 
     /**
      * Kör olvasható nevének lekérdezése
-     *
+     * 
      * @return kör neve
      */
     public String getName() {
@@ -58,10 +36,34 @@ public class Group implements Serializable {
 
     /**
      * Körhöz tartozó token (ami az url-ben szerepel) lekérdezése
-     *
+     * 
      * @return token
      */
     public String getToken() {
         return token;
+    }
+
+    public List<Program> getPrograms() {
+        return programs;
+    }
+    
+    public void setPrograms(List<Program> programs) {
+        this.programs = programs;
+    }
+    
+    @Override
+    public String getKey() {
+        return token;
+    }
+
+    @Override
+    public Group merge(Group other) {
+        List<Program> programs = other.getPrograms();
+        // ha nincsenek programok a jelenlegi példányban, de az eddig
+        // bent lévőben igen, akkor azt hozzuk át ;)
+        if( this.programs == null && programs != null) {
+            this.setPrograms(programs);
+        }
+        return this;
     }
 }

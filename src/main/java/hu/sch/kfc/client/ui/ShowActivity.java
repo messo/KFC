@@ -1,8 +1,8 @@
 package hu.sch.kfc.client.ui;
 
 import java.util.List;
+import hu.sch.kfc.client.cache.CachingAsyncCallback;
 import hu.sch.kfc.client.place.ApplicationPlace;
-import hu.sch.kfc.client.place.ShowPlace;
 import hu.sch.kfc.client.service.ProgramService;
 import hu.sch.kfc.client.service.ProgramServiceAsync;
 import hu.sch.kfc.client.service.GroupService;
@@ -13,25 +13,39 @@ import hu.sch.kfc.shared.Program;
 import hu.sch.kfc.shared.Group;
 import com.google.gwt.app.place.PlaceController;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.user.client.Timer;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 
 public class ShowActivity extends AbstractActivity implements ShowView.Listener {
 
     private static ShowView defaultView = null;
     private ShowView view;
-    private Group group;
+    private String groupToken;
+    private Group group = null;
+    private List<Program> programs;
     private GroupServiceAsync groupService = GWT.create(GroupService.class);
     private ProgramServiceAsync eventService = GWT.create(ProgramService.class);
 
-    public ShowActivity(PlaceController<ApplicationPlace> placeController, Group group, ShowView view) {
+    final Timer programSetter = new Timer() {
+        public void run() {
+            if( group != null ) {
+                programSetter.cancel();
+                group.setPrograms(programs);
+            }
+        }
+    };
+    
+    public ShowActivity(PlaceController<ApplicationPlace> placeController, String token,
+            ShowView view) {
         super(placeController);
         this.view = view;
-        this.group = group;
+        this.groupToken = token;
         view.setListener(this);
     }
 
-    public ShowActivity(PlaceController<ApplicationPlace> placeController, Group group) {
-        this(placeController, group, getDefaultView());
+    public ShowActivity(PlaceController<ApplicationPlace> placeController, String token) {
+        this(placeController, token, getDefaultView());
     }
 
     private static ShowView getDefaultView() {
@@ -43,36 +57,58 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
 
     @Override
     public void start(Display panel) {
-        GWT.log("Activity start: show");
-
-        // megnézzük, hogy mi a csoport tokenje.
-        String token = null;
-        ApplicationPlace place = placeController.getWhere();
-        token = ((ShowPlace) place).getGroupToken();
-
-        // lekérjük az eventeket.
-        eventService.getEventsForGroupToken(token, new AsyncCallback<List<Program>>() {
+        groupService.getGroupByToken(groupToken, new CachingAsyncCallback<Group>() {
 
             @Override
-            public void onSuccess(List<Program> result) {
-                eventsReceived(result);
+            public void onRetrieved(Group g) {
+                setGroup(g);
             }
 
             @Override
-            public void onFailure(Throwable caught) {
+            public void onFailure(Throwable arg0) {
+                Window.alert("Hiba a kérésben!");
             }
         });
 
-        // TODO - ha nincs csoport, akkor azt is kérjük le, mert itt megjeleníthetnénk tök jó dolgokat.
-        if( group != null ) {
-            view.setText(group.getName());
+        // lekérjük az eventeket.
+        if (group != null && group.getPrograms() != null) {
+            onHavingPrograms(group.getPrograms());
+        } else {
+            eventService.getEventsForGroupToken(groupToken, new AsyncCallback<List<Program>>() {
+
+                @Override
+                public void onSuccess(List<Program> result) {
+                    onProgramsReceived(result);
+                }
+
+                @Override
+                public void onFailure(Throwable caught) {
+                }
+            });
         }
 
         panel.showActivityWidget(view);
     }
 
-    private void eventsReceived(List<Program> events) {
-        view.setEvents(events);
+    protected void setGroup(Group g) {
+        group = g;
+        if (group != null)
+            onGroupChanged();
+    }
+
+    private void onGroupChanged() {
+        view.setText(group.getName());
+    }
+
+    private void onHavingPrograms(List<Program> programs) {
+        // elmentjük, hogy ha kell, akkor csoporthoz tudjuk rendelni
+        this.programs = programs;
+        view.setEvents(programs);
+    }
+
+    private void onProgramsReceived(final List<Program> programs) {
+        onHavingPrograms(programs);
+        programSetter.scheduleRepeating(1000);
     }
 
 }
