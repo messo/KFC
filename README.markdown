@@ -23,16 +23,17 @@ FAQ
 3. Okés, tudom tesztelni, de hogy tudok rendesen fejleszteni?
 -------------------------------------------------------------
 
-  A projekt Eclipse-ready (3.5 Galileo + Google Eclipse Plugin), tehát nincs más dolgod, mint az egészet
+  A projekt Eclipse-ready (3.6 Helios + Google Eclipse Plugin), tehát nincs más dolgod, mint az egészet
   beimportálni a workspace-edbe. Utána jobb klikk a KFC.launch-on Run As > KFC. Ekkor elindul az Eclipsen
   belül a Development Mode, ahol nyomon lehet követni az eseményeket, nem mellesleg, ha módosítás történik
   a kliens rétegben, akkor a böngészőn belül csak frissíteni kell és máris éles a dolog. Ha servleteken
   történik a módosítás, akkor meg a Development Mode-ban a kis frissítés ikonra (Reload web server) kell
-  nyomni.
+  nyomni. (Ez jelenleg nem működik, mert a jetty kivételt dob: NPE @ org.mortbay.jetty.plus.webapp.AbstractConfiguration.callPreDestroyCallbacks())
   
   Egyelőre a 3.6-os Eclipse-el és a hozzá tartozó pluginnal nem akar működni rendesen, nem akarja a
   src/main/webapp tartalmát bemásolni a helyére, így csak akkor megy rendesen ha tolunk egy `mvn war:exploded`-et.
-  Amíg ezt nem sikerül működésre bírni, addig a 3.5-öt javaslom.
+  Tehát, ha véletlen változtatunk a css-ben, vagy valamelyik fájlban a src/main/webapp alatt, akkor futtassuk le
+  az előző parancsot és mehet a móka.
 
 4. Leszedtem a repóból, megnyitom Eclipse-ben és panaszkodik, hogy: "Missing asynchronous interface ..."
 --------------------------------------------------------------------------------------------------------
