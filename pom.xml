@@ -22,7 +22,7 @@
 			Ez egyezzen meg a GWT-ben lévő Jetty verizójával, legalábbis
 			szerintem úgy a tuti :)
 		-->
-		<jetty.version>7.0.2.v20100331</jetty.version>
+		<jetty.version>6.1.11</jetty.version>
 
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
@@ -54,8 +54,14 @@
 		</dependency>
 		<!-- Launcher miatt, ez nincs benne a gwt-devben -->
 		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
+			<groupId>org.mortbay.jetty</groupId>
 			<artifactId>jetty-plus</artifactId>
+			<version>${jetty.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-naming</artifactId>
 			<version>${jetty.version}</version>
 			<scope>provided</scope>
 		</dependency>
@@ -137,7 +143,7 @@
 
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
+				<artifactId>maven-jetty-plugin</artifactId>
 				<version>${jetty.version}</version>
 			</plugin>
 
