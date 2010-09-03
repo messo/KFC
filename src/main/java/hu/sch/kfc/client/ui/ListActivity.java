@@ -2,7 +2,6 @@ package hu.sch.kfc.client.ui;
 
 import java.util.List;
 import hu.sch.kfc.client.cache.Cache;
-import hu.sch.kfc.client.place.ApplicationPlace;
 import hu.sch.kfc.client.place.ShowPlace;
 import hu.sch.kfc.client.service.GroupService;
 import hu.sch.kfc.client.service.GroupServiceAsync;
@@ -11,6 +10,7 @@ import hu.sch.kfc.client.ui.view.impl.ListViewImpl;
 import hu.sch.kfc.shared.Group;
 import com.google.gwt.app.place.PlaceController;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 
@@ -28,13 +28,13 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
     private ListView view;
     private GroupServiceAsync groupService = GWT.create(GroupService.class);
 
-    public ListActivity(PlaceController<ApplicationPlace> placeController, ListView view) {
+    public ListActivity(PlaceController placeController, ListView view) {
         super(placeController);
         this.view = view;
         view.setListener(this);
     }
 
-    public ListActivity(PlaceController<ApplicationPlace> placeController) {
+    public ListActivity(PlaceController placeController) {
         this(placeController, getDefaultView());
     }
 
@@ -46,7 +46,7 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
     }
 
     @Override
-    public void start(Display panel) {
+    public void start(Display panel, EventBus eventBus) {
         GWT.log("Activity start: list");
         if (groups == null) {
             groupService.getGroups(new AsyncCallback<List<Group>>() {
@@ -75,5 +75,4 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
     public void groupClicked(Group g) {
         placeController.goTo(new ShowPlace(g.getToken()));
     }
-
 }

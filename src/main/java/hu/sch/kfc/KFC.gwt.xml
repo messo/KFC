@@ -6,7 +6,11 @@
 	<inherits name="com.google.gwt.http.HTTP" />
 	<inherits name='com.google.gwt.app.App' />
 	<inherits name='com.google.gwt.requestfactory.RequestFactory' />
-
+	<inherits name="com.google.gwt.i18n.I18N"/>
+	
+	<extend-property name="locale" values="hu"/>
+	<set-property name="locale" value="hu"/>
+	
 	<replace-with
 		class="hu.sch.kfc.client.atmosphere.impl.AtmosphereTransportImplIE">
 		<when-type-is class="hu.sch.kfc.client.atmosphere.AtmosphereTransport" />
@@ -33,5 +37,10 @@
 	<!-- Specify the paths for translatable code                    -->
 	<source path='client' />
 	<source path='shared' />
+	
+	<!-- for PROD -->
+	<set-configuration-property name="CssResource.obfuscationPrefix" value="empty"/>
+	<!-- Ez még nem az igazi, mert így nem műxik a hackelt RPC :D -->
+	<!-- <inherits name='com.google.gwt.user.RemoteServiceObfuscateTypeNames' /> -->
 
 </module>

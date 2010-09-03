@@ -16,7 +16,7 @@
 
 	<properties>
 		<!-- Verziók beállítása -->
-		<gwt.version>2.1.0.M2</gwt.version>
+		<gwt.version>2.1-SNAPSHOT</gwt.version>
 		<atmosphere.version>0.6</atmosphere.version>
 		<!--
 			Ez egyezzen meg a GWT-ben lévő Jetty verizójával, legalábbis
@@ -106,7 +106,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
-				<version>1.3.1.google</version>
+				<version>1.3-SNAPSHOT</version>
 				<executions>
 					<execution>
 						<id>async-gen</id>
@@ -170,7 +170,7 @@
 						<buildcommand>com.google.gwt.eclipse.core.gwtProjectValidator</buildcommand>
 					</additionalBuildcommands>
 					<additionalProjectFacets>
-						<jpt.jpa>1.0</jpt.jpa>
+						<jpt.jpa>2.0</jpt.jpa>
 					</additionalProjectFacets>
 					<excludes>
 						<!-- ezeket a GPE biztosítja -->
@@ -185,25 +185,33 @@
 
 	<repositories>
 		<repository>
-			<id>codehaus</id>
-			<name>Codehaus Repo</name>
-			<url>http://repository.codehaus.org/</url>
-		</repository>
-		<repository>
-			<id>google-gwt-maven</id>
-			<name>Google's GWT Repo</name>
-			<url>http://google-web-toolkit.googlecode.com/svn/${gwt.version}/gwt/maven/</url>
+			<id>google-maven-snapshot-repository</id>
+			<name>Google Maven Snapshot Repository</name>
+ 			<url>https://oss.sonatype.org/content/repositories/google-snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 		<repository>
 			<id>java.net</id>
-			<url>http://download.java.net/maven/1/</url>
+			<url>http://download.java.net/maven/1</url>
 			<layout>legacy</layout>
 		</repository>
 		<repository>
 			<id>EclipseLink Repo</id>
 			<url>http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo</url>
 		</repository>
-
 	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>codehaus-snapshot-repository</id>
+			<name>Codehaus Snapshot Repository</name>
+			<url>https://nexus.codehaus.org/content/repositories/codehaus-snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 
 </project>

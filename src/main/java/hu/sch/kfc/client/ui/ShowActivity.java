@@ -2,7 +2,6 @@ package hu.sch.kfc.client.ui;
 
 import java.util.List;
 import hu.sch.kfc.client.cache.CachingAsyncCallback;
-import hu.sch.kfc.client.place.ApplicationPlace;
 import hu.sch.kfc.client.service.ProgramService;
 import hu.sch.kfc.client.service.ProgramServiceAsync;
 import hu.sch.kfc.client.service.GroupService;
@@ -13,6 +12,7 @@ import hu.sch.kfc.shared.Program;
 import hu.sch.kfc.shared.Group;
 import com.google.gwt.app.place.PlaceController;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -29,6 +29,7 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
 
     final Timer programSetter = new Timer() {
         public void run() {
+            GWT.log("timer...");
             if( group != null ) {
                 programSetter.cancel();
                 group.setPrograms(programs);
@@ -36,7 +37,7 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
         }
     };
     
-    public ShowActivity(PlaceController<ApplicationPlace> placeController, String token,
+    public ShowActivity(PlaceController placeController, String token,
             ShowView view) {
         super(placeController);
         this.view = view;
@@ -44,7 +45,7 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
         view.setListener(this);
     }
 
-    public ShowActivity(PlaceController<ApplicationPlace> placeController, String token) {
+    public ShowActivity(PlaceController placeController, String token) {
         this(placeController, token, getDefaultView());
     }
 
@@ -56,7 +57,7 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
     }
 
     @Override
-    public void start(Display panel) {
+    public void start(Display panel, EventBus eventBus) {
         groupService.getGroupByToken(groupToken, new CachingAsyncCallback<Group>() {
 
             @Override
@@ -110,5 +111,4 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
         onHavingPrograms(programs);
         programSetter.scheduleRepeating(1000);
     }
-
 }

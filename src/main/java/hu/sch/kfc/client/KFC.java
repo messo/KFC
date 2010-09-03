@@ -31,19 +31,18 @@ public class KFC implements EntryPoint {
      */
     public void onModuleLoad() {
         final HandlerManager eventBus = new HandlerManager(null);
-        final PlaceController<ApplicationPlace> placeController = new PlaceController<ApplicationPlace>(
-                eventBus);
+        final PlaceController placeController = new PlaceController(eventBus);
 
         final Shell shell = new Shell();
 
         // ez vezérli a fő activityket.
-        final ActivityManager<ApplicationPlace> activityManager = new ActivityManager<ApplicationPlace>(
-                new MainActivityMapper(placeController), eventBus) {
+        final ActivityManager activityManager = new ActivityManager(new MainActivityMapper(
+                placeController), eventBus) {
 
             @Override
-            public void onPlaceChange(PlaceChangeEvent<ApplicationPlace> event) {
+            public void onPlaceChange(PlaceChangeEvent event) {
                 super.onPlaceChange(event);
-                ApplicationPlace place = event.getNewPlace();
+                ApplicationPlace place = (ApplicationPlace) event.getNewPlace();
                 GWT.log("Place changed: " + place.toString());
                 if (!place.isInvokedByHistory()) {
                     // csak akkor adjuk hozzá, ha nem eleve a lenti
@@ -70,42 +69,13 @@ public class KFC implements EntryPoint {
             public void onValueChange(ValueChangeEvent<String> event) {
                 final String token = event.getValue();
                 GWT.log("History token: " + token);
-                ApplicationPlace place = ApplicationPlace
-                        .getPlaceForHistoryToken(token);
+                ApplicationPlace place = ApplicationPlace.getPlaceForHistoryToken(token);
                 if (place != null) {
                     place.setInvokedByHistory(true);
                 }
                 placeController.goTo(place);
             }
         });
-
-        /*RpcRequestBuilder rrb = new RpcRequestBuilder() {
-            @Override
-            protected RequestBuilder doCreate(String serviceEntryPoint) {
-                return new RequestBuilder(RequestBuilder.GET,
-                        serviceEntryPoint);
-            }
-        };
-        
-        ((ServiceDefTarget) eventService).setRpcRequestBuilder(rrb);
-
-        final AsyncCallback<Event> eventCallback = new AsyncCallback<Event>() {
-
-            @Override
-            public void onSuccess(Event e) {
-                if (e instanceof LikeEvent) {
-                    shell.setLikeLabel(((LikeEvent) e).getLiked());
-                }
-                // ha lekezeltük az eventet, akkor figyeljünk tovább a többi
-                // eventre.
-                eventService.getEvent(this);
-            }
-
-            @Override
-            public void onFailure(Throwable t) {
-                eventService.getEvent(this);
-            }
-        };*/
 
         RootPanel.get().add(shell);
 
@@ -120,19 +90,18 @@ public class KFC implements EntryPoint {
         DeferredCommand.addPause(); // ezzel kicsit késleltetünk.
         DeferredCommand.addCommand(new Command() {
 
-        	@Override
+            @Override
             public void execute() {
-                //eventService.getEvent(eventCallback);
+                AtmosphereClient client = new AtmosphereClient(eventBus);
             }
         });
-        
+
         eventBus.addHandler(LikeEvent.TYPE, new LikeEventHandler() {
-            
+
             @Override
             public void onLikeEvent(LikeEvent event) {
                 shell.setLikeLabel(event.getLiked());
             }
         });
-        AtmosphereClient client = new AtmosphereClient(eventBus);
     }
 }
