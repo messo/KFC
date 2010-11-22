@@ -1,42 +1,64 @@
 package hu.sch.kfc.client.ui.widget;
 
+import hu.sch.kfc.shared.DateInterval;
 import hu.sch.kfc.shared.Program;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.dom.client.Element;
+import com.google.gwt.i18n.client.DateTimeFormat;
+import com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 
-
 public class EventBox extends Composite {
 
+    private static final DateTimeFormat df = DateTimeFormat.getFormat("yyyy. MM. dd.");
+    private static final DateTimeFormat tf = DateTimeFormat.getFormat(PredefinedFormat.TIME_SHORT);
+
     private static EventBoxUiBinder uiBinder = GWT.create(EventBoxUiBinder.class);
-    private static EventBox instance = null;
 
     interface EventBoxUiBinder extends UiBinder<HTMLPanel, EventBox> {
     }
 
     @UiField
-    DivElement itemHeader;
+    Element itemDesc;
     @UiField
-    DivElement itemDesc;
+    Element eventName;
+    @UiField
+    Element orderInterval;
+    @UiField
+    Button orderBtn;
 
-    private EventBox() {
+    Program program;
+
+    public EventBox(Program p) {
         initWidget(uiBinder.createAndBindUi(this));
+        program = p;
     }
 
-    public static EventBox getInstance() {
-        if( instance == null ) {
-            instance = new EventBox();
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+        eventName.setInnerText(program.getName());
+        itemDesc.setInnerText(program.getDescription());
+        DateInterval order = program.getOrderInterval();
+        StringBuilder sb = new StringBuilder();
+        if (order.isOneDayLong()) {
+            sb.append(df.format(order.getStart())).append(" ");
+            sb.append(tf.format(order.getStart())).append("-").append(tf.format(order.getEnd()));
+        } else {
+            sb.append("hosszú :D");
         }
-        return instance;
+        if (order.isEnded()) {
+            orderBtn.setDisabled(true);
+        }
+        orderInterval.setInnerText(sb.toString());
     }
 
-    public String displayEvent(Program e) {
-        //itemHeader.setInnerText(e.getName());
-        //itemDesc.setInnerText(e.getDescription());
-        return getElement().getInnerHTML();
+    @Override
+    protected void onDetach() {
+        super.onDetach();
+        // stop the timers.
     }
-
 }

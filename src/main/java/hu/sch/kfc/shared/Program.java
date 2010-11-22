@@ -1,12 +1,11 @@
 package hu.sch.kfc.shared;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * Rendezvény objektumot reprezentál, ebből egy időben több is lehet, lehet átfedés a rendelési
  * időszakok között
- *
+ * 
  * @author messo
  * @since 0.1
  */
@@ -14,13 +13,13 @@ import java.util.Date;
 public class Program implements Serializable {
 
     /**
-     * Innentől kezdve lehet rendelni
+     * Rendelési időszak
      */
-    private Date start;
+    private DateInterval orderInterval;
     /**
-     * Ekkor záródik le a rendelés időszak
+     * A rendezvény ideje
      */
-    private Date end;
+    private DateInterval programInterval;
     /**
      * Az esemény neve.
      */
@@ -34,19 +33,12 @@ public class Program implements Serializable {
         // TODO Auto-generated constructor stub
     }
 
-    public Program(Date start, Date end, String name, String text) {
-        this.start = start;
-        this.end = end;
+    public Program(DateInterval orderInterval, DateInterval programInterval, String name,
+            String text) {
+        this.orderInterval = orderInterval;
+        this.programInterval = programInterval;
         this.name = name;
         this.text = text;
-    }
-
-    public Date getStart() {
-        return start;
-    }
-
-    public Date getEnd() {
-        return end;
     }
 
     public String getName() {
@@ -55,5 +47,9 @@ public class Program implements Serializable {
 
     public String getDescription() {
         return text;
+    }
+
+    public DateInterval getOrderInterval() {
+        return orderInterval;
     }
 }

@@ -1,14 +1,9 @@
 package hu.sch.kfc.server;
 
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import hu.sch.kfc.client.service.ProgramService;
-import hu.sch.kfc.server.domain.GroupEntity;
 import hu.sch.kfc.server.domain.ProgramEntity;
 import hu.sch.kfc.shared.Program;
 import hu.sch.kfc.shared.Group;
