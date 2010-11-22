@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-    xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    xmlns:g="urn:import:com.google.gwt.user.client.ui"
+    xmlns:w="urn:import:hu.sch.kfc.client.ui.widget">
     <ui:style>
         .important {
         	font-weight: bold;
@@ -13,7 +14,7 @@
     </ui:style>
     <g:HTMLPanel styleName="{style.container}">
         <g:SimplePanel ui:field="mainPanel"></g:SimplePanel>
-        <g:Button ui:field="likeBtn" text="Like me!" />
+        <w:Button ui:field="likeBtn" text="Like me!" />
         <g:Label ui:field="likeLabel">?</g:Label>
         <div style="font-size: x-small; text-align: center; margin-top: 15px">Kriván Bálint 2010</div>
     </g:HTMLPanel>

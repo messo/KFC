@@ -1,0 +1,71 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style type='hu.sch.kfc.client.ui.widget.Button.Style'>
+		.defaultState {
+			border: 1px solid #BBBBBB;
+			color: black;
+			cursor: default;
+			font: normal normal normal 70%/ normal arial, sans-serif;
+			margin: 0px 8px 0px 0px;
+			outline: none;
+			padding: 3px 8px;
+			text-align: center;
+			vertical-align: middle;
+			white-space: nowrap;
+			position: relative;
+			display: inline-block;
+		}
+		
+		.disabled {
+			color: #878787;
+		}
+		
+		@if user.agent gecko gecko1_8 {
+			.defaultState {
+				background: literal("-moz-linear-gradient(center top , #F9F9F9, #E3E3E3) repeat scroll 0 0 transparent");
+				-moz-border-radius: 3px 3px 3px 3px;
+				-moz-user-select: none;
+			}
+		}
+		
+		@if user.agent safari {
+			.defaultState {
+				background: literal("-webkit-gradient(linear, 0% 40%, 0% 70%, from(#F9F9F9), to(#E3E3E3))");
+				-webkit-user-select: none;
+			}
+		}
+		
+		@if user.agent safari opera {
+			.defaultState {
+				border-radius: 3px 3px 3px 3px;
+			}
+		}
+		
+		@if user.agent ie6 ie8 {
+			.defaultState {
+				filter: literal("progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#FFF9F9F9, endColorstr=#FFE3E3E3)");
+				display: inline !important;
+				zoom: 1;
+			}
+		}
+		
+		.onHover {
+			border-color: #939393 !important;
+		}
+		
+		.onFocus {
+			border-color: #444444 !important;
+		}
+		
+		.onClick {
+			background: literal("-moz-linear-gradient(center top , #EEEEEE, #F9F9F9) repeat scroll 0 0 transparent"
+				);
+			background: literal("-webkit-gradient(linear, 0% 40%, 0% 70%, from(#E3E3E3), to(#F9F9F9))"
+				);
+			filter: literal("progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#FFE3E3E3, endColorstr=#FFF9F9F9)"
+				);
+		}
+	</ui:style>
+	<div class="{style.defaultState}" ui:field="button">Button</div>
+</ui:UiBinder> 
