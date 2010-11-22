@@ -18,7 +18,7 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "programs")
-@NamedQueries( { @NamedQuery(name = ProgramEntity.retrieveByGroupToken, query = "SELECT p FROM ProgramEntity p "
+@NamedQueries({ @NamedQuery(name = ProgramEntity.retrieveByGroupToken, query = "SELECT p FROM ProgramEntity p "
         + "LEFT JOIN FETCH p.organizer WHERE p.organizer.token = :token") })
 public class ProgramEntity implements IsEntity<Program> {
 
@@ -32,8 +32,10 @@ public class ProgramEntity implements IsEntity<Program> {
     private String description;
     private GroupEntity organizer;
 
+    @Column(name = "programStart")
     @Temporal(TemporalType.TIMESTAMP)
     private Date start;
+    @Column(name = "programEnd")
     @Temporal(TemporalType.TIMESTAMP)
     private Date end;
     @Temporal(TemporalType.TIMESTAMP)
