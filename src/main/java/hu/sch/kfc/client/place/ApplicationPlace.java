@@ -1,6 +1,6 @@
 package hu.sch.kfc.client.place;
 
-import com.google.gwt.app.place.Place;
+import com.google.gwt.place.shared.Place;
 
 public abstract class ApplicationPlace extends Place {
 

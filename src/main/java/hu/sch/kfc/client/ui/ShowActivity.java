@@ -10,12 +10,13 @@ import hu.sch.kfc.client.ui.view.ShowView;
 import hu.sch.kfc.client.ui.view.impl.ShowViewImpl;
 import hu.sch.kfc.shared.Program;
 import hu.sch.kfc.shared.Group;
-import com.google.gwt.app.place.PlaceController;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.AcceptsOneWidget;
 
 public class ShowActivity extends AbstractActivity implements ShowView.Listener {
 
@@ -47,6 +48,7 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
 
     public ShowActivity(PlaceController placeController, String token) {
         this(placeController, token, getDefaultView());
+        view.reset();
     }
 
     private static ShowView getDefaultView() {
@@ -57,7 +59,7 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
     }
 
     @Override
-    public void start(Display panel, EventBus eventBus) {
+    public void start(AcceptsOneWidget panel, EventBus eventBus) {
         groupService.getGroupByToken(groupToken, new CachingAsyncCallback<Group>() {
 
             @Override
@@ -88,7 +90,7 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
             });
         }
 
-        panel.showActivityWidget(view);
+        panel.setWidget(view);
     }
 
     protected void setGroup(Group g) {
@@ -104,7 +106,7 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
     private void onHavingPrograms(List<Program> programs) {
         // elmentjük, hogy ha kell, akkor csoporthoz tudjuk rendelni
         this.programs = programs;
-        view.setEvents(programs);
+        view.setPrograms(programs);
     }
 
     private void onProgramsReceived(final List<Program> programs) {

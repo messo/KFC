@@ -8,11 +8,12 @@ import hu.sch.kfc.client.service.GroupServiceAsync;
 import hu.sch.kfc.client.ui.view.ListView;
 import hu.sch.kfc.client.ui.view.impl.ListViewImpl;
 import hu.sch.kfc.shared.Group;
-import com.google.gwt.app.place.PlaceController;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.AcceptsOneWidget;
 
 /**
  * Ez az Activity felelős a körök kilistázásáért, tulajdonképpen ez az indító
@@ -46,7 +47,7 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
     }
 
     @Override
-    public void start(Display panel, EventBus eventBus) {
+    public void start(AcceptsOneWidget panel, EventBus eventBus) {
         GWT.log("Activity start: list");
         if (groups == null) {
             groupService.getGroups(new AsyncCallback<List<Group>>() {
@@ -68,7 +69,7 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
         } else {
             view.setGroups(groups);
         }
-        panel.showActivityWidget(view);
+        panel.setWidget(view);
     }
 
     @Override

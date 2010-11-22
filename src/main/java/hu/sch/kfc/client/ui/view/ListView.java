@@ -2,7 +2,7 @@ package hu.sch.kfc.client.ui.view;
 
 import hu.sch.kfc.shared.Group;
 import java.util.List;
-import com.google.gwt.app.place.IsWidget;
+import com.google.gwt.user.client.ui.IsWidget;
 
 public interface ListView extends IsWidget {
 

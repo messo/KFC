@@ -18,37 +18,28 @@ package com.google.gwt.user.rebind.rpc;
 import hu.sch.kfc.client.cache.Cache;
 import hu.sch.kfc.client.cache.Cacheable;
 import hu.sch.kfc.client.cache.UseCache;
-import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.core.client.impl.Impl;
-import com.google.gwt.core.ext.GeneratorContext;
-import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.core.ext.typeinfo.JClassType;
 import com.google.gwt.core.ext.typeinfo.JMethod;
-import com.google.gwt.core.ext.typeinfo.JPackage;
 import com.google.gwt.core.ext.typeinfo.JParameter;
 import com.google.gwt.core.ext.typeinfo.JPrimitiveType;
 import com.google.gwt.core.ext.typeinfo.JType;
 import com.google.gwt.dev.generator.NameFactory;
 import com.google.gwt.http.client.Request;
 import com.google.gwt.http.client.RequestBuilder;
-import com.google.gwt.user.client.rpc.SerializationException;
 import com.google.gwt.user.client.rpc.SerializationStreamWriter;
 import com.google.gwt.user.client.rpc.impl.FailedRequest;
 import com.google.gwt.user.client.rpc.impl.FailingRequestBuilder;
 import com.google.gwt.user.client.rpc.impl.RequestCallbackAdapter.ResponseReader;
-import com.google.gwt.user.rebind.ClassSourceFileComposerFactory;
 import com.google.gwt.user.rebind.SourceWriter;
 
 /**
  * Creates a client-side proxy for a {@link hu.sch.kfc.client.cache.CachingRemoteService
  * CachingRemoteService} interface as well as the necessary type and field serializers.
- * 
  * ProxyCreator-ból, amit kellett azt copyztuk.
  * 
- * @version 2.1.0.M2
+ * @version 2.1.0
  */
 public class CachingProxyCreator extends ProxyCreator {
 
@@ -125,7 +116,7 @@ public class CachingProxyCreator extends ProxyCreator {
                             + syncMethod.getParameters()[0].getName() + ");");
                     w.println("if( obj != null ) {");
                     w.indent();
-                    w.println(asyncParams[asyncParams.length-1].getName()+".onSuccess(obj);");
+                    w.println(asyncParams[asyncParams.length - 1].getName() + ".onSuccess(obj);");
                     w.println("return ;");
                     w.outdent();
                     w.println("}");
@@ -135,14 +126,14 @@ public class CachingProxyCreator extends ProxyCreator {
             }
         }
 
-        String requestIdName = nameFactory.createName("requestId");
-        w.println("int " + requestIdName + " = getNextRequestId();");
+        String statsContextName = nameFactory.createName("statsContext");
+        generateRpcStatsContext(w, syncMethod, asyncMethod, statsContextName);
 
         String statsMethodExpr = getProxySimpleName() + "." + syncMethod.getName();
         String tossName = nameFactory.createName("toss");
-        w.println("boolean " + tossName + " = isStatsAvailable() && stats(" + "timeStat(\""
-                + statsMethodExpr + "\", " + requestIdName + ", \"begin\"));");
-
+        w.println(
+                "boolean %s = %s.isStatsAvailable() && %s.stats(%s.timeStat(\"%s\", \"begin\"));",
+                tossName, statsContextName, statsContextName, statsContextName, statsMethodExpr);
         w.print(SerializationStreamWriter.class.getSimpleName());
         w.print(" ");
         String streamWriterName = nameFactory.createName("streamWriter");
@@ -180,8 +171,9 @@ public class CachingProxyCreator extends ProxyCreator {
         String payloadName = nameFactory.createName("payload");
         w.println("String " + payloadName + " = " + streamWriterName + ".toString();");
 
-        w.println(tossName + " = isStatsAvailable() && stats(" + "timeStat(\"" + statsMethodExpr
-                + "\", " + requestIdName + ", \"requestSerialized\"));");
+        w.println(tossName + " = " + statsContextName + ".isStatsAvailable() && "
+                + statsContextName + ".stats(" + statsContextName + ".timeStat(\""
+                + statsMethodExpr + "\",  \"requestSerialized\"));");
 
         /*
          * Depending on the return type for the async method, return a RequestBuilder, a Request, or
@@ -204,7 +196,7 @@ public class CachingProxyCreator extends ProxyCreator {
         JType returnType = syncMethod.getReturnType();
         w.print("ResponseReader." + getResponseReaderFor(returnType).name());
         w.println(", \"" + getProxySimpleName() + "." + syncMethod.getName() + "\", "
-                + requestIdName + ", " + payloadName + ", " + callbackName + ");");
+                + statsContextName + ", " + payloadName + ", " + callbackName + ");");
 
         w.outdent();
         w.print("} catch (SerializationException ");

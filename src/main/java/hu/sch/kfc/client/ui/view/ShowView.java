@@ -2,8 +2,7 @@ package hu.sch.kfc.client.ui.view;
 
 import hu.sch.kfc.shared.Program;
 import java.util.List;
-import com.google.gwt.app.place.IsWidget;
-
+import com.google.gwt.user.client.ui.IsWidget;
 
 public interface ShowView extends IsWidget {
 
@@ -17,6 +16,8 @@ public interface ShowView extends IsWidget {
 
     void setText(String string);
 
-    void setEvents(List<Program> events);
+    void setPrograms(List<Program> events);
+
+    void reset();
 
 }

@@ -6,19 +6,20 @@ import hu.sch.kfc.client.ui.MainActivityMapper;
 import hu.sch.kfc.client.ui.Shell;
 import hu.sch.kfc.shared.event.LikeEvent;
 import hu.sch.kfc.shared.event.LikeEventHandler;
-import com.google.gwt.app.place.ActivityManager;
-import com.google.gwt.app.place.PlaceChangeEvent;
-import com.google.gwt.app.place.PlaceController;
-import com.google.gwt.app.place.Activity.Display;
-import com.google.gwt.app.place.IsWidget;
+import com.google.gwt.activity.shared.ActivityManager;
+import com.google.gwt.place.shared.PlaceChangeEvent;
+import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
-import com.google.gwt.event.shared.HandlerManager;
+import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.event.shared.SimpleEventBus;
 import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.DeferredCommand;
 import com.google.gwt.user.client.History;
+import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.RootPanel;
 
 /**
@@ -30,7 +31,7 @@ public class KFC implements EntryPoint {
      * This is the entry point method.
      */
     public void onModuleLoad() {
-        final HandlerManager eventBus = new HandlerManager(null);
+        final EventBus eventBus = new SimpleEventBus();
         final PlaceController placeController = new PlaceController(eventBus);
 
         final Shell shell = new Shell();
@@ -55,13 +56,7 @@ public class KFC implements EntryPoint {
         };
 
         // az eredményt, pedig a Shell-nek a mainPaneljébe rakjuk!
-        activityManager.setDisplay(new Display() {
-
-            @Override
-            public void showActivityWidget(IsWidget widget) {
-                shell.getMainPanel().setWidget(widget.asWidget());
-            }
-        });
+        activityManager.setDisplay(shell.getMainPanel());
 
         History.addValueChangeHandler(new ValueChangeHandler<String>() {
 

@@ -1,16 +1,16 @@
 package hu.sch.kfc.client.atmosphere;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.http.client.RequestException;
 import com.google.gwt.user.client.rpc.StatusCodeException;
 
 public class AtmosphereClient {
 
-    private final HandlerManager eventBus;
+    private final EventBus eventBus;
 
-    public AtmosphereClient(HandlerManager eventBus) {
+    public AtmosphereClient(EventBus eventBus) {
         this.eventBus = eventBus;
         final AtmosphereTransport at = GWT.create(AtmosphereTransport.class);
         at.setCallback(new AtmosphereCallback() {

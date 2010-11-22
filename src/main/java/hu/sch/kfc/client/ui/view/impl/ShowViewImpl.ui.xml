@@ -42,7 +42,7 @@
         <br />
         <div>
             <div class="{style.header}">Rendezvények</div>
-            <div class="{style.container}" ui:field="container"></div>
+            <g:FlowPanel styleName="{style.container}" ui:field="container"></g:FlowPanel>
             <div class="{style.footer}"></div>
         </div>
     </g:HTMLPanel>
