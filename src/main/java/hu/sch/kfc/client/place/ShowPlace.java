@@ -1,6 +1,10 @@
 package hu.sch.kfc.client.place;
 
-public class ShowPlace extends ApplicationPlace {
+import com.google.gwt.place.shared.Place;
+import com.google.gwt.place.shared.PlaceTokenizer;
+import com.google.gwt.place.shared.Prefix;
+
+public class ShowPlace extends Place {
 
     private final String groupToken;
 
@@ -8,12 +12,20 @@ public class ShowPlace extends ApplicationPlace {
         this.groupToken = groupToken;
     }
 
-    @Override
-    public String getBookmarkToken() {
-        return new StringBuilder(SHOW).append('/').append(groupToken).toString();
-    }
-
     public String getGroupToken() {
         return groupToken;
+    }
+
+    @Prefix(value = "show")
+    public static class Tokenizer implements PlaceTokenizer<ShowPlace> {
+        @Override
+        public String getToken(ShowPlace place) {
+            return place.getGroupToken();
+        }
+
+        @Override
+        public ShowPlace getPlace(String token) {
+            return new ShowPlace(token);
+        }
     }
 }
