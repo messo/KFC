@@ -1,67 +1,39 @@
 package hu.sch.kfc.client;
 
-import hu.sch.kfc.client.atmosphere.AtmosphereClient;
-import hu.sch.kfc.client.place.AppPlaceHistoryMapper;
-import hu.sch.kfc.client.place.ListPlace;
+import hu.sch.kfc.client.gin.KFCGinjector;
+import hu.sch.kfc.client.ui.AbstractActivity;
 import hu.sch.kfc.client.ui.MainActivityMapper;
 import hu.sch.kfc.client.ui.Shell;
-import hu.sch.kfc.shared.event.LikeEvent;
-import hu.sch.kfc.shared.event.LikeEventHandler;
+import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.activity.shared.ActivityManager;
-import com.google.gwt.place.shared.PlaceController;
-import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.event.shared.SimpleEventBus;
-import com.google.gwt.user.client.Command;
-import com.google.gwt.user.client.DeferredCommand;
-import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.place.shared.Place;
+import com.google.gwt.place.shared.PlaceController;
+import com.google.gwt.place.shared.PlaceHistoryHandler;
 
 /**
- * Entry point classes define <code>onModuleLoad()</code>.
+ * Az egész KFC alkalmazás belépőpontja, innen indul az egész finomság. Nem történik nagy varázslat,
+ * kérünk a GIN-től egy {@link Application}-t, ami létrehozza a workflowhoz szükséges
+ * vezérlőelemeket ({@link ActivityManager}, {@link PlaceHistoryHandler}) illetve az alkalmazás keretét jelentő
+ * {@link Shell} widgetet.
+ * <p>
+ * A workflowt már az {@link ActivityManager} vezérli, aki a {@link MainActivityMapper}
+ * segítségével az adott {@link Place}-ekhez, elindítja a megfelelő {@link Activity}-t, aki kezeli a
+ * saját kis View-ját.
+ * </p>
+ * <p>
+ * Minden {@link AbstractActivity}-ben elérhető a {@link PlaceController}, ezzel tudunk más helyekre
+ * navigálni, ezzel egy másik {@link Activity}-t elindítani.
+ * </p>
  */
 public class KFC implements EntryPoint {
 
     /**
-     * This is the entry point method.
+     * Belépési pont
      */
     public void onModuleLoad() {
-        final EventBus eventBus = new SimpleEventBus();
-        final PlaceController placeController = new PlaceController(eventBus);
-
-        final Shell shell = new Shell();
-
-        // ez vezérli a fő activityket.
-        final ActivityManager activityManager = new ActivityManager(new MainActivityMapper(
-                placeController), eventBus);
-        // az eredményt, pedig a Shell-nek a mainPaneljébe rakjuk!
-        activityManager.setDisplay(shell.getMainPanel());
-
-        AppPlaceHistoryMapper historyMapper = GWT.create(AppPlaceHistoryMapper.class);
-        PlaceHistoryHandler historyHandler = new PlaceHistoryHandler(historyMapper);
-        historyHandler.register(placeController, eventBus, new ListPlace());
-
-        RootPanel.get().add(shell);
-
-        historyHandler.handleCurrentHistory();
-
-        // TODO - még így is néha van Loading Chrome-ban.
-        DeferredCommand.addPause(); // ezzel kicsit késleltetünk.
-        DeferredCommand.addCommand(new Command() {
-
-            @Override
-            public void execute() {
-                AtmosphereClient client = new AtmosphereClient(eventBus);
-            }
-        });
-
-        eventBus.addHandler(LikeEvent.TYPE, new LikeEventHandler() {
-
-            @Override
-            public void onLikeEvent(LikeEvent event) {
-                shell.setLikeLabel(event.getLiked());
-            }
-        });
+        // GIN-nel oldunk meg mindent.
+        ((KFCGinjector) GWT.create(KFCGinjector.class)).getApplication();
     }
 }

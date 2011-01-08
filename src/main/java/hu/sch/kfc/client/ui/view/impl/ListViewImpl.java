@@ -4,7 +4,6 @@ import java.util.List;
 import hu.sch.kfc.client.ui.view.ListView;
 import hu.sch.kfc.client.ui.widget.Button;
 import hu.sch.kfc.shared.Group;
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -12,20 +11,20 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Widget;
+import com.google.inject.Inject;
 
 public class ListViewImpl extends Composite implements ListView {
 
-    private static ListViewImplUiBinder uiBinder = GWT.create(ListViewImplUiBinder.class);
-
-    interface ListViewImplUiBinder extends UiBinder<Widget, ListViewImpl> {
+    public interface ListViewImplUiBinder extends UiBinder<Widget, ListViewImpl> {
     }
 
-    private Listener listener = null;
+    private Listener listener;
 
     @UiField
     FlowPanel panel;
 
-    public ListViewImpl() {
+    @Inject
+    public ListViewImpl(ListViewImplUiBinder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 

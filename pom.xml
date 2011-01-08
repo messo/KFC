@@ -17,12 +17,10 @@
 
 	<properties>
 		<!-- Verziók beállítása -->
-		<gwt.version>2.1.0</gwt.version>
+		<gwt.version>2.1.1</gwt.version>
 		<atmosphere.version>0.6</atmosphere.version>
-		<!--
-			Ez egyezzen meg a GWT-ben lévő Jetty verizójával, legalábbis
-			szerintem úgy a tuti :)
-		-->
+		<!-- Ez egyezzen meg a GWT-ben lévő Jetty verizójával, legalábbis szerintem 
+			úgy a tuti :) -->
 		<jetty.version>6.1.11</jetty.version>
 
 		<maven.compiler.source>1.6</maven.compiler.source>
@@ -82,8 +80,8 @@
 		<!-- EclipseLink -->
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
-			<artifactId>org.eclipse.persistence.jpa</artifactId>
-			<version>2.1.0</version>
+			<artifactId>eclipselink</artifactId>
+			<version>2.2.0-M6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
@@ -95,7 +93,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.13</version>
+			<version>5.1.14</version>
 			<scope>runtime</scope>
 		</dependency>
 
@@ -106,6 +104,23 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Ezek kellenek még a RequestFactoryhoz, amik a gwt-servlet-deps.jar-ban lennének -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20090211</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.gwt.inject</groupId>
+			<artifactId>gin</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -113,7 +128,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
-				<version>2.1.0</version>
+				<version>2.1.1-SNAPSHOT</version>
 				<executions>
 					<execution>
 						<id>async-gen</id>
@@ -163,6 +178,7 @@
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<configuration>
 					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
 					<buildOutputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</buildOutputDirectory>
 					<classpathContainers>
 						<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
@@ -210,7 +226,7 @@
 		<pluginRepository>
 			<id>codehaus-snapshot-repository</id>
 			<name>Codehaus Snapshot Repository</name>
-			<url>https://nexus.codehaus.org/content/repositories/codehaus-snapshots</url>
+			<url>https://nexus.codehaus.org/content/repositories/snapshots</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>

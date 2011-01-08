@@ -19,5 +19,4 @@ public interface ShowView extends IsWidget {
     void setPrograms(List<Program> events);
 
     void reset();
-
 }

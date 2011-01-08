@@ -4,19 +4,17 @@ import java.util.List;
 import hu.sch.kfc.client.ui.view.ShowView;
 import hu.sch.kfc.client.ui.widget.EventBox;
 import hu.sch.kfc.shared.Program;
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.SpanElement;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Widget;
+import com.google.inject.Inject;
 
 public class ShowViewImpl extends Composite implements ShowView {
 
-    private static ShowViewImplUiBinder uiBinder = GWT.create(ShowViewImplUiBinder.class);
-
-    interface ShowViewImplUiBinder extends UiBinder<Widget, ShowViewImpl> {
+    public interface ShowViewImplUiBinder extends UiBinder<Widget, ShowViewImpl> {
     }
 
     @UiField
@@ -25,7 +23,8 @@ public class ShowViewImpl extends Composite implements ShowView {
     FlowPanel container;
     private Listener listener;
 
-    public ShowViewImpl() {
+    @Inject
+    public ShowViewImpl(ShowViewImplUiBinder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 

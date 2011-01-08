@@ -22,5 +22,10 @@ public interface ListView extends IsWidget {
 
     void setListener(Listener listener);
 
+    /**
+     * Megjeleníti a megadott köröket. Ez a metódus alapállapotba hozza a viewt.
+     * 
+     * @param groups
+     */
     void setGroups(List<Group> groups);
 }

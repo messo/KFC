@@ -2,64 +2,60 @@ package hu.sch.kfc.client.ui;
 
 import java.util.List;
 import hu.sch.kfc.client.cache.CachingAsyncCallback;
-import hu.sch.kfc.client.service.ProgramService;
+import hu.sch.kfc.client.place.ShowPlace;
 import hu.sch.kfc.client.service.ProgramServiceAsync;
-import hu.sch.kfc.client.service.GroupService;
 import hu.sch.kfc.client.service.GroupServiceAsync;
 import hu.sch.kfc.client.ui.view.ShowView;
-import hu.sch.kfc.client.ui.view.impl.ShowViewImpl;
 import hu.sch.kfc.shared.Program;
 import hu.sch.kfc.shared.Group;
+import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import com.google.inject.Inject;
 
+/**
+ * Egy adott körhöz tartozó rendezvényeket listázza ki.
+ * 
+ * @author balint
+ * @since 0.1
+ */
 public class ShowActivity extends AbstractActivity implements ShowView.Listener {
 
-    private static ShowView defaultView = null;
+    @Inject
     private ShowView view;
+    @Inject
+    private GroupServiceAsync groupService;
+    @Inject
+    private ProgramServiceAsync eventService;
+
     private String groupToken;
     private Group group = null;
     private List<Program> programs;
-    private GroupServiceAsync groupService = GWT.create(GroupService.class);
-    private ProgramServiceAsync eventService = GWT.create(ProgramService.class);
 
     final Timer programSetter = new Timer() {
         public void run() {
             GWT.log("timer...");
-            if( group != null ) {
+            if (group != null) {
                 programSetter.cancel();
                 group.setPrograms(programs);
             }
         }
     };
-    
-    public ShowActivity(PlaceController placeController, String token,
-            ShowView view) {
-        super(placeController);
-        this.view = view;
-        this.groupToken = token;
-        view.setListener(this);
-    }
 
-    public ShowActivity(PlaceController placeController, String token) {
-        this(placeController, token, getDefaultView());
-        view.reset();
-    }
-
-    private static ShowView getDefaultView() {
-        if (defaultView == null) {
-            defaultView = new ShowViewImpl();
-        }
-        return defaultView;
+    public Activity withPlace(ShowPlace place) {
+        this.groupToken = place.getGroupToken();
+        return this;
     }
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        view.setListener(this);
+        view.reset();
+
         groupService.getGroupByToken(groupToken, new CachingAsyncCallback<Group>() {
 
             @Override

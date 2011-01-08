@@ -8,6 +8,7 @@
 	<inherits name='com.google.gwt.activity.Activity' />
 	<inherits name='com.google.gwt.requestfactory.RequestFactory' />
 	<inherits name="com.google.gwt.i18n.I18N"/>
+	<inherits name="com.google.gwt.inject.Inject"/>
 	
 	<extend-property name="locale" values="hu"/>
 	<set-property name="locale" value="hu"/>
