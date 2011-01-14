@@ -1,9 +1,9 @@
 package hu.sch.kfc.client.ui.view.impl;
 
-import java.util.List;
+import hu.sch.kfc.client.proxy.GroupProxy;
 import hu.sch.kfc.client.ui.view.ListView;
 import hu.sch.kfc.client.ui.widget.Button;
-import hu.sch.kfc.shared.Group;
+import java.util.List;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -39,10 +39,10 @@ public class ListViewImpl extends Composite implements ListView {
     }
 
     @Override
-    public void setGroups(List<Group> groups) {
+    public void setGroups(List<GroupProxy> groups) {
         panel.clear();
         Button b;
-        for (final Group g : groups) {
+        for (final GroupProxy g : groups) {
             b = new Button(g.getName());
             b.addClickHandler(new ClickHandler() {
 

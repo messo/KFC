@@ -1,6 +1,6 @@
 package hu.sch.kfc.client.ui.view;
 
-import hu.sch.kfc.shared.Group;
+import hu.sch.kfc.client.proxy.GroupProxy;
 import java.util.List;
 import com.google.gwt.user.client.ui.IsWidget;
 
@@ -17,7 +17,7 @@ public interface ListView extends IsWidget {
          *
          * @param g a kör, amit kiválasztottunk
          */
-        void groupClicked(Group g);
+        void groupClicked(GroupProxy g);
     }
 
     void setListener(Listener listener);
@@ -27,5 +27,5 @@ public interface ListView extends IsWidget {
      * 
      * @param groups
      */
-    void setGroups(List<Group> groups);
+    void setGroups(List<GroupProxy> groups);
 }

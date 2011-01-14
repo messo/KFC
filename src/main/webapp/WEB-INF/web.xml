@@ -45,23 +45,6 @@
 		<url-pattern>/gwtRequest</url-pattern>
 	</servlet-mapping>
 
-	<servlet>
-		<servlet-name>groupServlet</servlet-name>
-		<servlet-class>hu.sch.kfc.server.GroupServiceImpl</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>groupServlet</servlet-name>
-		<url-pattern>/kfc/group</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>programServlet</servlet-name>
-		<servlet-class>hu.sch.kfc.server.ProgramServiceImpl</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>programServlet</servlet-name>
-		<url-pattern>/kfc/program</url-pattern>
-	</servlet-mapping>
-
 	<welcome-file-list>
 		<welcome-file>KFC.html</welcome-file>
 	</welcome-file-list>

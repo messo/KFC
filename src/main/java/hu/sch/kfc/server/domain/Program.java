@@ -1,10 +1,12 @@
 package hu.sch.kfc.server.domain;
 
+import hu.sch.kfc.server.EMF;
+import hu.sch.kfc.server.misc.DateInterval;
 import java.util.Date;
-import hu.sch.kfc.shared.DateInterval;
-import hu.sch.kfc.shared.Program;
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EntityManager;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -15,43 +17,59 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Version;
 
 @Entity
 @Table(name = "programs")
-@NamedQueries({ @NamedQuery(name = ProgramEntity.retrieveByGroupToken, query = "SELECT p FROM ProgramEntity p "
+@NamedQueries({ @NamedQuery(name = Program.retrieveByGroupToken, query = "SELECT p FROM Program p "
         + "LEFT JOIN FETCH p.organizer WHERE p.organizer.token = :token") })
-public class ProgramEntity implements IsEntity<Program> {
+public class Program {
 
     public static final String retrieveByGroupToken = "retrieveByGroupToken";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
+
+    @Column(name = "name")
     private String name;
-    @Column(columnDefinition = "TEXT")
+
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
-    private GroupEntity organizer;
+
+    @ManyToOne
+    @JoinColumn(name = "organizer")
+    private Group organizer;
 
     @Column(name = "programStart")
     @Temporal(TemporalType.TIMESTAMP)
     private Date start;
+
     @Column(name = "programEnd")
     @Temporal(TemporalType.TIMESTAMP)
     private Date end;
+
+    @Column(name = "orderStart")
     @Temporal(TemporalType.TIMESTAMP)
     private Date orderStart;
+
+    @Column(name = "orderEnd")
     @Temporal(TemporalType.TIMESTAMP)
     private Date orderEnd;
 
-    public ProgramEntity() {
+    @Version
+    @Column(name = "version")
+    private Integer version;
+
+    public Program() {
         super();
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -63,13 +81,19 @@ public class ProgramEntity implements IsEntity<Program> {
         this.name = name;
     }
 
-    @ManyToOne
-    @JoinColumn
-    public GroupEntity getOrganizer() {
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Group getOrganizer() {
         return organizer;
     }
 
-    public void setOrganizer(GroupEntity organizer) {
+    public void setOrganizer(Group organizer) {
         this.organizer = organizer;
     }
 
@@ -105,9 +129,29 @@ public class ProgramEntity implements IsEntity<Program> {
         this.orderEnd = orderEnd;
     }
 
-    @Override
-    public Program convert() {
-        return new Program(new DateInterval(orderStart, orderEnd), new DateInterval(start, end),
-                name, description);
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
+    public DateInterval getOrderInterval() {
+        return new DateInterval(orderStart, orderEnd);
+    }
+
+    public static Program findProgram(Long id) {
+        return null;
+    }
+
+    public static List<Program> findProgramsForGroup(Group g) {
+        return findProgramsByGroupToken(g.getToken());
+    }
+
+    public static List<Program> findProgramsByGroupToken(String token) {
+        EntityManager em = EMF.get();
+        return em.createNamedQuery(Program.retrieveByGroupToken, Program.class)
+                .setParameter("token", token).getResultList();
     }
 }

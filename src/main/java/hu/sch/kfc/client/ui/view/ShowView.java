@@ -1,6 +1,6 @@
 package hu.sch.kfc.client.ui.view;
 
-import hu.sch.kfc.shared.Program;
+import hu.sch.kfc.client.proxy.ProgramProxy;
 import java.util.List;
 import com.google.gwt.user.client.ui.IsWidget;
 
@@ -16,7 +16,7 @@ public interface ShowView extends IsWidget {
 
     void setText(String string);
 
-    void setPrograms(List<Program> events);
+    void setPrograms(List<ProgramProxy> events);
 
     void reset();
 }

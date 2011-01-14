@@ -1,9 +1,9 @@
 package hu.sch.kfc.client.ui.view.impl;
 
-import java.util.List;
+import hu.sch.kfc.client.proxy.ProgramProxy;
 import hu.sch.kfc.client.ui.view.ShowView;
-import hu.sch.kfc.client.ui.widget.EventBox;
-import hu.sch.kfc.shared.Program;
+import hu.sch.kfc.client.ui.widget.ProgramBox;
+import java.util.List;
 import com.google.gwt.dom.client.SpanElement;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -44,10 +44,10 @@ public class ShowViewImpl extends Composite implements ShowView {
     }
 
     @Override
-    public void setPrograms(List<Program> events) {
-        EventBox eb;
-        for (Program e : events) {
-            eb = new EventBox(e);
+    public void setPrograms(List<ProgramProxy> programs) {
+        ProgramBox eb;
+        for (ProgramProxy e : programs) {
+            eb = new ProgramBox(e);
             container.add(eb);
         }
     }

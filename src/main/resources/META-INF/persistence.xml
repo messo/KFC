@@ -3,8 +3,8 @@
   <persistence-unit name="KFC-PU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <non-jta-data-source>java:comp/env/jdbc/kfc</non-jta-data-source>
-    <class>hu.sch.kfc.server.domain.GroupEntity</class>
-    <class>hu.sch.kfc.server.domain.ProgramEntity</class>
+    <class>hu.sch.kfc.server.domain.Group</class>
+    <class>hu.sch.kfc.server.domain.Program</class>
     <properties>
     	<property name="eclipselink.ddl-generation" value="create-tables"/>
     	<property name="eclipselink.logging.level" value="FINE"/>

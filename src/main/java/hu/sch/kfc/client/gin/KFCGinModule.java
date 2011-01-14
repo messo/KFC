@@ -1,9 +1,9 @@
 package hu.sch.kfc.client.gin;
 
 import hu.sch.kfc.client.Application;
-import hu.sch.kfc.client.KFCRequestFactory;
 import hu.sch.kfc.client.place.AppPlaceHistoryMapper;
 import hu.sch.kfc.client.place.ListPlace;
+import hu.sch.kfc.client.request.KFCRequestFactory;
 import hu.sch.kfc.client.ui.ListActivity;
 import hu.sch.kfc.client.ui.MainActivityMapper;
 import hu.sch.kfc.client.ui.Shell;

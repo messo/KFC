@@ -1,15 +1,13 @@
 package hu.sch.kfc.client.ui;
 
-import java.util.List;
-import hu.sch.kfc.client.cache.Cache;
 import hu.sch.kfc.client.place.ShowPlace;
-import hu.sch.kfc.client.service.GroupServiceAsync;
+import hu.sch.kfc.client.proxy.GroupProxy;
+import hu.sch.kfc.client.request.KFCRequestFactory;
 import hu.sch.kfc.client.ui.view.ListView;
-import hu.sch.kfc.shared.Group;
+import java.util.List;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.requestfactory.shared.Receiver;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
@@ -25,31 +23,22 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
     @Inject
     private ListView view;
     @Inject
-    private GroupServiceAsync groupService;
+    private KFCRequestFactory requestFactory;
 
-    private static List<Group> groups = null;
+    private static List<GroupProxy> groups = null;
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         view.setListener(this);
-        
+
         GWT.log("Activity start: list");
         if (groups == null) {
 
-            groupService.getGroups(new AsyncCallback<List<Group>>() {
-
+            requestFactory.groupRequest().findGroups().fire(new Receiver<List<GroupProxy>>() {
                 @Override
-                public void onSuccess(List<Group> result) {
-                    groups = result;
-                    for (Group g : result) {
-                        Cache.put(g);
-                    }
-                    view.setGroups(groups);
-                }
-
-                @Override
-                public void onFailure(Throwable caught) {
-                    Window.alert("Hiba a kérésben!");
+                public void onSuccess(List<GroupProxy> response) {
+                    groups = response;
+                    view.setGroups(response);
                 }
             });
         } else {
@@ -59,7 +48,7 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
     }
 
     @Override
-    public void groupClicked(Group g) {
+    public void groupClicked(GroupProxy g) {
         placeController.goTo(new ShowPlace(g.getToken()));
     }
 }
