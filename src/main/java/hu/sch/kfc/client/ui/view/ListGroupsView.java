@@ -1,10 +1,10 @@
 package hu.sch.kfc.client.ui.view;
 
-import hu.sch.kfc.client.proxy.GroupProxy;
+import hu.sch.kfc.client.model.GroupProxy;
 import java.util.List;
 import com.google.gwt.user.client.ui.IsWidget;
 
-public interface ListView extends IsWidget {
+public interface ListGroupsView extends IsWidget {
 
     /**
      * Ezt kell implementálnia a tulajdonosnak.

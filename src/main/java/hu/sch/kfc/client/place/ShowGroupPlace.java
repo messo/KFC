@@ -4,11 +4,11 @@ import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceTokenizer;
 import com.google.gwt.place.shared.Prefix;
 
-public class ShowPlace extends Place {
+public class ShowGroupPlace extends Place {
 
     private final String groupToken;
 
-    public ShowPlace(String groupToken) {
+    public ShowGroupPlace(String groupToken) {
         this.groupToken = groupToken;
     }
 
@@ -17,15 +17,15 @@ public class ShowPlace extends Place {
     }
 
     @Prefix(value = "show")
-    public static class Tokenizer implements PlaceTokenizer<ShowPlace> {
+    public static class Tokenizer implements PlaceTokenizer<ShowGroupPlace> {
         @Override
-        public String getToken(ShowPlace place) {
+        public String getToken(ShowGroupPlace place) {
             return place.getGroupToken();
         }
 
         @Override
-        public ShowPlace getPlace(String token) {
-            return new ShowPlace(token);
+        public ShowGroupPlace getPlace(String token) {
+            return new ShowGroupPlace(token);
         }
     }
 }

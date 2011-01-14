@@ -1,15 +1,16 @@
 package hu.sch.kfc.client.ui.view;
 
-import hu.sch.kfc.client.proxy.ProgramProxy;
+import hu.sch.kfc.client.model.ProgramProxy;
 import java.util.List;
 import com.google.gwt.user.client.ui.IsWidget;
 
-public interface ShowView extends IsWidget {
+public interface ShowGroupView extends IsWidget {
 
     /**
      * Ezt kell implementálnia a tulajdonosnak.
      */
     public interface Listener {
+        void onProgramSelected(ProgramProxy program);
     }
 
     void setListener(Listener listener);

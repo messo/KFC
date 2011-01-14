@@ -1,6 +1,6 @@
 package hu.sch.kfc.client.request;
 
-import hu.sch.kfc.client.proxy.GroupProxy;
+import hu.sch.kfc.client.model.GroupProxy;
 import hu.sch.kfc.server.domain.Group;
 import java.util.List;
 import com.google.gwt.requestfactory.shared.Request;

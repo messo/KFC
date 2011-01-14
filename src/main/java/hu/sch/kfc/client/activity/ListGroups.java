@@ -1,9 +1,9 @@
-package hu.sch.kfc.client.ui;
+package hu.sch.kfc.client.activity;
 
-import hu.sch.kfc.client.place.ShowPlace;
-import hu.sch.kfc.client.proxy.GroupProxy;
+import hu.sch.kfc.client.model.GroupProxy;
+import hu.sch.kfc.client.place.ShowGroupPlace;
 import hu.sch.kfc.client.request.KFCRequestFactory;
-import hu.sch.kfc.client.ui.view.ListView;
+import hu.sch.kfc.client.ui.view.ListGroupsView;
 import java.util.List;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.EventBus;
@@ -18,10 +18,10 @@ import com.google.inject.Inject;
  * @author messo
  * @since 0.1
  */
-public class ListActivity extends AbstractActivity implements ListView.Listener {
+public class ListGroups extends AbstractActivity implements ListGroupsView.Listener {
 
     @Inject
-    private ListView view;
+    private ListGroupsView view;
     @Inject
     private KFCRequestFactory requestFactory;
 
@@ -49,6 +49,6 @@ public class ListActivity extends AbstractActivity implements ListView.Listener 
 
     @Override
     public void groupClicked(GroupProxy g) {
-        placeController.goTo(new ShowPlace(g.getToken()));
+        placeController.goTo(new ShowGroupPlace(g.getToken()));
     }
 }

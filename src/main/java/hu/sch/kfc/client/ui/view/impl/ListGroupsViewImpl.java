@@ -1,7 +1,7 @@
 package hu.sch.kfc.client.ui.view.impl;
 
-import hu.sch.kfc.client.proxy.GroupProxy;
-import hu.sch.kfc.client.ui.view.ListView;
+import hu.sch.kfc.client.model.GroupProxy;
+import hu.sch.kfc.client.ui.view.ListGroupsView;
 import hu.sch.kfc.client.ui.widget.Button;
 import java.util.List;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -13,9 +13,9 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
-public class ListViewImpl extends Composite implements ListView {
+public class ListGroupsViewImpl extends Composite implements ListGroupsView {
 
-    public interface ListViewImplUiBinder extends UiBinder<Widget, ListViewImpl> {
+    public interface MyUiBinder extends UiBinder<Widget, ListGroupsViewImpl> {
     }
 
     private Listener listener;
@@ -24,7 +24,7 @@ public class ListViewImpl extends Composite implements ListView {
     FlowPanel panel;
 
     @Inject
-    public ListViewImpl(ListViewImplUiBinder uiBinder) {
+    public ListGroupsViewImpl(MyUiBinder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 

@@ -1,4 +1,4 @@
-package hu.sch.kfc.client.ui;
+package hu.sch.kfc.client.activity;
 
 import hu.sch.kfc.client.gin.KFCGinModule;
 import com.google.gwt.activity.shared.Activity;

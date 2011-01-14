@@ -1,4 +1,4 @@
-package hu.sch.kfc.client.proxy;
+package hu.sch.kfc.client.model;
 
 import hu.sch.kfc.server.domain.Group;
 import com.google.gwt.requestfactory.shared.EntityProxy;

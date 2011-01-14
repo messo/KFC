@@ -1,11 +1,15 @@
 package hu.sch.kfc.client.ui.widget;
 
-import hu.sch.kfc.client.proxy.DateIntervalProxy;
-import hu.sch.kfc.client.proxy.ProgramProxy;
+import hu.sch.kfc.client.model.DateIntervalProxy;
+import hu.sch.kfc.client.model.ProgramProxy;
+import hu.sch.kfc.client.ui.view.ShowGroupView;
+import hu.sch.kfc.client.ui.view.ShowGroupView.Listener;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Element;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 
@@ -25,11 +29,18 @@ public class ProgramBox extends Composite {
     @UiField
     Button orderBtn;
 
-    ProgramProxy program;
+    private ProgramProxy program;
+    private Listener listener;
 
-    public ProgramBox(ProgramProxy p) {
+    public ProgramBox(ProgramProxy p, ShowGroupView.Listener listener) {
         initWidget(uiBinder.createAndBindUi(this));
         program = p;
+        this.listener = listener;
+    }
+    
+    @UiHandler("orderBtn")
+    public void onSelected(ClickEvent click) {
+        listener.onProgramSelected(program);
     }
 
     @Override

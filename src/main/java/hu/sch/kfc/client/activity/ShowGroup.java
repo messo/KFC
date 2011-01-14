@@ -1,10 +1,11 @@
-package hu.sch.kfc.client.ui;
+package hu.sch.kfc.client.activity;
 
-import hu.sch.kfc.client.place.ShowPlace;
-import hu.sch.kfc.client.proxy.GroupProxy;
-import hu.sch.kfc.client.proxy.ProgramProxy;
+import hu.sch.kfc.client.model.GroupProxy;
+import hu.sch.kfc.client.model.ProgramProxy;
+import hu.sch.kfc.client.place.ShowGroupPlace;
+import hu.sch.kfc.client.place.ShowProgramPlace;
 import hu.sch.kfc.client.request.KFCRequestFactory;
-import hu.sch.kfc.client.ui.view.ShowView;
+import hu.sch.kfc.client.ui.view.ShowGroupView;
 import java.util.List;
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.event.shared.EventBus;
@@ -18,17 +19,17 @@ import com.google.inject.Inject;
  * @author balint
  * @since 0.1
  */
-public class ShowActivity extends AbstractActivity implements ShowView.Listener {
+public class ShowGroup extends AbstractActivity implements ShowGroupView.Listener {
 
     @Inject
-    private ShowView view;
+    private ShowGroupView view;
     @Inject
     private KFCRequestFactory requestFactory;
 
     private GroupProxy group;
     private String groupToken;
 
-    public Activity withPlace(ShowPlace place) {
+    public Activity withPlace(ShowGroupPlace place) {
         this.groupToken = place.getGroupToken();
         return this;
     }
@@ -70,5 +71,10 @@ public class ShowActivity extends AbstractActivity implements ShowView.Listener 
         // elmentjük, hogy ha kell, akkor csoporthoz tudjuk rendelni
         // this.programs = programs;
         view.setPrograms(programs);
+    }
+
+    @Override
+    public void onProgramSelected(ProgramProxy program) {
+        placeController.goTo(new ShowProgramPlace(program));
     }
 }

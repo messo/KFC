@@ -1,8 +1,8 @@
 package hu.sch.kfc.client;
 
+import hu.sch.kfc.client.activity.AbstractActivity;
+import hu.sch.kfc.client.activity.MainActivityMapper;
 import hu.sch.kfc.client.gin.KFCGinjector;
-import hu.sch.kfc.client.ui.AbstractActivity;
-import hu.sch.kfc.client.ui.MainActivityMapper;
 import hu.sch.kfc.client.ui.Shell;
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.activity.shared.ActivityManager;
