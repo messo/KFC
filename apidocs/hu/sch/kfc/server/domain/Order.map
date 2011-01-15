@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="c5461" href="./Order.html" title="hu.sch.kfc.server.domain.Order" alt="" coords="143,11,209,53"/>
+<area shape="rect" id="node1" href="./Order.html" title="&lt;TABLE&gt;" alt="" coords="132,6,220,58"/>
+<area shape="rect" id="c5467" href="./User.html" title="hu.sch.kfc.server.domain.User" alt="" coords="16,131,83,173"/>
+<area shape="rect" id="node2" href="./User.html" title="&lt;TABLE&gt;" alt="" coords="5,126,93,178"/>
+<area shape="rect" id="c5468" href="./OrderInterval.html" title="hu.sch.kfc.server.domain.OrderInterval" alt="" coords="128,131,224,173"/>
+<area shape="rect" id="node3" href="./OrderInterval.html" title="&lt;TABLE&gt;" alt="" coords="117,126,235,178"/>
+<area shape="rect" id="c5470" href="./Food.html" title="hu.sch.kfc.server.domain.Food" alt="" coords="269,131,336,173"/>
+<area shape="rect" id="node4" href="./Food.html" title="&lt;TABLE&gt;" alt="" coords="259,126,347,178"/>
+</map>

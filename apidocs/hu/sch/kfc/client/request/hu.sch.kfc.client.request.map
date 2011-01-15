@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="c307" href="./ProgramRequest.html" title="hu.sch.kfc.client.request.ProgramRequest" alt="" coords="15,11,134,53"/>
+<area shape="rect" id="node1" href="./ProgramRequest.html" title="&lt;TABLE&gt;" alt="" coords="5,6,144,58"/>
+<area shape="rect" id="c308" href="./GroupRequest.html" title="hu.sch.kfc.client.request.GroupRequest" alt="" coords="178,11,283,53"/>
+<area shape="rect" id="node2" href="./GroupRequest.html" title="&lt;TABLE&gt;" alt="" coords="168,6,293,58"/>
+<area shape="rect" id="c309" href="./KFCRequestFactory.html" title="hu.sch.kfc.client.request.KFCRequestFactory" alt="" coords="328,11,469,53"/>
+<area shape="rect" id="node3" href="./KFCRequestFactory.html" title="&lt;TABLE&gt;" alt="" coords="317,6,480,58"/>
+</map>

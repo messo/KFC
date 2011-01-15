@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="c4046" href="./JettyLauncher.JettyRequestLogger.html" title="hu.sch.kfc.dev.JettyLauncher.JettyRequestLogger" alt="" coords="86,118,223,143"/>
+<area shape="rect" id="node1" href="./JettyLauncher.JettyRequestLogger.html" title="&lt;TABLE&gt;" alt="" coords="76,107,233,155"/>
+<area shape="rect" id="c4052" href="http://java.sun.com/j2se/1.4.2/docs/api/org/mortbay/component/AbstractLifeCycle.html" title="org.mortbay.component.AbstractLifeCycle" alt="" coords="16,19,141,45"/>
+<area shape="rect" id="node2" href="http://java.sun.com/j2se/1.4.2/docs/api/org/mortbay/component/AbstractLifeCycle.html" title="&lt;TABLE&gt;" alt="" coords="5,8,152,56"/>
+<area shape="rect" id="c4053" href="http://java.sun.com/j2se/1.4.2/docs/api/org/mortbay/jetty/RequestLog.html" title="org.mortbay.jetty.RequestLog" alt="" coords="187,11,277,53"/>
+<area shape="rect" id="node4" href="http://java.sun.com/j2se/1.4.2/docs/api/org/mortbay/jetty/RequestLog.html" title="&lt;TABLE&gt;" alt="" coords="176,6,288,58"/>
+</map>

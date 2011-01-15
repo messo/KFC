@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="c1744" href="./ShowProgram.html" title="hu.sch.kfc.client.activity.ShowProgram" alt="" coords="15,209,118,234"/>
+<area shape="rect" id="node1" href="./ShowProgram.html" title="&lt;TABLE&gt;" alt="" coords="5,197,128,245"/>
+<area shape="rect" id="c1745" href="./AbstractActivity.html" title="hu.sch.kfc.client.activity.AbstractActivity" alt="" coords="147,113,261,138"/>
+<area shape="rect" id="node2" href="./AbstractActivity.html" title="&lt;TABLE&gt;" alt="" coords="137,101,271,149"/>
+<area shape="rect" id="c1748" href="./ListGroups.html" title="hu.sch.kfc.client.activity.ListGroups" alt="" coords="162,209,246,234"/>
+<area shape="rect" id="node3" href="./ListGroups.html" title="&lt;TABLE&gt;" alt="" coords="152,197,256,245"/>
+<area shape="rect" id="c1751" href="./ShowGroup.html" title="hu.sch.kfc.client.activity.ShowGroup" alt="" coords="290,209,379,234"/>
+<area shape="rect" id="node4" href="./ShowGroup.html" title="&lt;TABLE&gt;" alt="" coords="280,197,389,245"/>
+<area shape="rect" id="c1882" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/activity/shared/AbstractActivity.html" title="com.google.gwt.activity.shared.AbstractActivity" alt="" coords="147,17,261,42"/>
+<area shape="rect" id="node6" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/activity/shared/AbstractActivity.html" title="&lt;TABLE&gt;" alt="" coords="137,5,271,53"/>
+</map>
