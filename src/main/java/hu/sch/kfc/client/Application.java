@@ -23,7 +23,7 @@ import com.google.inject.Inject;
  * őket, és elindul az alkalmazás életciklusa.
  * </p>
  * 
- * @author balint
+ * @author messo
  * @since 0.1
  */
 public class Application {

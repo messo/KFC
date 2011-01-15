@@ -1,0 +1,18 @@
+Bevezetés
+
+* Célok
+
+  Egy olyan projekt létrehozása a cél, amely segítségével a Házban lakók könnyedén tudnak kaját rendelni a kajás köröktől, illetve
+  a kajás körök ezeket a rendeléseket könnyedén tudják teljesíteni. Emellett egy jó tanulóprojekt, hogy megismerjük jobban a GWT-t,
+  illetve kiéljük a DI örömöket :).
+
+* Megvalósítás
+
+  Az alkalmazás nagyon kliens-centrikus, ezért igazából az egész rendszer a felhasználó felületet valósítja meg, és csak az adatok
+  kezelése az, ami a szerver oldalra hárul.
+
+* További finomságok
+
+  {{{./activity.html}Activityk működése}}
+
+  {{{./requestfactory.html}RequestFactory}}

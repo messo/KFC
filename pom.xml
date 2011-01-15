@@ -7,11 +7,17 @@
 	<name>KFC (${project.version})</name>
 	<packaging>war</packaging>
 	<version>0.1-SNAPSHOT</version>
+	<url>http://messo.github.com/KFC</url>
+
+	<issueManagement>
+		<system>Redmine</system>
+		<url>https://redmine.kirdev.sch.bme.hu/projects/kfc/issues</url>
+	</issueManagement>
 
 	<developers>
 		<developer>
 			<name>Bálint Kriván</name>
-			<email>balint@krivan.hu</email>
+			<email>balint[KUKAC]krivan[PONT]hu</email>
 		</developer>
 	</developers>
 
@@ -124,6 +130,12 @@
 		</dependency>
 	</dependencies>
 
+	<scm>
+		<url>http://github.com/messo/KFC</url>
+		<connection>scm:git:git://github.com/messo/KFC.git</connection>
+		<developerConnection>scm:git:git://github.com/messo/KFC.git</developerConnection>
+	</scm>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -203,6 +215,12 @@
 						<exclude>com.google.gwt:gwt-dev</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>2.2</version>
 			</plugin>
 		</plugins>
 	</build>

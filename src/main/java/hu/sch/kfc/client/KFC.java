@@ -26,6 +26,8 @@ import com.google.gwt.place.shared.PlaceHistoryHandler;
  * Minden {@link AbstractActivity}-ben elérhető a {@link PlaceController}, ezzel tudunk más helyekre
  * navigálni, ezzel egy másik {@link Activity}-t elindítani.
  * </p>
+ * 
+ * @author messo
  */
 public class KFC implements EntryPoint {
 

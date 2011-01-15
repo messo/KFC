@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.1 http://maven.apache.org/xsd/decoration-1.0.1.xsd"
+	name="KFC (0.1-SNAPSHOT)" xmlns="http://maven.apache.org/DECORATION/1.0.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<bannerLeft>
+		<name>KFC (0.1-SNAPSHOT)</name>
+	</bannerLeft>
+	<body>
+		<links>
+			<item name="KFC (0.1-SNAPSHOT)" href="http://messo.github.com/KFC" />
+		</links>
+
+		<menu name="KFC">
+			<item name="Bevezetés" href="index.html" />
+			<item name="Activityk" href="activity.html" />
+			<item name="RequestFactory" href="requestfactory.html" />
+		</menu>
+
+		<menu ref="parent" />
+		<menu ref="reports" />
+	</body>
+
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-stylus-skin</artifactId>
+		<version>1.2</version>
+	</skin>
+</project>
