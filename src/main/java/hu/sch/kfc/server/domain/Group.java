@@ -15,6 +15,15 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
+/**
+ * Egy kajás kört reprezentál, akinek rendezvényei vannak, illetve különböző kaja típusokat gyárt,
+ * amelyeket a rendezvényeken lehet megrendelni.
+ * 
+ * @author messo
+ * @stereotype entity
+ * @composed - has * Program
+ * @has 1 produces * Food
+ */
 @Entity
 @Table(name = "groups")
 @NamedQueries({
@@ -38,6 +47,9 @@ public class Group {
 
     @OneToMany(mappedBy = "organizer")
     private List<Program> programs;
+
+    @OneToMany(mappedBy = "producer")
+    private List<Food> foods;
 
     @Version
     @Column(name = "version")
@@ -73,6 +85,14 @@ public class Group {
 
     public void setPrograms(List<Program> programs) {
         this.programs = programs;
+    }
+
+    public List<Food> getFoods() {
+        return foods;
+    }
+
+    public void setFoods(List<Food> foods) {
+        this.foods = foods;
     }
 
     public Integer getVersion() {

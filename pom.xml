@@ -105,7 +105,8 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Ezek kellenek még a RequestFactoryhoz, amik a gwt-servlet-deps.jar-ban lennének -->
+		<!-- Ezek kellenek még a RequestFactoryhoz, amik a gwt-servlet-deps.jar-ban 
+			lennének -->
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
@@ -205,6 +206,23 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
+
+					<docletPath>${project.baseUri}/doc/UmlGraph-5.4.jar</docletPath>
+					<additionalparam>-hide (.*?_) -views</additionalparam>
+					<!-- <useStandardDocletOptions>true</useStandardDocletOptions> -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
 
 	<repositories>
 		<repository>

@@ -5,6 +5,10 @@
     <non-jta-data-source>java:comp/env/jdbc/kfc</non-jta-data-source>
     <class>hu.sch.kfc.server.domain.Group</class>
     <class>hu.sch.kfc.server.domain.Program</class>
+    <class>hu.sch.kfc.server.domain.Food</class>
+    <class>hu.sch.kfc.server.domain.User</class>
+    <class>hu.sch.kfc.server.domain.Order</class>
+    <class>hu.sch.kfc.server.domain.OrderInterval</class>
     <properties>
     	<property name="eclipselink.ddl-generation" value="create-tables"/>
     	<property name="eclipselink.logging.level" value="FINE"/>

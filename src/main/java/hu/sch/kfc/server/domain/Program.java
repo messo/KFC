@@ -2,6 +2,7 @@ package hu.sch.kfc.server.domain;
 
 import hu.sch.kfc.server.EMF;
 import hu.sch.kfc.server.misc.DateInterval;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Column;
@@ -11,14 +12,26 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Version;
 
+/**
+ * Egy kör által szervezett rendezvényt ír le. Meg lehet adni a rendelhető kajákat, illetve, hogy
+ * milyen rendelési intervallumok (legalább egynek lennie kell) vannak, azaz mikorra lehet rendelni
+ * a kajákat.
+ * 
+ * @author messo
+ * @stereotype entity
+ * @has * provides * Food
+ * @composed 1 "consists of" 1..* OrderInterval
+ */
 @Entity
 @Table(name = "programs")
 @NamedQueries({ @NamedQuery(name = Program.retrieveByGroupToken, query = "SELECT p FROM Program p "
@@ -37,8 +50,8 @@ public class Program {
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
-    @ManyToOne
-    @JoinColumn(name = "organizer")
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "organizer", nullable = false)
     private Group organizer;
 
     @Column(name = "programStart")
@@ -49,13 +62,11 @@ public class Program {
     @Temporal(TemporalType.TIMESTAMP)
     private Date end;
 
-    @Column(name = "orderStart")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date orderStart;
+    @ManyToMany(mappedBy = "programs")
+    private List<Food> orderableFoods;
 
-    @Column(name = "orderEnd")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date orderEnd;
+    @OneToMany(mappedBy = "program")
+    private List<OrderInterval> orderIntervals;
 
     @Version
     @Column(name = "version")
@@ -113,20 +124,20 @@ public class Program {
         this.end = end;
     }
 
-    public Date getOrderStart() {
-        return orderStart;
+    public List<Food> getOrderableFoods() {
+        return orderableFoods;
     }
 
-    public void setOrderStart(Date orderStart) {
-        this.orderStart = orderStart;
+    public void setOrderableFoods(List<Food> orderableFoods) {
+        this.orderableFoods = orderableFoods;
     }
 
-    public Date getOrderEnd() {
-        return orderEnd;
+    public List<OrderInterval> getOrderIntervals() {
+        return orderIntervals;
     }
 
-    public void setOrderEnd(Date orderEnd) {
-        this.orderEnd = orderEnd;
+    public void setOrderIntervals(List<OrderInterval> orderIntervals) {
+        this.orderIntervals = orderIntervals;
     }
 
     public Integer getVersion() {
@@ -137,8 +148,16 @@ public class Program {
         this.version = version;
     }
 
+    /**
+     * Lekérjük a rendezvény összesített rendelési idejét
+     * 
+     * @return összesített rendelési idő
+     */
     public DateInterval getOrderInterval() {
-        return new DateInterval(orderStart, orderEnd);
+        OrderInterval[] intervals = orderIntervals
+                .toArray(new OrderInterval[orderIntervals.size()]);
+        Arrays.sort(intervals);
+        return new DateInterval(intervals[0].getStart(), intervals[intervals.length - 1].getEnd());
     }
 
     public static Program findProgram(Long id) {
