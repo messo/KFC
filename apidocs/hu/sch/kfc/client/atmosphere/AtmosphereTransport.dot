@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.atmosphere.AtmosphereTransport
-	c2153 [label=<<table title="hu.sch.kfc.client.atmosphere.AtmosphereTransport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AtmosphereTransport.html">
+	c2154 [label=<<table title="hu.sch.kfc.client.atmosphere.AtmosphereTransport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AtmosphereTransport.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AtmosphereTransport </td></tr>
 		</table></td></tr>
@@ -22,6 +22,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./impl/AtmosphereTransportImplIE.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.atmosphere.impl.AtmosphereTransportImplIE extends hu.sch.kfc.client.atmosphere.AtmosphereTransport
-	c2153:p -> c2155:p [dir=back,arrowtail=empty];
+	c2154:p -> c2155:p [dir=back,arrowtail=empty];
 }
 

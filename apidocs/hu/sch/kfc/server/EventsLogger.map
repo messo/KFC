@@ -1,6 +1,5 @@
 <map id="G" name="G">
 <area shape="rect" id="c3358" href="./EventsLogger.html" title="hu.sch.kfc.server.EventsLogger" alt="" coords="79,118,180,143"/>
 <area shape="rect" id="node1" href="./EventsLogger.html" title="&lt;TABLE&gt;" alt="" coords="68,107,191,155"/>
-<area shape="rect" id="c3378" href="http://java.sun.com/j2se/1.4.2/docs/api/org/atmosphere/cpr/AtmosphereResourceEventListener.html" title="org.atmosphere.cpr.AtmosphereResourceEventListener" alt="" coords="16,11,243,53"/>
-<area shape="rect" id="node2" href="http://java.sun.com/j2se/1.4.2/docs/api/org/atmosphere/cpr/AtmosphereResourceEventListener.html" title="&lt;TABLE&gt;" alt="" coords="5,6,253,58"/>
+<area shape="rect" id="node2" href="null" title="&lt;TABLE&gt;" alt="" coords="5,6,253,58"/>
 </map>

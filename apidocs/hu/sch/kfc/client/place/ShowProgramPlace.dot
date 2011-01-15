@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.place.ShowProgramPlace
-	c6755 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowProgramPlace.html">
+	c6753 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowProgramPlace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowProgramPlace </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowProgramPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.place.ShowProgramPlace extends com.google.gwt.place.shared.Place
-	c6823:p -> c6755:p [dir=back,arrowtail=empty];
+	c6823:p -> c6753:p [dir=back,arrowtail=empty];
 	// com.google.gwt.place.shared.Place
-	c6823 [label=<<table title="com.google.gwt.place.shared.Place" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/place/shared/Place.html">
+	c6823 [label=<<table title="com.google.gwt.place.shared.Place" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Place </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/place/shared/Place.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl
-	c5210 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ListGroupsViewImpl.html">
+	c5208 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ListGroupsViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ListGroupsViewImpl </td></tr>
 		</table></td></tr>
@@ -23,14 +23,14 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="../ListGroupsView.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl extends com.google.gwt.user.client.ui.Composite
-	c5253:p -> c5210:p [dir=back,arrowtail=empty];
+	c5253:p -> c5208:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl implements hu.sch.kfc.client.ui.view.ListGroupsView
-	c5215:p -> c5210:p [dir=back,arrowtail=empty,style=dashed];
+	c5215:p -> c5208:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.ui.Composite
-	c5253 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/ui/Composite.html">
+	c5253 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Composite </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/ui/Composite.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

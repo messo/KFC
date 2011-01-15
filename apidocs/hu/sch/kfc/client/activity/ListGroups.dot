@@ -9,18 +9,18 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// hu.sch.kfc.client.activity.AbstractActivity
-	c4821 [label=<<table title="hu.sch.kfc.client.activity.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractActivity.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractActivity </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="./AbstractActivity.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.ListGroups
-	c4822 [label=<<table title="hu.sch.kfc.client.activity.ListGroups" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ListGroups.html">
+	c4820 [label=<<table title="hu.sch.kfc.client.activity.ListGroups" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ListGroups.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ListGroups </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ListGroups.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// hu.sch.kfc.client.activity.AbstractActivity
+	c4823 [label=<<table title="hu.sch.kfc.client.activity.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractActivity.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractActivity </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="./AbstractActivity.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.ListGroupsView.Listener
 	c4843 [label=<<table title="hu.sch.kfc.client.ui.view.ListGroupsView.Listener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ui/view/ListGroupsView.Listener.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -29,8 +29,8 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="../ui/view/ListGroupsView.Listener.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.activity.ListGroups extends hu.sch.kfc.client.activity.AbstractActivity
-	c4821:p -> c4822:p [dir=back,arrowtail=empty];
+	c4823:p -> c4820:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.activity.ListGroups implements hu.sch.kfc.client.ui.view.ListGroupsView.Listener
-	c4843:p -> c4822:p [dir=back,arrowtail=empty,style=dashed];
+	c4843:p -> c4820:p [dir=back,arrowtail=empty,style=dashed];
 }
 

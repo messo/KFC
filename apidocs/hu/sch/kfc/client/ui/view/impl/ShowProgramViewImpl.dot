@@ -16,7 +16,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./ShowProgramViewImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.ShowProgramView
-	c7007 [label=<<table title="hu.sch.kfc.client.ui.view.ShowProgramView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ShowProgramView.html">
+	c7009 [label=<<table title="hu.sch.kfc.client.ui.view.ShowProgramView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ShowProgramView.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ShowProgramView </td></tr>
@@ -25,12 +25,12 @@ digraph G {
 	//hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl extends com.google.gwt.user.client.ui.Composite
 	c7048:p -> c7001:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl implements hu.sch.kfc.client.ui.view.ShowProgramView
-	c7007:p -> c7001:p [dir=back,arrowtail=empty,style=dashed];
+	c7009:p -> c7001:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.ui.Composite
-	c7048 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/ui/Composite.html">
+	c7048 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Composite </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/ui/Composite.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

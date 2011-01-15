@@ -1,16 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" id="c226" href="./ShowGroupPlace.html" title="hu.sch.kfc.client.place.ShowGroupPlace" alt="" coords="15,19,137,45"/>
-<area shape="rect" id="node1" href="./ShowGroupPlace.html" title="&lt;TABLE&gt;" alt="" coords="5,8,147,56"/>
-<area shape="rect" id="c227" href="./ShowGroupPlace.Tokenizer.html" title="hu.sch.kfc.client.place.ShowGroupPlace.Tokenizer" alt="" coords="181,19,259,45"/>
-<area shape="rect" id="node2" href="./ShowGroupPlace.Tokenizer.html" title="&lt;TABLE&gt;" alt="" coords="171,8,269,56"/>
-<area shape="rect" id="c228" href="./ShowProgramPlace.html" title="hu.sch.kfc.client.place.ShowProgramPlace" alt="" coords="304,19,440,45"/>
-<area shape="rect" id="node3" href="./ShowProgramPlace.html" title="&lt;TABLE&gt;" alt="" coords="293,8,451,56"/>
-<area shape="rect" id="c229" href="./ShowProgramPlace.Tokenizer.html" title="hu.sch.kfc.client.place.ShowProgramPlace.Tokenizer" alt="" coords="485,19,563,45"/>
-<area shape="rect" id="node4" href="./ShowProgramPlace.Tokenizer.html" title="&lt;TABLE&gt;" alt="" coords="475,8,573,56"/>
-<area shape="rect" id="c230" href="./ListGroupsPlace.html" title="hu.sch.kfc.client.place.ListGroupsPlace" alt="" coords="608,19,725,45"/>
-<area shape="rect" id="node5" href="./ListGroupsPlace.html" title="&lt;TABLE&gt;" alt="" coords="597,8,736,56"/>
-<area shape="rect" id="c231" href="./ListGroupsPlace.Tokenizer.html" title="hu.sch.kfc.client.place.ListGroupsPlace.Tokenizer" alt="" coords="771,19,848,45"/>
-<area shape="rect" id="node6" href="./ListGroupsPlace.Tokenizer.html" title="&lt;TABLE&gt;" alt="" coords="760,8,859,56"/>
-<area shape="rect" id="c232" href="./AppPlaceHistoryMapper.html" title="hu.sch.kfc.client.place.AppPlaceHistoryMapper" alt="" coords="893,11,1054,53"/>
-<area shape="rect" id="node7" href="./AppPlaceHistoryMapper.html" title="&lt;TABLE&gt;" alt="" coords="883,6,1064,58"/>
+<area shape="rect" id="c226" href="./ShowProgramPlace.html" title="hu.sch.kfc.client.place.ShowProgramPlace" alt="" coords="16,19,152,45"/>
+<area shape="rect" id="node1" href="./ShowProgramPlace.html" title="&lt;TABLE&gt;" alt="" coords="5,8,163,56"/>
+<area shape="rect" id="c227" href="./ShowProgramPlace.Tokenizer.html" title="hu.sch.kfc.client.place.ShowProgramPlace.Tokenizer" alt="" coords="197,19,275,45"/>
+<area shape="rect" id="node2" href="./ShowProgramPlace.Tokenizer.html" title="&lt;TABLE&gt;" alt="" coords="187,8,285,56"/>
+<area shape="rect" id="c228" href="./AppPlaceHistoryMapper.html" title="hu.sch.kfc.client.place.AppPlaceHistoryMapper" alt="" coords="319,11,481,53"/>
+<area shape="rect" id="node3" href="./AppPlaceHistoryMapper.html" title="&lt;TABLE&gt;" alt="" coords="309,6,491,58"/>
+<area shape="rect" id="c229" href="./ListGroupsPlace.html" title="hu.sch.kfc.client.place.ListGroupsPlace" alt="" coords="525,19,643,45"/>
+<area shape="rect" id="node4" href="./ListGroupsPlace.html" title="&lt;TABLE&gt;" alt="" coords="515,8,653,56"/>
+<area shape="rect" id="c230" href="./ListGroupsPlace.Tokenizer.html" title="hu.sch.kfc.client.place.ListGroupsPlace.Tokenizer" alt="" coords="688,19,765,45"/>
+<area shape="rect" id="node5" href="./ListGroupsPlace.Tokenizer.html" title="&lt;TABLE&gt;" alt="" coords="677,8,776,56"/>
+<area shape="rect" id="c231" href="./ShowGroupPlace.html" title="hu.sch.kfc.client.place.ShowGroupPlace" alt="" coords="810,19,931,45"/>
+<area shape="rect" id="node6" href="./ShowGroupPlace.html" title="&lt;TABLE&gt;" alt="" coords="800,8,941,56"/>
+<area shape="rect" id="c232" href="./ShowGroupPlace.Tokenizer.html" title="hu.sch.kfc.client.place.ShowGroupPlace.Tokenizer" alt="" coords="976,19,1053,45"/>
+<area shape="rect" id="node7" href="./ShowGroupPlace.Tokenizer.html" title="&lt;TABLE&gt;" alt="" coords="965,8,1064,56"/>
 </map>

@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.activity.ListGroups
-	c5121 [label=<<table title="hu.sch.kfc.client.activity.ListGroups" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../activity/ListGroups.html">
+	c5119 [label=<<table title="hu.sch.kfc.client.activity.ListGroups" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../activity/ListGroups.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ListGroups </td></tr>
 		</table></td></tr>
@@ -23,6 +23,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./ListGroupsView.Listener.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.activity.ListGroups implements hu.sch.kfc.client.ui.view.ListGroupsView.Listener
-	c5142:p -> c5121:p [dir=back,arrowtail=empty,style=dashed];
+	c5142:p -> c5119:p [dir=back,arrowtail=empty,style=dashed];
 }
 

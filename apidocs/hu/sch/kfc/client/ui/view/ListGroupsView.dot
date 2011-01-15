@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl
-	c5061 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./impl/ListGroupsViewImpl.html">
+	c5059 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./impl/ListGroupsViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ListGroupsViewImpl </td></tr>
 		</table></td></tr>
@@ -23,15 +23,15 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./ListGroupsView.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl implements hu.sch.kfc.client.ui.view.ListGroupsView
-	c5066:p -> c5061:p [dir=back,arrowtail=empty,style=dashed];
+	c5066:p -> c5059:p [dir=back,arrowtail=empty,style=dashed];
 	//hu.sch.kfc.client.ui.view.ListGroupsView implements com.google.gwt.user.client.ui.IsWidget
 	c5104:p -> c5066:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.ui.IsWidget
-	c5104 [label=<<table title="com.google.gwt.user.client.ui.IsWidget" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/ui/IsWidget.html">
+	c5104 [label=<<table title="com.google.gwt.user.client.ui.IsWidget" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> IsWidget </td></tr>
 		</table></td></tr>
-		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/ui/IsWidget.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

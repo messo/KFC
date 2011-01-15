@@ -20,17 +20,17 @@ digraph G {
 	//hu.sch.kfc.shared.event.LikeEvent implements com.google.gwt.user.client.rpc.IsSerializable
 	c4655:p -> c4580:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.rpc.IsSerializable
-	c4655 [label=<<table title="com.google.gwt.user.client.rpc.IsSerializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/rpc/IsSerializable.html">
+	c4655 [label=<<table title="com.google.gwt.user.client.rpc.IsSerializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> IsSerializable </td></tr>
 		</table></td></tr>
-		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/rpc/IsSerializable.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// com.google.gwt.event.shared.GwtEvent<H extends com.google.gwt.event.shared.EventHandler>
-	c4654 [label=<<table title="com.google.gwt.event.shared.GwtEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/event/shared/GwtEvent.html">
+	c4654 [label=<<table title="com.google.gwt.event.shared.GwtEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> GwtEvent&lt;H extends EventHandler&gt; </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/event/shared/GwtEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

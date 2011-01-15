@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl
-	c6554 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowGroupViewImpl.html">
+	c6556 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowGroupViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowGroupViewImpl </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowGroupViewImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.ShowGroupView
-	c6559 [label=<<table title="hu.sch.kfc.client.ui.view.ShowGroupView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ShowGroupView.html">
+	c6558 [label=<<table title="hu.sch.kfc.client.ui.view.ShowGroupView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ShowGroupView.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ShowGroupView </td></tr>
 		</table></td></tr>
 		</table>>, URL="../ShowGroupView.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl extends com.google.gwt.user.client.ui.Composite
-	c6599:p -> c6554:p [dir=back,arrowtail=empty];
+	c6599:p -> c6556:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl implements hu.sch.kfc.client.ui.view.ShowGroupView
-	c6559:p -> c6554:p [dir=back,arrowtail=empty,style=dashed];
+	c6558:p -> c6556:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.ui.Composite
-	c6599 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/ui/Composite.html">
+	c6599 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Composite </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/user/client/ui/Composite.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

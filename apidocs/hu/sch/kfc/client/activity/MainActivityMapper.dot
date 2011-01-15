@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.activity.MainActivityMapper
-	c5347 [label=<<table title="hu.sch.kfc.client.activity.MainActivityMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MainActivityMapper.html">
+	c5345 [label=<<table title="hu.sch.kfc.client.activity.MainActivityMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MainActivityMapper.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MainActivityMapper </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MainActivityMapper.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.activity.MainActivityMapper implements com.google.gwt.activity.shared.ActivityMapper
-	c5403:p -> c5347:p [dir=back,arrowtail=empty,style=dashed];
+	c5403:p -> c5345:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.activity.shared.ActivityMapper
-	c5403 [label=<<table title="com.google.gwt.activity.shared.ActivityMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/activity/shared/ActivityMapper.html">
+	c5403 [label=<<table title="com.google.gwt.activity.shared.ActivityMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ActivityMapper </td></tr>
 		</table></td></tr>
-		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/activity/shared/ActivityMapper.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

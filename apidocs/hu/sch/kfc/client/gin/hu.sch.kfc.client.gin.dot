@@ -9,18 +9,18 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// hu.sch.kfc.client.gin.KFCGinModule
-	c540 [label=<<table title="hu.sch.kfc.client.gin.KFCGinModule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./KFCGinModule.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> KFCGinModule </td></tr>
-		</table></td></tr>
-		</table>>, URL="./KFCGinModule.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.gin.KFCGinjector
-	c541 [label=<<table title="hu.sch.kfc.client.gin.KFCGinjector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./KFCGinjector.html">
+	c540 [label=<<table title="hu.sch.kfc.client.gin.KFCGinjector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./KFCGinjector.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> KFCGinjector </td></tr>
 		</table></td></tr>
 		</table>>, URL="./KFCGinjector.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// hu.sch.kfc.client.gin.KFCGinModule
+	c541 [label=<<table title="hu.sch.kfc.client.gin.KFCGinModule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./KFCGinModule.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> KFCGinModule </td></tr>
+		</table></td></tr>
+		</table>>, URL="./KFCGinModule.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

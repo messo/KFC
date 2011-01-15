@@ -9,43 +9,43 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// hu.sch.kfc.client.activity.ShowProgram
-	c1744 [label=<<table title="hu.sch.kfc.client.activity.ShowProgram" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgram.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> ShowProgram </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ShowProgram.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// hu.sch.kfc.client.activity.AbstractActivity
-	c1745 [label=<<table title="hu.sch.kfc.client.activity.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AbstractActivity.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractActivity </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="./AbstractActivity.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.ListGroups
-	c1748 [label=<<table title="hu.sch.kfc.client.activity.ListGroups" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroups.html">
+	c1745 [label=<<table title="hu.sch.kfc.client.activity.ListGroups" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroups.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ListGroups </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ListGroups.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.ShowGroup
-	c1751 [label=<<table title="hu.sch.kfc.client.activity.ShowGroup" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroup.html">
+	c1748 [label=<<table title="hu.sch.kfc.client.activity.ShowGroup" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroup.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowGroup </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowGroup.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	//hu.sch.kfc.client.activity.ShowProgram extends hu.sch.kfc.client.activity.AbstractActivity
-	c1745:p -> c1744:p [dir=back,arrowtail=empty];
-	//hu.sch.kfc.client.activity.AbstractActivity extends com.google.gwt.activity.shared.AbstractActivity
-	c1882:p -> c1745:p [dir=back,arrowtail=empty];
-	//hu.sch.kfc.client.activity.ListGroups extends hu.sch.kfc.client.activity.AbstractActivity
-	c1745:p -> c1748:p [dir=back,arrowtail=empty];
-	//hu.sch.kfc.client.activity.ShowGroup extends hu.sch.kfc.client.activity.AbstractActivity
-	c1745:p -> c1751:p [dir=back,arrowtail=empty];
-	// com.google.gwt.activity.shared.AbstractActivity
-	c1882 [label=<<table title="com.google.gwt.activity.shared.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/activity/shared/AbstractActivity.html">
+	// hu.sch.kfc.client.activity.AbstractActivity
+	c1752 [label=<<table title="hu.sch.kfc.client.activity.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AbstractActivity.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractActivity </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="http://java.sun.com/j2se/1.4.2/docs/api/com/google/gwt/activity/shared/AbstractActivity.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./AbstractActivity.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// hu.sch.kfc.client.activity.ShowProgram
+	c1754 [label=<<table title="hu.sch.kfc.client.activity.ShowProgram" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgram.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> ShowProgram </td></tr>
+		</table></td></tr>
+		</table>>, URL="./ShowProgram.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	//hu.sch.kfc.client.activity.ListGroups extends hu.sch.kfc.client.activity.AbstractActivity
+	c1752:p -> c1745:p [dir=back,arrowtail=empty];
+	//hu.sch.kfc.client.activity.ShowGroup extends hu.sch.kfc.client.activity.AbstractActivity
+	c1752:p -> c1748:p [dir=back,arrowtail=empty];
+	//hu.sch.kfc.client.activity.AbstractActivity extends com.google.gwt.activity.shared.AbstractActivity
+	c1882:p -> c1752:p [dir=back,arrowtail=empty];
+	//hu.sch.kfc.client.activity.ShowProgram extends hu.sch.kfc.client.activity.AbstractActivity
+	c1752:p -> c1754:p [dir=back,arrowtail=empty];
+	// com.google.gwt.activity.shared.AbstractActivity
+	c1882 [label=<<table title="com.google.gwt.activity.shared.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractActivity </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

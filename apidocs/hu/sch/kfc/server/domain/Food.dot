@@ -10,21 +10,21 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.server.domain.Order
-	c3436 [label=<<table title="hu.sch.kfc.server.domain.Order" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Order.html">
+	c3438 [label=<<table title="hu.sch.kfc.server.domain.Order" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Order.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Order </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Order.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Group
-	c3437 [label=<<table title="hu.sch.kfc.server.domain.Group" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Group.html">
+	c3441 [label=<<table title="hu.sch.kfc.server.domain.Group" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Group.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Group </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Group.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Program
-	c3439 [label=<<table title="hu.sch.kfc.server.domain.Program" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Program.html">
+	c3444 [label=<<table title="hu.sch.kfc.server.domain.Program" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Program.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Program </td></tr>
@@ -38,12 +38,12 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Food.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Order NAVASSOC hu.sch.kfc.server.domain.Food
-	c3436:p -> c3445:p [taillabel="*", label="what", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c3438:p -> c3445:p [taillabel="*", label="what", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// hu.sch.kfc.server.domain.Group HAS hu.sch.kfc.server.domain.Food
-	c3437:p -> c3445:p [taillabel="1", label="produces", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c3441:p -> c3445:p [taillabel="1", label="produces", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// hu.sch.kfc.server.domain.Group COMPOSED hu.sch.kfc.server.domain.Program
-	c3437:p -> c3439:p [taillabel="", label="has", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c3441:p -> c3444:p [taillabel="", label="has", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	// hu.sch.kfc.server.domain.Program HAS hu.sch.kfc.server.domain.Food
-	c3439:p -> c3445:p [taillabel="*", label="provides", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c3444:p -> c3445:p [taillabel="*", label="provides", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 }
 
