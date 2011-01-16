@@ -1,60 +1,69 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
-<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:w="urn:import:hu.sch.kfc.client.ui.widget">
-    <ui:style>
-        div.itemOuter {
-        	margin: 6px;
-        	border: 1px solid #CAD4E6;
-        	border-radius: 8px;
-        	-moz-border-radius: 8px;
-        }
-        
-        div.itemInner {
-        	margin-left: 200px;
-        	overflow: visible;
-        	position: relative;
-        	min-height: 110px;
-        }
-        
-        div.itemMain {
-        	background-color: #E0ECFF;
-        	border-color: #CAD4E6;
-        	border-style: solid;
-        	border-width: 0px 1px 0px 0px;
-        	border-radius: 8px;
-        	-moz-border-radius: 8px;
-        	position: absolute;
-        	left: 0px;
-        	top: 0px;
-        	margin-left: -200px;
-        	width: 200px;
-        	height: 100%;
-        }
-        
-        div.itemMain > div {
-        	padding: 10px;
-        }
-        
-        div.itemDesc {
-        	padding: 10px;
-        }
-    </ui:style>
-    <g:HTMLPanel>
-        <div class="{style.itemOuter}">
-            <div class="{style.itemInner}">
-                <div class="{style.itemMain}">
-                    <div>
-                    <div><strong ui:field="eventName">Rendezvény neve</strong></div>
-                    <div>Rendelési időszak:</div>
-                    <div style="text-align: center; font-size: small" ui:field="orderInterval">2010. 05. 10. 17:00-20:00</div>
-                    <div style="text-align: center;"><w:Button text="Rendelek" ui:field="orderBtn"/></div>
-                    </div>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:w="urn:import:hu.sch.kfc.client.ui.widget">
+	<ui:style>
+		div.itemOuter {
+			margin: 6px;
+			border: 1px solid #CAD4E6;
+			border-radius: 8px;
+			-moz-border-radius: 8px;
+		}
+		
+		div.itemInner {
+			margin-left: 200px;
+			overflow: visible;
+			position: relative;
+			min-height: 110px;
+		}
+		
+		div.itemMain {
+			background-color: #E0ECFF;
+			border-color: #CAD4E6;
+			border-style: solid;
+			border-width: 0px 1px 0px 0px;
+			border-radius: 8px;
+			-moz-border-radius: 8px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			margin-left: -200px;
+			width: 200px;
+			height: 100%;
+		}
+		
+		div.itemMain>div {
+			padding: 10px;
+		}
+		
+		div.itemDesc {
+			padding: 10px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="{style.itemOuter}">
+			<div class="{style.itemInner}">
+				<div class="{style.itemMain}">
+					<div>
+						<div>
+							<strong ui:field="eventName">Rendezvény neve</strong>
+						</div>
+						<div>Rendelési időszak:</div>
+						<div style="text-align: center; font-size: small" ui:field="orderInterval">2010.
+							05. 10. 17:00-20:00</div>
+						<div style="text-align: center;">
+							<w:ButtonBar ui:field="btnBar">
+								<w:Button text="Rendelek" ui:field="orderBtn" />
+								<w:Button text="Szerkesztés" ui:field="editBtn" />
+							</w:ButtonBar>
+						</div>
+					</div>
+				</div>
+				<div class="{style.itemDesc}" ui:field="itemDesc">
+					Ide jön a
+					description
                 </div>
-                <div class="{style.itemDesc}" ui:field="itemDesc">
-                    Ide jön a
-                    description
-                </div>
-                <div style="clear: both"></div>
-            </div>
-        </div>
-    </g:HTMLPanel>
+				<div style="clear: both"></div>
+			</div>
+		</div>
+	</g:HTMLPanel>
 </ui:UiBinder>

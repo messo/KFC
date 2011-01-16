@@ -22,6 +22,14 @@ public class Button extends Widget implements EventListener, HasClickHandlers {
     interface Style extends CssResource {
         String defaultState();
 
+        String collapseRight();
+
+        String collapseLeft();
+
+        String leftCollapsedHoverCorrection();
+
+        String leftCollapsedFocusCorrection();
+
         String onFocus();
 
         String onHover();
@@ -41,6 +49,7 @@ public class Button extends Widget implements EventListener, HasClickHandlers {
     @UiField
     protected Element button;
     private boolean disabled = false;
+    private boolean leftBorderCollapsed = false;
 
     public Button(String name, ClickHandler handler) {
         setElement(uiBinder.createAndBindUi(this));
@@ -91,17 +100,29 @@ public class Button extends Widget implements EventListener, HasClickHandlers {
             switch (type) {
             case Event.ONFOCUS:
                 addStyleName(style.onFocus());
+                if (leftBorderCollapsed) {
+                    addStyleName(style.leftCollapsedFocusCorrection());
+                }
                 break;
             case Event.ONBLUR:
                 removeStyleName(style.onFocus());
                 removeStyleName(style.onClick());
+                if (leftBorderCollapsed) {
+                    removeStyleName(style.leftCollapsedFocusCorrection());
+                }
                 break;
             case Event.ONMOUSEOVER:
                 addStyleName(style.onHover());
+                if (leftBorderCollapsed) {
+                    addStyleName(style.leftCollapsedHoverCorrection());
+                }
                 break;
             case Event.ONMOUSEOUT:
                 removeStyleName(style.onHover());
                 removeStyleName(style.onClick());
+                if (leftBorderCollapsed) {
+                    removeStyleName(style.leftCollapsedHoverCorrection());
+                }
                 break;
             case Event.ONMOUSEDOWN:
                 addStyleName(style.onClick());
@@ -118,13 +139,33 @@ public class Button extends Widget implements EventListener, HasClickHandlers {
                 }
                 break;
             }
-        }
 
-        super.onBrowserEvent(event);
+            super.onBrowserEvent(event);
+        }
     }
 
     @Override
     public HandlerRegistration addClickHandler(ClickHandler handler) {
         return addDomHandler(handler, ClickEvent.getType());
+    }
+
+    public void collapse(Boolean left, Boolean right) {
+        if (left != null) {
+            if (left) {
+                leftBorderCollapsed = true;
+                addStyleName(style.collapseLeft());
+            } else {
+                leftBorderCollapsed = false;
+                removeStyleName(style.collapseLeft());
+            }
+        }
+
+        if (right != null) {
+            if (right) {
+                addStyleName(style.collapseRight());
+            } else {
+                removeStyleName(style.collapseRight());
+            }
+        }
     }
 }

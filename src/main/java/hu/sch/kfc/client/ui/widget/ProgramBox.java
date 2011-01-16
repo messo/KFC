@@ -28,6 +28,10 @@ public class ProgramBox extends Composite {
     Element orderInterval;
     @UiField
     Button orderBtn;
+    @UiField
+    Button editBtn;
+    @UiField
+    ButtonBar btnBar;
 
     private ProgramProxy program;
     private Listener listener;
@@ -37,10 +41,14 @@ public class ProgramBox extends Composite {
         program = p;
         this.listener = listener;
     }
-    
+
     @UiHandler("orderBtn")
     public void onSelected(ClickEvent click) {
         listener.onProgramSelected(program);
+    }
+
+    @UiHandler("editBtn")
+    public void onEdit(ClickEvent click) {
     }
 
     @Override

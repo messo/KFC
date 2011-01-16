@@ -6,7 +6,7 @@ import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="Dali", date="2011-01-15T22:54:45.545+0100")
+@Generated(value="Dali", date="2011-01-16T11:26:37.357+0100")
 @StaticMetamodel(Program.class)
 public class Program_ {
 	public static volatile SingularAttribute<Program, Long> id;
@@ -16,6 +16,6 @@ public class Program_ {
 	public static volatile SingularAttribute<Program, Date> start;
 	public static volatile SingularAttribute<Program, Date> end;
 	public static volatile ListAttribute<Program, Food> orderableFoods;
-	public static volatile SingularAttribute<Program, Integer> version;
 	public static volatile ListAttribute<Program, OrderInterval> orderIntervals;
+	public static volatile SingularAttribute<Program, Integer> version;
 }
