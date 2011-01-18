@@ -93,14 +93,7 @@
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>javax.persistence</artifactId>
 			<version>2.0.1</version>
-			<!-- <scope>provided</scope> -->
-		</dependency>
-		<!-- MySQL Connector -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.14</version>
-			<scope>runtime</scope>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- test -->
@@ -117,6 +110,7 @@
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
 			<version>1.0.0.GA</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.json</groupId>
@@ -137,6 +131,7 @@
 	</scm>
 
 	<build>
+		<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -207,6 +202,8 @@
 					</additionalBuildcommands>
 					<additionalProjectFacets>
 						<jpt.jpa>2.0</jpt.jpa>
+						<jst.web>3.0</jst.web>
+						<sun.facet>9</sun.facet>
 					</additionalProjectFacets>
 					<excludes>
 						<!-- ezeket a GPE biztosítja -->

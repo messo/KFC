@@ -58,7 +58,6 @@
   <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jetty-plus/6.1.11/jetty-plus-6.1.11.jar" sourcepath="M2_REPO/org/mortbay/jetty/jetty-plus/6.1.11/jetty-plus-6.1.11-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/json/json/20090211/json-20090211.jar"/>
   <classpathentry kind="var" path="M2_REPO/junit/junit/4.7/junit-4.7.jar" sourcepath="M2_REPO/junit/junit/4.7/junit-4.7-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.14/mysql-connector-java-5.1.14.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
 </classpath>

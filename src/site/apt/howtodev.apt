@@ -1,0 +1,42 @@
+Hogyan fejlesszünk?
+
+* Git repo clone elkészítése
+
+-------------------------------------------
+$ git clone git@github.com:messo/KFC.git
+-------------------------------------------
+
+  Ha ez megvan, akkor szuper, elkészíthetjük a WAR-t, amit csak deployolni kell
+
+* Fordítás, csomagolás
+
+  Ha ki szeretnénk próbálni izibe a dolgot, akkor két dolgot kell csinálni:
+
+  [[1]] Létrehozni a JDBC poolt és a resource
+
+    TODO...
+
+  [[2]] Létrehozni a WAR-t
+
+    Mi sem egyszerűbb ennél:
+
+-------------------------------------------
+$ mvn package
+-------------------------------------------
+
+    Ekkor létrejön a <<<target>>> könyvtár megfelelő alkönyvtárában a WAR állomány.
+
+  [[3]] Deployolni a szerverre
+
+* Eclipse-szel, hogy lehet fejleszteni?
+
+  Először is, hozzuk létre az async interfészeket, amiket nem kell kézzel megírni, csak generálni:
+
+-------------------------------------------
+$ mvn gwt:generateAsync
+-------------------------------------------
+
+  Most már beimportálhatjuk a projektet az Eclipse workspaceünkbe, és ha mindent jól csináltunk, akkor
+  nem ír ki semmilyen hibát (természetesen legyen fent a Google Plugin for Eclipse). Ahhoz, hogy fejleszteni tudjuk,
+  indítsuk el a KFC.launch konfigurációt (Jobb gomb -> Run as -> KFC), ekkor elindul a Development Mode, és most szinkronizáljuk a mi kis
+  alkalmazásunkat valamelyik szerverrel a listában (ha még nincs ilyen, akkor vegyünk fel egyet).

@@ -13,6 +13,7 @@
 
 		<menu name="KFC">
 			<item name="Bevezetés" href="index.html" />
+			<item name="Hogy fejlesszünk?" href="howtodev.html" />
 			<item name="Activityk" href="activity.html" />
 			<item name="RequestFactory" href="requestfactory.html" />
 		</menu>

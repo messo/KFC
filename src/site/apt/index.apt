@@ -13,6 +13,8 @@ Bevezetés
 
 * További finomságok
 
+  {{{./howtodev.html}Hogy fejlesszünk?}}
+
   {{{./activity.html}Activityk működése}}
 
   {{{./requestfactory.html}RequestFactory}}
