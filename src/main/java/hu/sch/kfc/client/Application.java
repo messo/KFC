@@ -1,12 +1,10 @@
 package hu.sch.kfc.client;
 
 import hu.sch.kfc.client.gin.KFCGinjector;
+import hu.sch.kfc.client.ui.DefaultBundle;
 import hu.sch.kfc.client.ui.Shell;
-import hu.sch.kfc.shared.event.LikeEvent;
-import hu.sch.kfc.shared.event.LikeEventHandler;
 import com.google.gwt.activity.shared.ActivityManager;
-import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import com.google.gwt.dom.client.StyleInjector;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.user.client.ui.RootPanel;
@@ -47,21 +45,23 @@ public class Application {
 
         historyHandler.handleCurrentHistory();
 
+        StyleInjector.inject(DefaultBundle.INSTANCE.defStyle().getText());
+
         // TODO - még így is néha van Loading Chrome-ban.
-        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-
-            @Override
-            public void execute() {
-                // AtmosphereClient client = new AtmosphereClient(eventBus);
-            }
-        });
-
-        eventBus.addHandler(LikeEvent.TYPE, new LikeEventHandler() {
-
-            @Override
-            public void onLikeEvent(LikeEvent event) {
-                shell.setLikeLabel(event.getLiked());
-            }
-        });
+        // Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+        //
+        // @Override
+        // public void execute() {
+        // // AtmosphereClient client = new AtmosphereClient(eventBus);
+        // }
+        // });
+        //
+        // eventBus.addHandler(LikeEvent.TYPE, new LikeEventHandler() {
+        //
+        // @Override
+        // public void onLikeEvent(LikeEvent event) {
+        // shell.setLikeLabel(event.getLiked());
+        // }
+        // });
     }
 }

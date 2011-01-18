@@ -1,5 +1,18 @@
-/** Add css rules here for your application. */
-
 body {
 	font-family: 'Cantarell', arial, serif;
+	font-size: 14px;
+}
+
+input[type="text"], textarea {
+	border-color: #999 #CCC #CCC;
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px 1px;
+	margin: 1px;
+}
+
+input[type="text"]:focus, textarea:focus {
+	border: 2px solid #6694E3 !important;
+	outline: 0px !important;
+	margin: 0px;
 }

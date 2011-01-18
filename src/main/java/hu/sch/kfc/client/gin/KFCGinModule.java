@@ -1,6 +1,7 @@
 package hu.sch.kfc.client.gin;
 
 import hu.sch.kfc.client.Application;
+import hu.sch.kfc.client.activity.EditProgram;
 import hu.sch.kfc.client.activity.ShowGroup;
 import hu.sch.kfc.client.activity.ListGroups;
 import hu.sch.kfc.client.activity.MainActivityMapper;
@@ -8,9 +9,11 @@ import hu.sch.kfc.client.place.AppPlaceHistoryMapper;
 import hu.sch.kfc.client.place.ListGroupsPlace;
 import hu.sch.kfc.client.request.KFCRequestFactory;
 import hu.sch.kfc.client.ui.Shell;
+import hu.sch.kfc.client.ui.view.EditProgramView;
 import hu.sch.kfc.client.ui.view.ListGroupsView;
 import hu.sch.kfc.client.ui.view.ShowGroupView;
 import hu.sch.kfc.client.ui.view.ShowProgramView;
+import hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl;
 import hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl;
 import hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl;
 import hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl;
@@ -46,10 +49,12 @@ public class KFCGinModule implements GinModule {
         binder.bind(ListGroupsView.class).to(ListGroupsViewImpl.class).in(Singleton.class);
         binder.bind(ShowGroupView.class).to(ShowGroupViewImpl.class).in(Singleton.class);
         binder.bind(ShowProgramView.class).to(ShowProgramViewImpl.class).in(Singleton.class);
+        binder.bind(EditProgramView.class).to(EditProgramViewImpl.class).in(Singleton.class);
         binder.bind(ActivityMapper.class).to(MainActivityMapper.class).in(Singleton.class);
 
         binder.bind(ListGroups.class);
         binder.bind(ShowGroup.class);
+        binder.bind(EditProgram.class);
     }
 
     @Provides

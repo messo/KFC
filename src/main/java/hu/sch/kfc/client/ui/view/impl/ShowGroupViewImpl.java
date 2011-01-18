@@ -1,6 +1,7 @@
 package hu.sch.kfc.client.ui.view.impl;
 
 import hu.sch.kfc.client.model.ProgramProxy;
+import hu.sch.kfc.client.ui.DefaultBundle;
 import hu.sch.kfc.client.ui.view.ShowGroupView;
 import hu.sch.kfc.client.ui.widget.ProgramBox;
 import java.util.List;
@@ -21,6 +22,9 @@ public class ShowGroupViewImpl extends Composite implements ShowGroupView {
     SpanElement groupLabel;
     @UiField
     FlowPanel container;
+    @UiField(provided = true)
+    final DefaultBundle bundle = DefaultBundle.INSTANCE;
+    
     private Listener listener;
 
     @Inject

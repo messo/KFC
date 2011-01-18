@@ -6,7 +6,7 @@
 			border: 1px solid #BBBBBB;
 			color: black;
 			cursor: default;
-			font: normal normal normal 70%/normal arial, sans-serif;
+			font: normal normal normal 80%/normal arial, sans-serif;
 			margin: 0px 8px 0px 0px;
 			outline: none;
 			padding: 3px 8px;

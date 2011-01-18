@@ -55,7 +55,7 @@ public class JerseyTest implements SerializationPolicyProvider, EventService {
         String encoded = null;
         StringBuilder sb = new StringBuilder(100);
         try {
-            Method method = this.getClass().getMethod("getEvent", null);
+            Method method = this.getClass().getMethod("getEvent", (Class<?>) null);
             encoded = RPC.invokeAndEncodeResponse(this, method, null/*, getSerializationPolicy(
                     "http://127.0.0.1:8888/kfc/", "DD98F5EAEFEC65CD76A0D7BC1E3C8E8D")*/);
             sb.append(encoded).append('\n');

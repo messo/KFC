@@ -5,7 +5,6 @@ import hu.sch.kfc.client.place.ShowGroupPlace;
 import hu.sch.kfc.client.request.KFCRequestFactory;
 import hu.sch.kfc.client.ui.view.ListGroupsView;
 import java.util.List;
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.requestfactory.shared.Receiver;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
@@ -31,7 +30,6 @@ public class ListGroups extends AbstractActivity implements ListGroupsView.Liste
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         view.setListener(this);
 
-        GWT.log("Activity start: list");
         if (groups == null) {
 
             requestFactory.groupRequest().findGroups().fire(new Receiver<List<GroupProxy>>() {
@@ -44,6 +42,7 @@ public class ListGroups extends AbstractActivity implements ListGroupsView.Liste
         } else {
             view.setGroups(groups);
         }
+
         panel.setWidget(view);
     }
 

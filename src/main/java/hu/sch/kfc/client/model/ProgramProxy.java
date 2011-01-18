@@ -9,7 +9,7 @@ import com.google.gwt.requestfactory.shared.ProxyFor;
 public interface ProgramProxy extends EntityProxy {
 
     Long getId();
-    
+
     String getName();
 
     void setName(String name);
@@ -19,6 +19,8 @@ public interface ProgramProxy extends EntityProxy {
     void setDescription(String description);
 
     DateIntervalProxy getOrderInterval();
-    
+
+    String getGroupToken();
+
     EntityProxyId<ProgramProxy> stableId();
 }

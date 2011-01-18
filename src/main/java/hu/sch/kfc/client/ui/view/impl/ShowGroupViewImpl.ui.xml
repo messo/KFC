@@ -1,37 +1,10 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
     xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <ui:with field='bundle' type='hu.sch.kfc.client.ui.DefaultBundle' />
     <ui:style>
         .important {
         	font-weight: bold;
-        }
-        
-        div.header {
-        	background-color: #C3D9FF;
-        	border: 1px solid #C3D9FF;
-        	padding: 3px 0px 2px 3px;
-        	border-top-left-radius: 5px;
-        	border-top-right-radius: 5px;
-        	-moz-border-radius-topleft: 5px;
-        	-moz-border-radius-topright: 5px;
-        }
-        
-        div.container {
-        	padding: 3px 0px 3px 0px;
-        	border-color: #C3D9FF;
-        	border-style: solid;
-        	border-width: 0px 5px 0px 5px;
-        }
-        
-        div.footer {
-        	border-color: #C3D9FF;
-        	border-style: solid;
-        	border-width: 0px 5px 5px 5px;
-        	border-bottom-left-radius: 5px;
-        	border-bottom-right-radius: 5px;
-        	-moz-border-radius-bottomleft: 5px;
-        	-moz-border-radius-bottomright: 5px;
-        	clear: both;
         }
     </ui:style>
     <g:HTMLPanel>
@@ -41,9 +14,9 @@
         <br />
         <br />
         <div>
-            <div class="{style.header}">Rendezvények</div>
-            <g:FlowPanel styleName="{style.container}" ui:field="container"></g:FlowPanel>
-            <div class="{style.footer}"></div>
+            <div class="{bundle.defStyle.header}">Rendezvények</div>
+            <g:FlowPanel styleName="{bundle.defStyle.container}" ui:field="container"></g:FlowPanel>
+            <div class="{bundle.defStyle.footer}"></div>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder> 

@@ -2,6 +2,7 @@ package hu.sch.kfc.client.activity;
 
 import hu.sch.kfc.client.model.GroupProxy;
 import hu.sch.kfc.client.model.ProgramProxy;
+import hu.sch.kfc.client.place.EditProgramPlace;
 import hu.sch.kfc.client.place.ShowGroupPlace;
 import hu.sch.kfc.client.place.ShowProgramPlace;
 import hu.sch.kfc.client.request.KFCRequestFactory;
@@ -76,5 +77,10 @@ public class ShowGroup extends AbstractActivity implements ShowGroupView.Listene
     @Override
     public void onProgramSelected(ProgramProxy program) {
         placeController.goTo(new ShowProgramPlace(program));
+    }
+
+    @Override
+    public void onProgramEdit(ProgramProxy program) {
+        placeController.goTo(new EditProgramPlace(program));
     }
 }

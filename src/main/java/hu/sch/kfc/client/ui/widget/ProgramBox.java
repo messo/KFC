@@ -49,6 +49,7 @@ public class ProgramBox extends Composite {
 
     @UiHandler("editBtn")
     public void onEdit(ClickEvent click) {
+        listener.onProgramEdit(program);
     }
 
     @Override

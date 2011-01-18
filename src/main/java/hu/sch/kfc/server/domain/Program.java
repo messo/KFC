@@ -8,6 +8,7 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -160,8 +161,40 @@ public class Program {
         return new DateInterval(intervals[0].getStart(), intervals[intervals.length - 1].getEnd());
     }
 
+    /**
+     * Lekérjük a rendezvényt szervező körnek a tokenjét. Ezt akkor használjuk, amikor egy adott
+     * rendezvényről vissza akarunk navigálni a körhöz.
+     * 
+     * @return rendező körnek a tokenje
+     */
+    public String getGroupToken() {
+        return organizer.getToken();
+    }
+
+    public void persist() {
+        EntityManager em = EMF.get();
+        try {
+            EntityTransaction t = em.getTransaction();
+            t.begin();
+            if (id != null) {
+                em.merge(this);
+            } else {
+                em.persist(this);
+            }
+            t.commit();
+        } finally {
+            em.close();
+        }
+    }
+
     public static Program findProgram(Long id) {
-        return null;
+        EntityManager em = EMF.get();
+        try {
+            em.getTransaction().begin();
+            return em.find(Program.class, id);
+        } finally {
+            em.close();
+        }
     }
 
     public static List<Program> findProgramsForGroup(Group g) {
