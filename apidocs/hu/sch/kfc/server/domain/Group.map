@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c3590" href="./Group.html" title="hu.sch.kfc.server.domain.Group" alt="" coords="87,11,153,53"/>
+<area shape="rect" id="c5275" href="./Group.html" title="hu.sch.kfc.server.domain.Group" alt="" coords="87,11,153,53"/>
 <area shape="rect" id="node1" href="./Group.html" title="&lt;TABLE&gt;" alt="" coords="76,6,164,58"/>
-<area shape="rect" id="c3593" href="./Program.html" title="hu.sch.kfc.server.domain.Program" alt="" coords="16,131,85,173"/>
+<area shape="rect" id="c5278" href="./Program.html" title="hu.sch.kfc.server.domain.Program" alt="" coords="16,131,85,173"/>
 <area shape="rect" id="node2" href="./Program.html" title="&lt;TABLE&gt;" alt="" coords="5,126,96,178"/>
-<area shape="rect" id="c3594" href="./Food.html" title="hu.sch.kfc.server.domain.Food" alt="" coords="69,251,136,293"/>
+<area shape="rect" id="c5279" href="./Food.html" title="hu.sch.kfc.server.domain.Food" alt="" coords="69,251,136,293"/>
 <area shape="rect" id="node3" href="./Food.html" title="&lt;TABLE&gt;" alt="" coords="59,246,147,298"/>
 </map>

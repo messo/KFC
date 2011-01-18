@@ -1,14 +1,18 @@
 <map id="G" name="G">
-<area shape="rect" id="c767" href="./ShowProgramViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl" alt="" coords="16,19,173,45"/>
-<area shape="rect" id="node1" href="./ShowProgramViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="5,8,184,56"/>
-<area shape="rect" id="c768" href="./ShowProgramViewImpl.MyUiBinder.html" title="hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl.MyUiBinder" alt="" coords="218,11,307,53"/>
-<area shape="rect" id="node2" href="./ShowProgramViewImpl.MyUiBinder.html" title="&lt;TABLE&gt;" alt="" coords="208,6,317,58"/>
-<area shape="rect" id="c769" href="./ListGroupsViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl" alt="" coords="351,19,489,45"/>
-<area shape="rect" id="node3" href="./ListGroupsViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="341,8,499,56"/>
-<area shape="rect" id="c770" href="./ListGroupsViewImpl.MyUiBinder.html" title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl.MyUiBinder" alt="" coords="533,11,622,53"/>
-<area shape="rect" id="node4" href="./ListGroupsViewImpl.MyUiBinder.html" title="&lt;TABLE&gt;" alt="" coords="523,6,632,58"/>
-<area shape="rect" id="c771" href="./ShowGroupViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" alt="" coords="666,19,809,45"/>
-<area shape="rect" id="node5" href="./ShowGroupViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="656,8,819,56"/>
-<area shape="rect" id="c772" href="./ShowGroupViewImpl.MyUiBinder.html" title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl.MyUiBinder" alt="" coords="853,11,942,53"/>
-<area shape="rect" id="node6" href="./ShowGroupViewImpl.MyUiBinder.html" title="&lt;TABLE&gt;" alt="" coords="843,6,952,58"/>
+<area shape="rect" id="c993" href="./EditProgramViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl" alt="" coords="16,19,163,45"/>
+<area shape="rect" id="node1" href="./EditProgramViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="5,8,173,56"/>
+<area shape="rect" id="c994" href="./EditProgramViewImpl.MyUiBinder.html" title="hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl.MyUiBinder" alt="" coords="207,11,297,53"/>
+<area shape="rect" id="node2" href="./EditProgramViewImpl.MyUiBinder.html" title="&lt;TABLE&gt;" alt="" coords="197,6,307,58"/>
+<area shape="rect" id="c995" href="./ShowProgramViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl" alt="" coords="341,19,499,45"/>
+<area shape="rect" id="node3" href="./ShowProgramViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="331,8,509,56"/>
+<area shape="rect" id="c996" href="./ShowProgramViewImpl.MyUiBinder.html" title="hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl.MyUiBinder" alt="" coords="543,11,633,53"/>
+<area shape="rect" id="node4" href="./ShowProgramViewImpl.MyUiBinder.html" title="&lt;TABLE&gt;" alt="" coords="533,6,643,58"/>
+<area shape="rect" id="c997" href="./ListGroupsViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl" alt="" coords="677,19,814,45"/>
+<area shape="rect" id="node5" href="./ListGroupsViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="667,8,824,56"/>
+<area shape="rect" id="c998" href="./ListGroupsViewImpl.MyUiBinder.html" title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl.MyUiBinder" alt="" coords="858,11,947,53"/>
+<area shape="rect" id="node6" href="./ListGroupsViewImpl.MyUiBinder.html" title="&lt;TABLE&gt;" alt="" coords="848,6,957,58"/>
+<area shape="rect" id="c999" href="./ShowGroupViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" alt="" coords="991,19,1134,45"/>
+<area shape="rect" id="node7" href="./ShowGroupViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="981,8,1144,56"/>
+<area shape="rect" id="c1000" href="./ShowGroupViewImpl.MyUiBinder.html" title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl.MyUiBinder" alt="" coords="1178,11,1267,53"/>
+<area shape="rect" id="node8" href="./ShowGroupViewImpl.MyUiBinder.html" title="&lt;TABLE&gt;" alt="" coords="1168,6,1277,58"/>
 </map>

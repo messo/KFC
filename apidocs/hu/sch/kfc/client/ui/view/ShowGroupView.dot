@@ -10,24 +10,24 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl
-	c6407 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./impl/ShowGroupViewImpl.html">
+	c8761 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./impl/ShowGroupViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowGroupViewImpl </td></tr>
 		</table></td></tr>
 		</table>>, URL="./impl/ShowGroupViewImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.ShowGroupView
-	c6409 [label=<<table title="hu.sch.kfc.client.ui.view.ShowGroupView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowGroupView.html">
+	c8763 [label=<<table title="hu.sch.kfc.client.ui.view.ShowGroupView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowGroupView.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ShowGroupView </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowGroupView.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl implements hu.sch.kfc.client.ui.view.ShowGroupView
-	c6409:p -> c6407:p [dir=back,arrowtail=empty,style=dashed];
+	c8763:p -> c8761:p [dir=back,arrowtail=empty,style=dashed];
 	//hu.sch.kfc.client.ui.view.ShowGroupView implements com.google.gwt.user.client.ui.IsWidget
-	c6450:p -> c6409:p [dir=back,arrowtail=empty,style=dashed];
+	c8806:p -> c8763:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.ui.IsWidget
-	c6450 [label=<<table title="com.google.gwt.user.client.ui.IsWidget" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c8806 [label=<<table title="com.google.gwt.user.client.ui.IsWidget" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> IsWidget </td></tr>

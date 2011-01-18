@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.dev.JettyLauncher.JettyTreeLogger
-	c4199 [label=<<table title="hu.sch.kfc.dev.JettyLauncher.JettyTreeLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./JettyLauncher.JettyTreeLogger.html">
+	c5988 [label=<<table title="hu.sch.kfc.dev.JettyLauncher.JettyTreeLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./JettyLauncher.JettyTreeLogger.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> JettyTreeLogger </td></tr>
 		</table></td></tr>
 		</table>>, URL="./JettyLauncher.JettyTreeLogger.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.dev.JettyLauncher.JettyTreeLogger implements org.mortbay.log.Logger
-	c4203:p -> c4199:p [dir=back,arrowtail=empty,style=dashed];
+	c5992:p -> c5988:p [dir=back,arrowtail=empty,style=dashed];
 	// org.mortbay.log.Logger
-	c4203 [label=<<table title="org.mortbay.log.Logger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c5992 [label=<<table title="org.mortbay.log.Logger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Logger </td></tr>

@@ -10,16 +10,16 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl.MyUiBinder
-	c6632 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowGroupViewImpl.MyUiBinder.html">
+	c9025 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowGroupViewImpl.MyUiBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MyUiBinder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowGroupViewImpl.MyUiBinder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl.MyUiBinder implements com.google.gwt.uibinder.client.UiBinder<U, O>
-	c6674:p -> c6632:p [dir=back,arrowtail=empty,style=dashed];
+	c9069:p -> c9025:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.uibinder.client.UiBinder<U, O>
-	c6674 [label=<<table title="com.google.gwt.uibinder.client.UiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c9069 [label=<<table title="com.google.gwt.uibinder.client.UiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> UiBinder&lt;U, O&gt; </td></tr>

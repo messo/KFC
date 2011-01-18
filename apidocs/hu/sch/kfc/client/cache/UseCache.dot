@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.cache.UseCache
-	c7170 [label=<<table title="hu.sch.kfc.client.cache.UseCache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./UseCache.html">
+	c9656 [label=<<table title="hu.sch.kfc.client.cache.UseCache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./UseCache.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> UseCache </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./UseCache.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.cache.UseCache implements java.lang.annotation.Annotation
-	c7198:p -> c7170:p [dir=back,arrowtail=empty,style=dashed];
+	c9684:p -> c9656:p [dir=back,arrowtail=empty,style=dashed];
 	// java.lang.annotation.Annotation
-	c7198 [label=<<table title="java.lang.annotation.Annotation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/javase/6/docs/api/java/lang/annotation/Annotation.html">
+	c9684 [label=<<table title="java.lang.annotation.Annotation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/javase/6/docs/api/java/lang/annotation/Annotation.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Annotation </td></tr>

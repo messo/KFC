@@ -1,11 +1,13 @@
 <map id="G" name="G">
-<area shape="rect" id="c1745" href="./ListGroups.html" title="hu.sch.kfc.client.activity.ListGroups" alt="" coords="15,209,99,234"/>
+<area shape="rect" id="c2135" href="./ListGroups.html" title="hu.sch.kfc.client.activity.ListGroups" alt="" coords="15,209,99,234"/>
 <area shape="rect" id="node1" href="./ListGroups.html" title="&lt;TABLE&gt;" alt="" coords="5,197,109,245"/>
-<area shape="rect" id="c1748" href="./ShowGroup.html" title="hu.sch.kfc.client.activity.ShowGroup" alt="" coords="143,209,233,234"/>
-<area shape="rect" id="node2" href="./ShowGroup.html" title="&lt;TABLE&gt;" alt="" coords="133,197,243,245"/>
-<area shape="rect" id="c1752" href="./AbstractActivity.html" title="hu.sch.kfc.client.activity.AbstractActivity" alt="" coords="131,113,245,138"/>
-<area shape="rect" id="node3" href="./AbstractActivity.html" title="&lt;TABLE&gt;" alt="" coords="121,101,255,149"/>
-<area shape="rect" id="c1754" href="./ShowProgram.html" title="hu.sch.kfc.client.activity.ShowProgram" alt="" coords="277,209,379,234"/>
-<area shape="rect" id="node4" href="./ShowProgram.html" title="&lt;TABLE&gt;" alt="" coords="267,197,389,245"/>
-<area shape="rect" id="node7" href="null" title="&lt;TABLE&gt;" alt="" coords="121,5,255,53"/>
+<area shape="rect" id="c2138" href="./EditProgram.html" title="hu.sch.kfc.client.activity.EditProgram" alt="" coords="144,209,237,234"/>
+<area shape="rect" id="node2" href="./EditProgram.html" title="&lt;TABLE&gt;" alt="" coords="133,197,248,245"/>
+<area shape="rect" id="c2144" href="./ShowGroup.html" title="hu.sch.kfc.client.activity.ShowGroup" alt="" coords="282,209,371,234"/>
+<area shape="rect" id="node3" href="./ShowGroup.html" title="&lt;TABLE&gt;" alt="" coords="272,197,381,245"/>
+<area shape="rect" id="c2148" href="./AbstractActivity.html" title="hu.sch.kfc.client.activity.AbstractActivity" alt="" coords="202,113,315,138"/>
+<area shape="rect" id="node4" href="./AbstractActivity.html" title="&lt;TABLE&gt;" alt="" coords="192,101,325,149"/>
+<area shape="rect" id="c2150" href="./ShowProgram.html" title="hu.sch.kfc.client.activity.ShowProgram" alt="" coords="415,209,518,234"/>
+<area shape="rect" id="node5" href="./ShowProgram.html" title="&lt;TABLE&gt;" alt="" coords="405,197,528,245"/>
+<area shape="rect" id="node9" href="null" title="&lt;TABLE&gt;" alt="" coords="192,5,325,53"/>
 </map>

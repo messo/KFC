@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c1622" href="./JettyLauncher.html" title="hu.sch.kfc.dev.JettyLauncher" alt="" coords="15,17,118,42"/>
+<area shape="rect" id="c1995" href="./JettyLauncher.html" title="hu.sch.kfc.dev.JettyLauncher" alt="" coords="15,17,118,42"/>
 <area shape="rect" id="node1" href="./JettyLauncher.html" title="&lt;TABLE&gt;" alt="" coords="5,5,128,53"/>
-<area shape="rect" id="c1623" href="./JettyLauncher.JettyRequestLogger.html" title="hu.sch.kfc.dev.JettyLauncher.JettyRequestLogger" alt="" coords="162,17,299,42"/>
+<area shape="rect" id="c1996" href="./JettyLauncher.JettyRequestLogger.html" title="hu.sch.kfc.dev.JettyLauncher.JettyRequestLogger" alt="" coords="162,17,299,42"/>
 <area shape="rect" id="node2" href="./JettyLauncher.JettyRequestLogger.html" title="&lt;TABLE&gt;" alt="" coords="152,5,309,53"/>
-<area shape="rect" id="c1624" href="./JettyLauncher.JettyTreeLogger.html" title="hu.sch.kfc.dev.JettyLauncher.JettyTreeLogger" alt="" coords="344,17,459,42"/>
+<area shape="rect" id="c1997" href="./JettyLauncher.JettyTreeLogger.html" title="hu.sch.kfc.dev.JettyLauncher.JettyTreeLogger" alt="" coords="344,17,459,42"/>
 <area shape="rect" id="node3" href="./JettyLauncher.JettyTreeLogger.html" title="&lt;TABLE&gt;" alt="" coords="333,5,469,53"/>
-<area shape="rect" id="c1625" href="./JettyLauncher.JettyServletContainer.html" title="hu.sch.kfc.dev.JettyLauncher.JettyServletContainer" alt="" coords="504,17,651,42"/>
+<area shape="rect" id="c1998" href="./JettyLauncher.JettyServletContainer.html" title="hu.sch.kfc.dev.JettyLauncher.JettyServletContainer" alt="" coords="504,17,651,42"/>
 <area shape="rect" id="node4" href="./JettyLauncher.JettyServletContainer.html" title="&lt;TABLE&gt;" alt="" coords="493,5,661,53"/>
-<area shape="rect" id="c1626" href="./JettyLauncher.WebAppContextWithReload.html" title="hu.sch.kfc.dev.JettyLauncher.WebAppContextWithReload" alt="" coords="695,17,881,42"/>
+<area shape="rect" id="c1999" href="./JettyLauncher.WebAppContextWithReload.html" title="hu.sch.kfc.dev.JettyLauncher.WebAppContextWithReload" alt="" coords="695,17,881,42"/>
 <area shape="rect" id="node5" href="./JettyLauncher.WebAppContextWithReload.html" title="&lt;TABLE&gt;" alt="" coords="685,5,891,53"/>
 </map>

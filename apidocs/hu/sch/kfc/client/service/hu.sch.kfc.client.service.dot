@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.service.EventServiceAsync
-	c463 [label=<<table title="hu.sch.kfc.client.service.EventServiceAsync" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EventServiceAsync.html">
+	c545 [label=<<table title="hu.sch.kfc.client.service.EventServiceAsync" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EventServiceAsync.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EventServiceAsync </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EventServiceAsync.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.service.EventServiceAsync.Util
-	c464 [label=<<table title="hu.sch.kfc.client.service.EventServiceAsync.Util" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EventServiceAsync.Util.html">
+	c546 [label=<<table title="hu.sch.kfc.client.service.EventServiceAsync.Util" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EventServiceAsync.Util.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Util </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EventServiceAsync.Util.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.service.EventService
-	c465 [label=<<table title="hu.sch.kfc.client.service.EventService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EventService.html">
+	c547 [label=<<table title="hu.sch.kfc.client.service.EventService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EventService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EventService </td></tr>

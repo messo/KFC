@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c1001" href="./GroupProxy.html" title="hu.sch.kfc.client.model.GroupProxy" alt="" coords="15,11,105,53"/>
+<area shape="rect" id="c1270" href="./GroupProxy.html" title="hu.sch.kfc.client.model.GroupProxy" alt="" coords="15,11,105,53"/>
 <area shape="rect" id="node1" href="./GroupProxy.html" title="&lt;TABLE&gt;" alt="" coords="5,6,115,58"/>
-<area shape="rect" id="c1002" href="./ProgramProxy.html" title="hu.sch.kfc.client.model.ProgramProxy" alt="" coords="149,11,253,53"/>
+<area shape="rect" id="c1271" href="./ProgramProxy.html" title="hu.sch.kfc.client.model.ProgramProxy" alt="" coords="149,11,253,53"/>
 <area shape="rect" id="node2" href="./ProgramProxy.html" title="&lt;TABLE&gt;" alt="" coords="139,6,264,58"/>
-<area shape="rect" id="c1003" href="./DateIntervalProxy.html" title="hu.sch.kfc.client.model.DateIntervalProxy" alt="" coords="299,11,424,53"/>
+<area shape="rect" id="c1272" href="./DateIntervalProxy.html" title="hu.sch.kfc.client.model.DateIntervalProxy" alt="" coords="299,11,424,53"/>
 <area shape="rect" id="node3" href="./DateIntervalProxy.html" title="&lt;TABLE&gt;" alt="" coords="288,6,435,58"/>
 </map>

@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.cache.CachingAsyncCallback<T extends hu.sch.kfc.client.cache.Cacheable<T>>
-	c2527 [label=<<table title="hu.sch.kfc.client.cache.CachingAsyncCallback" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CachingAsyncCallback.html">
+	c3151 [label=<<table title="hu.sch.kfc.client.cache.CachingAsyncCallback" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CachingAsyncCallback.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> CachingAsyncCallback&lt;T extends Cacheable&lt;T&gt;&gt; </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./CachingAsyncCallback.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.cache.CachingAsyncCallback<T extends hu.sch.kfc.client.cache.Cacheable<T>> implements com.google.gwt.user.client.rpc.AsyncCallback<T>
-	c2556:p -> c2527:p [dir=back,arrowtail=empty,style=dashed];
+	c3180:p -> c3151:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.rpc.AsyncCallback<T>
-	c2556 [label=<<table title="com.google.gwt.user.client.rpc.AsyncCallback" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c3180 [label=<<table title="com.google.gwt.user.client.rpc.AsyncCallback" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> AsyncCallback&lt;T&gt; </td></tr>

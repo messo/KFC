@@ -11,6 +11,7 @@ hu.sch.kfc.client.request
 hu.sch.kfc.client.service
 hu.sch.kfc.client.ui
 hu.sch.kfc.client.ui.view
+hu.sch.kfc.client.ui.view.editor
 hu.sch.kfc.client.ui.view.impl
 hu.sch.kfc.client.ui.widget
 hu.sch.kfc.client.util

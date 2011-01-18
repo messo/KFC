@@ -10,21 +10,21 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.request.KFCRequestFactory
-	c307 [label=<<table title="hu.sch.kfc.client.request.KFCRequestFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./KFCRequestFactory.html">
+	c361 [label=<<table title="hu.sch.kfc.client.request.KFCRequestFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./KFCRequestFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> KFCRequestFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./KFCRequestFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.request.GroupRequest
-	c308 [label=<<table title="hu.sch.kfc.client.request.GroupRequest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GroupRequest.html">
+	c362 [label=<<table title="hu.sch.kfc.client.request.GroupRequest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GroupRequest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> GroupRequest </td></tr>
 		</table></td></tr>
 		</table>>, URL="./GroupRequest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.request.ProgramRequest
-	c309 [label=<<table title="hu.sch.kfc.client.request.ProgramRequest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProgramRequest.html">
+	c363 [label=<<table title="hu.sch.kfc.client.request.ProgramRequest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProgramRequest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ProgramRequest </td></tr>

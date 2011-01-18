@@ -10,32 +10,32 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.widget.Button
-	c2279 [label=<<table title="hu.sch.kfc.client.ui.widget.Button" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Button.html">
+	c2767 [label=<<table title="hu.sch.kfc.client.ui.widget.Button" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Button.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Button </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Button.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.widget.Button extends com.google.gwt.user.client.ui.Widget
-	c2330:p -> c2279:p [dir=back,arrowtail=empty];
+	c2825:p -> c2767:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.ui.widget.Button implements com.google.gwt.user.client.EventListener
-	c2331:p -> c2279:p [dir=back,arrowtail=empty,style=dashed];
+	c2826:p -> c2767:p [dir=back,arrowtail=empty,style=dashed];
 	//hu.sch.kfc.client.ui.widget.Button implements com.google.gwt.event.dom.client.HasClickHandlers
-	c2333:p -> c2279:p [dir=back,arrowtail=empty,style=dashed];
+	c2828:p -> c2767:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.ui.Widget
-	c2330 [label=<<table title="com.google.gwt.user.client.ui.Widget" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c2825 [label=<<table title="com.google.gwt.user.client.ui.Widget" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Widget </td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// com.google.gwt.event.dom.client.HasClickHandlers
-	c2333 [label=<<table title="com.google.gwt.event.dom.client.HasClickHandlers" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c2828 [label=<<table title="com.google.gwt.event.dom.client.HasClickHandlers" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HasClickHandlers </td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// com.google.gwt.user.client.EventListener
-	c2331 [label=<<table title="com.google.gwt.user.client.EventListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c2826 [label=<<table title="com.google.gwt.user.client.EventListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EventListener </td></tr>

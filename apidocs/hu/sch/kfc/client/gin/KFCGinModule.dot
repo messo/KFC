@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.gin.KFCGinModule
-	c4378 [label=<<table title="hu.sch.kfc.client.gin.KFCGinModule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KFCGinModule.html">
+	c6197 [label=<<table title="hu.sch.kfc.client.gin.KFCGinModule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KFCGinModule.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> KFCGinModule </td></tr>
 		</table></td></tr>
 		</table>>, URL="./KFCGinModule.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.gin.KFCGinModule implements com.google.gwt.inject.client.GinModule
-	c4429:p -> c4378:p [dir=back,arrowtail=empty,style=dashed];
+	c6257:p -> c6197:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.inject.client.GinModule
-	c4429 [label=<<table title="com.google.gwt.inject.client.GinModule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c6257 [label=<<table title="com.google.gwt.inject.client.GinModule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> GinModule </td></tr>

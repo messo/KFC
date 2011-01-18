@@ -10,24 +10,24 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.service.EventService
-	c3848 [label=<<table title="hu.sch.kfc.client.service.EventService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../client/service/EventService.html">
+	c5576 [label=<<table title="hu.sch.kfc.client.service.EventService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../client/service/EventService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EventService </td></tr>
 		</table></td></tr>
 		</table>>, URL="../client/service/EventService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.JerseyTest
-	c3879 [label=<<table title="hu.sch.kfc.server.JerseyTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./JerseyTest.html">
+	c5616 [label=<<table title="hu.sch.kfc.server.JerseyTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./JerseyTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> JerseyTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="./JerseyTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.server.JerseyTest implements com.google.gwt.user.server.rpc.SerializationPolicyProvider
-	c3901:p -> c3879:p [dir=back,arrowtail=empty,style=dashed];
+	c5638:p -> c5616:p [dir=back,arrowtail=empty,style=dashed];
 	//hu.sch.kfc.server.JerseyTest implements hu.sch.kfc.client.service.EventService
-	c3848:p -> c3879:p [dir=back,arrowtail=empty,style=dashed];
+	c5576:p -> c5616:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.server.rpc.SerializationPolicyProvider
-	c3901 [label=<<table title="com.google.gwt.user.server.rpc.SerializationPolicyProvider" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c5638 [label=<<table title="com.google.gwt.user.server.rpc.SerializationPolicyProvider" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SerializationPolicyProvider </td></tr>

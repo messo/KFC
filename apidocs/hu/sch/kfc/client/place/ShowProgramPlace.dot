@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.place.ShowProgramPlace
-	c6753 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowProgramPlace.html">
+	c9161 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowProgramPlace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowProgramPlace </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowProgramPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.place.ShowProgramPlace extends com.google.gwt.place.shared.Place
-	c6823:p -> c6753:p [dir=back,arrowtail=empty];
+	c9244:p -> c9161:p [dir=back,arrowtail=empty];
 	// com.google.gwt.place.shared.Place
-	c6823 [label=<<table title="com.google.gwt.place.shared.Place" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c9244 [label=<<table title="com.google.gwt.place.shared.Place" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Place </font></td></tr>
 		</table></td></tr>

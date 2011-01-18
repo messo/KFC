@@ -10,16 +10,16 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.request.KFCRequestFactory
-	c4516 [label=<<table title="hu.sch.kfc.client.request.KFCRequestFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KFCRequestFactory.html">
+	c6359 [label=<<table title="hu.sch.kfc.client.request.KFCRequestFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KFCRequestFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> KFCRequestFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./KFCRequestFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.request.KFCRequestFactory implements com.google.gwt.requestfactory.shared.RequestFactory
-	c4579:p -> c4516:p [dir=back,arrowtail=empty,style=dashed];
+	c6433:p -> c6359:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.requestfactory.shared.RequestFactory
-	c4579 [label=<<table title="com.google.gwt.requestfactory.shared.RequestFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c6433 [label=<<table title="com.google.gwt.requestfactory.shared.RequestFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestFactory </td></tr>

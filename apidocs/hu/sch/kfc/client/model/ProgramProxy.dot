@@ -10,16 +10,16 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.model.ProgramProxy
-	c5892 [label=<<table title="hu.sch.kfc.client.model.ProgramProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ProgramProxy.html">
+	c8157 [label=<<table title="hu.sch.kfc.client.model.ProgramProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ProgramProxy.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ProgramProxy </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ProgramProxy.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.model.ProgramProxy implements com.google.gwt.requestfactory.shared.EntityProxy
-	c5926:p -> c5892:p [dir=back,arrowtail=empty,style=dashed];
+	c8191:p -> c8157:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.requestfactory.shared.EntityProxy
-	c5926 [label=<<table title="com.google.gwt.requestfactory.shared.EntityProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c8191 [label=<<table title="com.google.gwt.requestfactory.shared.EntityProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EntityProxy </td></tr>

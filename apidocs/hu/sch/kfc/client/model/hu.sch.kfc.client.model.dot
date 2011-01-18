@@ -10,21 +10,21 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.model.GroupProxy
-	c1001 [label=<<table title="hu.sch.kfc.client.model.GroupProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GroupProxy.html">
+	c1270 [label=<<table title="hu.sch.kfc.client.model.GroupProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GroupProxy.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> GroupProxy </td></tr>
 		</table></td></tr>
 		</table>>, URL="./GroupProxy.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.model.ProgramProxy
-	c1002 [label=<<table title="hu.sch.kfc.client.model.ProgramProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProgramProxy.html">
+	c1271 [label=<<table title="hu.sch.kfc.client.model.ProgramProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProgramProxy.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ProgramProxy </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ProgramProxy.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.model.DateIntervalProxy
-	c1003 [label=<<table title="hu.sch.kfc.client.model.DateIntervalProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DateIntervalProxy.html">
+	c1272 [label=<<table title="hu.sch.kfc.client.model.DateIntervalProxy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DateIntervalProxy.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DateIntervalProxy </td></tr>

@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.server.EventsLogger
-	c3358 [label=<<table title="hu.sch.kfc.server.EventsLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EventsLogger.html">
+	c5004 [label=<<table title="hu.sch.kfc.server.EventsLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EventsLogger.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EventsLogger </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EventsLogger.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.server.EventsLogger implements org.atmosphere.cpr.AtmosphereResourceEventListener
-	c3378:p -> c3358:p [dir=back,arrowtail=empty,style=dashed];
+	c5024:p -> c5004:p [dir=back,arrowtail=empty,style=dashed];
 	// org.atmosphere.cpr.AtmosphereResourceEventListener
-	c3378 [label=<<table title="org.atmosphere.cpr.AtmosphereResourceEventListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c5024 [label=<<table title="org.atmosphere.cpr.AtmosphereResourceEventListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> AtmosphereResourceEventListener </td></tr>

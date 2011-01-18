@@ -10,24 +10,24 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.dev.JettyLauncher.JettyRequestLogger
-	c4046 [label=<<table title="hu.sch.kfc.dev.JettyLauncher.JettyRequestLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./JettyLauncher.JettyRequestLogger.html">
+	c5809 [label=<<table title="hu.sch.kfc.dev.JettyLauncher.JettyRequestLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./JettyLauncher.JettyRequestLogger.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> JettyRequestLogger </td></tr>
 		</table></td></tr>
 		</table>>, URL="./JettyLauncher.JettyRequestLogger.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.dev.JettyLauncher.JettyRequestLogger extends org.mortbay.component.AbstractLifeCycle
-	c4052:p -> c4046:p [dir=back,arrowtail=empty];
+	c5815:p -> c5809:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.dev.JettyLauncher.JettyRequestLogger implements org.mortbay.jetty.RequestLog
-	c4053:p -> c4046:p [dir=back,arrowtail=empty,style=dashed];
+	c5816:p -> c5809:p [dir=back,arrowtail=empty,style=dashed];
 	// org.mortbay.jetty.RequestLog
-	c4053 [label=<<table title="org.mortbay.jetty.RequestLog" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c5816 [label=<<table title="org.mortbay.jetty.RequestLog" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestLog </td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.mortbay.component.AbstractLifeCycle
-	c4052 [label=<<table title="org.mortbay.component.AbstractLifeCycle" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c5815 [label=<<table title="org.mortbay.component.AbstractLifeCycle" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractLifeCycle </font></td></tr>
 		</table></td></tr>

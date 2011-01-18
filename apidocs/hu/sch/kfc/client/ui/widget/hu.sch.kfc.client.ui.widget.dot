@@ -10,16 +10,22 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.widget.Button
-	c691 [label=<<table title="hu.sch.kfc.client.ui.widget.Button" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Button.html">
+	c814 [label=<<table title="hu.sch.kfc.client.ui.widget.Button" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Button.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Button </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Button.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.widget.ProgramBox
-	c692 [label=<<table title="hu.sch.kfc.client.ui.widget.ProgramBox" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProgramBox.html">
+	c815 [label=<<table title="hu.sch.kfc.client.ui.widget.ProgramBox" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProgramBox.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ProgramBox </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ProgramBox.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// hu.sch.kfc.client.ui.widget.ButtonBar
+	c816 [label=<<table title="hu.sch.kfc.client.ui.widget.ButtonBar" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ButtonBar.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> ButtonBar </td></tr>
+		</table></td></tr>
+		</table>>, URL="./ButtonBar.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

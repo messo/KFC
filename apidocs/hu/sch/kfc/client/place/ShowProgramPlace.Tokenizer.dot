@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.place.ShowProgramPlace.Tokenizer
-	c6829 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace.Tokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowProgramPlace.Tokenizer.html">
+	c9250 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace.Tokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowProgramPlace.Tokenizer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Tokenizer </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowProgramPlace.Tokenizer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.place.ShowProgramPlace.Tokenizer implements com.google.gwt.place.shared.PlaceTokenizer<P extends com.google.gwt.place.shared.Place>
-	c6898:p -> c6829:p [dir=back,arrowtail=empty,style=dashed];
+	c9332:p -> c9250:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.place.shared.PlaceTokenizer<P extends com.google.gwt.place.shared.Place>
-	c6898 [label=<<table title="com.google.gwt.place.shared.PlaceTokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c9332 [label=<<table title="com.google.gwt.place.shared.PlaceTokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> PlaceTokenizer&lt;P extends Place&gt; </td></tr>

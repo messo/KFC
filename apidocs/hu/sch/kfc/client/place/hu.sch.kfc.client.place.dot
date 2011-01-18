@@ -10,47 +10,59 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.place.ShowProgramPlace
-	c226 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgramPlace.html">
+	c265 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgramPlace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowProgramPlace </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowProgramPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.place.ShowProgramPlace.Tokenizer
-	c227 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace.Tokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgramPlace.Tokenizer.html">
+	c266 [label=<<table title="hu.sch.kfc.client.place.ShowProgramPlace.Tokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgramPlace.Tokenizer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Tokenizer </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowProgramPlace.Tokenizer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.place.AppPlaceHistoryMapper
-	c228 [label=<<table title="hu.sch.kfc.client.place.AppPlaceHistoryMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AppPlaceHistoryMapper.html">
+	c267 [label=<<table title="hu.sch.kfc.client.place.AppPlaceHistoryMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AppPlaceHistoryMapper.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> AppPlaceHistoryMapper </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AppPlaceHistoryMapper.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.place.ListGroupsPlace
-	c229 [label=<<table title="hu.sch.kfc.client.place.ListGroupsPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroupsPlace.html">
+	c268 [label=<<table title="hu.sch.kfc.client.place.ListGroupsPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroupsPlace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ListGroupsPlace </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ListGroupsPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.place.ListGroupsPlace.Tokenizer
-	c230 [label=<<table title="hu.sch.kfc.client.place.ListGroupsPlace.Tokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroupsPlace.Tokenizer.html">
+	c269 [label=<<table title="hu.sch.kfc.client.place.ListGroupsPlace.Tokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroupsPlace.Tokenizer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Tokenizer </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ListGroupsPlace.Tokenizer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.place.ShowGroupPlace
-	c231 [label=<<table title="hu.sch.kfc.client.place.ShowGroupPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroupPlace.html">
+	c270 [label=<<table title="hu.sch.kfc.client.place.ShowGroupPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroupPlace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowGroupPlace </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowGroupPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.place.ShowGroupPlace.Tokenizer
-	c232 [label=<<table title="hu.sch.kfc.client.place.ShowGroupPlace.Tokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroupPlace.Tokenizer.html">
+	c271 [label=<<table title="hu.sch.kfc.client.place.ShowGroupPlace.Tokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroupPlace.Tokenizer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Tokenizer </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowGroupPlace.Tokenizer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// hu.sch.kfc.client.place.EditProgramPlace
+	c272 [label=<<table title="hu.sch.kfc.client.place.EditProgramPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgramPlace.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> EditProgramPlace </td></tr>
+		</table></td></tr>
+		</table>>, URL="./EditProgramPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// hu.sch.kfc.client.place.EditProgramPlace.Tokenizer
+	c273 [label=<<table title="hu.sch.kfc.client.place.EditProgramPlace.Tokenizer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgramPlace.Tokenizer.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Tokenizer </td></tr>
+		</table></td></tr>
+		</table>>, URL="./EditProgramPlace.Tokenizer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 
