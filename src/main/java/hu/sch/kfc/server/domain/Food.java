@@ -1,6 +1,7 @@
 package hu.sch.kfc.server.domain;
 
 import java.util.List;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,6 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 /**
  * Egy rendelhető kaját ír le, amit egy adott kör gyárt.
@@ -17,9 +19,11 @@ import javax.persistence.ManyToOne;
  * @stereotype entity
  */
 @Entity
+@Table(name = "foods")
 public class Food {
 
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

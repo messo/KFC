@@ -36,6 +36,7 @@ public class Group {
     public static final String retrieveByToken = "retrieveByToken";
 
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

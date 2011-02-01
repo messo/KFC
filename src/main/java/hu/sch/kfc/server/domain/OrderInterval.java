@@ -1,9 +1,11 @@
 package hu.sch.kfc.server.domain;
 
+import hu.sch.kfc.server.EMF;
 import hu.sch.kfc.server.misc.DateInterval;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EntityManager;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -12,6 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Version;
 
 /**
  * Egy adott rendezvényhez tartozó rendelési intervallum, ahol meg lehet szabni, hogy mennyit lehet
@@ -25,6 +28,7 @@ import javax.persistence.TemporalType;
 public class OrderInterval implements Comparable<OrderInterval> {
 
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -45,6 +49,10 @@ public class OrderInterval implements Comparable<OrderInterval> {
 
     @Column(name = "orderCount", nullable = false)
     private Integer count;
+    
+    @Version
+    @Column(name = "version")
+    private Integer version;
 
     public Long getId() {
         return this.id;
@@ -77,6 +85,10 @@ public class OrderInterval implements Comparable<OrderInterval> {
     public void setEnd(Date orderEnd) {
         this.end = orderEnd;
     }
+    
+    public Integer getVersion() {
+        return version;
+    }
 
     public DateInterval getInterval() {
         return new DateInterval(start, end);
@@ -105,5 +117,20 @@ public class OrderInterval implements Comparable<OrderInterval> {
             c = end.compareTo(o.end);
 
         return c;
+    }
+    
+    public void persist() {
+        System.out.println("ORDER INTERVAL PERSIST!");
+        System.out.println(this);
+    }
+    
+    public static OrderInterval findOrderInterval(Long id) {
+        EntityManager em = EMF.get();
+        try {
+            em.getTransaction().begin();
+            return em.find(OrderInterval.class, id);
+        } finally {
+            em.close();
+        }
     }
 }

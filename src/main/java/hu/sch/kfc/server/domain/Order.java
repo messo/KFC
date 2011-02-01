@@ -1,11 +1,13 @@
 package hu.sch.kfc.server.domain;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 /**
  * Egy rendelést ír le: ki rendelte, mit rendelt és melyik intervallumra.
@@ -17,9 +19,11 @@ import javax.persistence.ManyToOne;
  * @navassoc * when 1 OrderInterval
  */
 @Entity
+@Table(name = "orders")
 public class Order {
 
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

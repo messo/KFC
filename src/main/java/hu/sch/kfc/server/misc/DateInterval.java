@@ -8,6 +8,7 @@ import java.util.Date;
 public class DateInterval {
 
     private static final DateFormat df = new SimpleDateFormat("yyyy. MM. dd.");
+    private static final DateFormat dtf = new SimpleDateFormat("yyyy. MM. dd. HH:mm");
     private static final DateFormat tf = DateFormat.getTimeInstance(DateFormat.SHORT);
 
     private Date start;
@@ -43,7 +44,8 @@ public class DateInterval {
             sb.append(df.format(start)).append(" ");
             sb.append(tf.format(start)).append("-").append(tf.format(end));
         } else {
-            sb.append("hosszú :D");
+            sb.append(dtf.format(start)).append(" - ");
+            sb.append(dtf.format(end));
         }
 
         return sb.toString();

@@ -42,6 +42,7 @@ public class Program {
     public static final String retrieveByGroupToken = "retrieveByGroupToken";
 
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -176,6 +177,11 @@ public class Program {
         try {
             EntityTransaction t = em.getTransaction();
             t.begin();
+            
+            for(OrderInterval oi : orderIntervals) {
+                System.out.println(oi.getStart() + " - " + oi.getEnd());
+            }
+            
             if (id != null) {
                 em.merge(this);
             } else {

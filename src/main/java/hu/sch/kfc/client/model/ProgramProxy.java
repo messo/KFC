@@ -1,5 +1,6 @@
 package hu.sch.kfc.client.model;
 
+import java.util.List;
 import hu.sch.kfc.server.domain.Program;
 import com.google.gwt.requestfactory.shared.EntityProxy;
 import com.google.gwt.requestfactory.shared.EntityProxyId;
@@ -18,6 +19,10 @@ public interface ProgramProxy extends EntityProxy {
 
     void setDescription(String description);
 
+    List<OrderIntervalProxy> getOrderIntervals();
+    
+    void setOrderIntervals(List<DateIntervalProxy> list);
+    
     DateIntervalProxy getOrderInterval();
 
     String getGroupToken();
