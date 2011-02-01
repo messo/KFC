@@ -1,13 +1,33 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:w="urn:import:hu.sch.kfc.client.ui.widget"
-	xmlns:e="urn:import:hu.sch.kfc.client.ui.view.editor">
+	xmlns:c="urn:import:com.google.gwt.user.cellview.client">
 	<ui:with field='bundle' type='hu.sch.kfc.client.ui.DefaultBundle' />
 	<g:HTMLPanel>
 		<div>
 			<div class="{bundle.defStyle.header}">Rendezvény szerkesztése</div>
 			<div class="{bundle.defStyle.container}">
-				<e:ProgramEditor ui:field="editor"></e:ProgramEditor>
+				<div class="{bundle.defStyle.form}">
+					<div>
+						<label>Rendezvény neve: </label>
+						<g:TextBox ui:field="name" />
+					</div>
+					<div>
+						<label>Leírás: </label>
+						<g:TextArea ui:field="description" />
+					</div>
+					<div>
+						<label>Időpontok: </label>
+						<div class="{bundle.defStyle.longRow}">
+							<c:CellTable ui:field="table" />
+							<br />
+							<g:TextBox ui:field="newIntervalStart" />
+							<g:TextBox ui:field="newIntervalEnd" />
+							<w:Button ui:field="add" text="Hozzáad" />
+						</div>
+					</div>
+				</div>
+
 				<div class="{bundle.defStyle.formButtons}">
 					<w:Button ui:field="save" text="Rendezvény mentése" />
 				</div>

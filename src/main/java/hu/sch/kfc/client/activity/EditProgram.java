@@ -6,7 +6,6 @@ import hu.sch.kfc.client.place.ShowGroupPlace;
 import hu.sch.kfc.client.request.KFCRequestFactory;
 import hu.sch.kfc.client.request.ProgramRequest;
 import hu.sch.kfc.client.ui.view.EditProgramView;
-import hu.sch.kfc.client.ui.view.editor.ProgramEditor;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.editor.client.EditorError;
 import com.google.gwt.event.shared.EventBus;
@@ -16,9 +15,17 @@ import com.google.gwt.requestfactory.shared.RequestContext;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
+/**
+ * Egy rendezvény szerkesztése, át lehet nevezni, leírást lehet adni, és meg lehet mondani, hogy
+ * milyen intervallumok vannak és ott mennyi a rendelési limit, illetve, hogy az adott rendezvényen
+ * mikből lehet rendelni.
+ * 
+ * @author messo
+ * @since 0.1
+ */
 public class EditProgram extends AbstractActivity implements EditProgramView.Listener {
 
-    public interface Driver extends RequestFactoryEditorDriver<ProgramProxy, ProgramEditor> {
+    public interface Driver extends RequestFactoryEditorDriver<ProgramProxy, EditProgramView> {
     }
 
     @Inject
@@ -52,8 +59,8 @@ public class EditProgram extends AbstractActivity implements EditProgramView.Lis
         // }
 
         // egyelőre nem tudjuk rendesen felhasználni a kapott program proxyt,
-        // ezért kérjünk egy újat, de orderInterval nélkül.
-        requestFactory.programRequest().findProgram(place.getProgramId())
+        // ezért kérjünk egy újat
+        requestFactory.programRequest().findProgram(place.getProgramId()).with("orderIntervals")
                 .fire(new Receiver<ProgramProxy>() {
                     @Override
                     public void onSuccess(ProgramProxy response) {
@@ -70,16 +77,13 @@ public class EditProgram extends AbstractActivity implements EditProgramView.Lis
      */
     private void startForReal() {
         // driver-t inicializáljuk
-        driver.initialize(requestFactory, view.getEditor());
+        driver.initialize(requestFactory, view);
 
         // beállítjuk, hogy a persist() operációt kell majd végrehajtani
         // illetve megadjuk, hogy melyik proxy-t szerkessze.
         ProgramRequest req = requestFactory.programRequest();
-        req.persist().using(program);
+        req.persist().using(program).with(driver.getPaths());
         driver.edit(program, req);
-
-        // egyebek.
-        view.showProgram(program);
     }
 
     /**

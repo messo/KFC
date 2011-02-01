@@ -9,6 +9,12 @@ import com.google.gwt.requestfactory.shared.Receiver;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
+/**
+ * Egy adott rendezvényt mutat meg, kilistázza a rendelhető kajákat és az intervallumokat.
+ * 
+ * @author messo
+ * @since 0.1
+ */
 public class ShowProgram extends AbstractActivity {
 
     @Inject

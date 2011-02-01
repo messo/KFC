@@ -1,10 +1,23 @@
 package hu.sch.kfc.client.ui.view;
 
+import hu.sch.kfc.client.model.OrderIntervalProxy;
 import hu.sch.kfc.client.model.ProgramProxy;
-import hu.sch.kfc.client.ui.view.editor.ProgramEditor;
+import com.google.gwt.editor.client.Editor;
+import com.google.gwt.editor.client.IsEditor;
+import com.google.gwt.editor.client.adapters.HasDataEditor;
+import com.google.gwt.editor.ui.client.adapters.ValueBoxEditor;
 import com.google.gwt.user.client.ui.IsWidget;
 
-public interface EditProgramView extends IsWidget {
+public interface EditProgramView extends IsWidget, Editor<ProgramProxy> {
+
+    @Path("name")
+    IsEditor<ValueBoxEditor<String>> getNameEditor();
+
+    @Path("description")
+    IsEditor<ValueBoxEditor<String>> getDescriptionEditor();
+
+    @Path("orderIntervals")
+    HasDataEditor<OrderIntervalProxy> getOrderIntervalsEditor();
 
     interface Listener {
         /**
@@ -13,14 +26,5 @@ public interface EditProgramView extends IsWidget {
         public void onSave();
     }
 
-    /**
-     * Átadjuk a viewnak a programunkat, hogy feltölthesse a kis mezőket
-     * 
-     * @param program
-     */
-    void showProgram(ProgramProxy program);
-
     void setListener(Listener listener);
-
-    ProgramEditor getEditor();
 }

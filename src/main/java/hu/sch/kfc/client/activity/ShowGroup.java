@@ -7,7 +7,6 @@ import hu.sch.kfc.client.place.ShowGroupPlace;
 import hu.sch.kfc.client.place.ShowProgramPlace;
 import hu.sch.kfc.client.request.KFCRequestFactory;
 import hu.sch.kfc.client.ui.view.ShowGroupView;
-import java.util.List;
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.requestfactory.shared.Receiver;
@@ -17,7 +16,7 @@ import com.google.inject.Inject;
 /**
  * Egy adott körhöz tartozó rendezvényeket listázza ki.
  * 
- * @author balint
+ * @author messo
  * @since 0.1
  */
 public class ShowGroup extends AbstractActivity implements ShowGroupView.Listener {
@@ -40,18 +39,11 @@ public class ShowGroup extends AbstractActivity implements ShowGroupView.Listene
         view.setListener(this);
         view.reset();
 
-        requestFactory.groupRequest().findGroupByToken(groupToken).fire(new Receiver<GroupProxy>() {
-            @Override
-            public void onSuccess(GroupProxy response) {
-                setGroup(response);
-            }
-        });
-
-        requestFactory.programRequest().findProgramsByGroupToken(groupToken).with("orderInterval")
-                .fire(new Receiver<List<ProgramProxy>>() {
+        requestFactory.groupRequest().findGroupByToken(groupToken)
+                .with("programs", "programs.orderInterval").fire(new Receiver<GroupProxy>() {
                     @Override
-                    public void onSuccess(List<ProgramProxy> response) {
-                        onProgramsReceived(response);
+                    public void onSuccess(GroupProxy response) {
+                        setGroup(response);
                     }
                 });
 
@@ -60,25 +52,23 @@ public class ShowGroup extends AbstractActivity implements ShowGroupView.Listene
 
     protected void setGroup(GroupProxy g) {
         group = g;
-        if (group != null)
-            onGroupChanged();
+        if (group != null) {
+            view.setText(g.getName());
+            view.setPrograms(g.getPrograms());
+        }
     }
 
-    private void onGroupChanged() {
-        view.setText(group.getName());
-    }
-
-    private void onProgramsReceived(List<ProgramProxy> programs) {
-        // elmentjük, hogy ha kell, akkor csoporthoz tudjuk rendelni
-        // this.programs = programs;
-        view.setPrograms(programs);
-    }
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onProgramSelected(ProgramProxy program) {
         placeController.goTo(new ShowProgramPlace(program));
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onProgramEdit(ProgramProxy program) {
         placeController.goTo(new EditProgramPlace(program));
