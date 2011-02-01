@@ -2,7 +2,7 @@ Telepítés
 
 * Adatbázis létrehozása
 
-<<<postgres>> felhasználóként az alábbi parancsokat futtassuk le (felhasználó és adatbázis létrehozása):
+<<<postgres>>> felhasználóként az alábbi parancsokat futtassuk le (felhasználó és adatbázis létrehozása):
 
 ------------------------------
 $ createuser -E -P -S -D -R kfc
@@ -19,4 +19,4 @@ TODO: alap dumpot ide felcuppantani.
 * JDBC Poolok és Resource-ok létrehozása
 
 Nyissuk meg a Glassfish Admin Console-t (általában {http://localhost:4848/}), és vegyünk fel egy Poolt, és egy Resource-ot,
-a resource-ot <<<jdbc/kfc>>-nek nevezzük el!
+a resource-ot <<<jdbc/kfc>>>-nek nevezzük el!
