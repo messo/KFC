@@ -10,40 +10,40 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.server.domain.Order
-	c5097 [label=<<table title="hu.sch.kfc.server.domain.Order" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Order.html">
+	c4954 [label=<<table title="hu.sch.kfc.server.domain.Order" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Order.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Order </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Order.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Group
-	c5100 [label=<<table title="hu.sch.kfc.server.domain.Group" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Group.html">
+	c4957 [label=<<table title="hu.sch.kfc.server.domain.Group" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Group.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Group </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Group.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Program
-	c5103 [label=<<table title="hu.sch.kfc.server.domain.Program" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Program.html">
+	c4960 [label=<<table title="hu.sch.kfc.server.domain.Program" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Program.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Program </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Program.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Food
-	c5104 [label=<<table title="hu.sch.kfc.server.domain.Food" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Food.html">
+	c4961 [label=<<table title="hu.sch.kfc.server.domain.Food" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Food.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Food </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Food.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Order NAVASSOC hu.sch.kfc.server.domain.Food
-	c5097:p -> c5104:p [taillabel="*", label="what", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c4954:p -> c4961:p [taillabel="*", label="what", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// hu.sch.kfc.server.domain.Group HAS hu.sch.kfc.server.domain.Food
-	c5100:p -> c5104:p [taillabel="1", label="produces", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c4957:p -> c4961:p [taillabel="1", label="produces", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// hu.sch.kfc.server.domain.Group COMPOSED hu.sch.kfc.server.domain.Program
-	c5100:p -> c5103:p [taillabel="", label="has", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c4957:p -> c4960:p [taillabel="", label="has", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	// hu.sch.kfc.server.domain.Program HAS hu.sch.kfc.server.domain.Food
-	c5103:p -> c5104:p [taillabel="*", label="provides", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c4960:p -> c4961:p [taillabel="*", label="provides", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 }
 

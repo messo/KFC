@@ -1,16 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" id="c451" href="./ListGroups.html" title="hu.sch.kfc.client.activity.ListGroups" alt="" coords="15,118,99,143"/>
+<area shape="rect" id="c446" href="./ListGroups.html" title="hu.sch.kfc.client.activity.ListGroups" alt="" coords="15,118,99,143"/>
 <area shape="rect" id="node1" href="./ListGroups.html" title="&lt;TABLE&gt;" alt="" coords="5,107,109,155"/>
-<area shape="rect" id="c452" href="./EditProgram.html" title="hu.sch.kfc.client.activity.EditProgram" alt="" coords="144,118,237,143"/>
+<area shape="rect" id="c447" href="./EditProgram.html" title="hu.sch.kfc.client.activity.EditProgram" alt="" coords="144,118,237,143"/>
 <area shape="rect" id="node2" href="./EditProgram.html" title="&lt;TABLE&gt;" alt="" coords="133,107,248,155"/>
-<area shape="rect" id="c453" href="./EditProgram.Driver.html" title="hu.sch.kfc.client.activity.EditProgram.Driver" alt="" coords="360,11,445,53"/>
+<area shape="rect" id="c448" href="./EditProgram.Driver.html" title="hu.sch.kfc.client.activity.EditProgram.Driver" alt="" coords="360,11,445,53"/>
 <area shape="rect" id="node3" href="./EditProgram.Driver.html" title="&lt;TABLE&gt;" alt="" coords="349,6,456,58"/>
-<area shape="rect" id="c454" href="./ShowGroup.html" title="hu.sch.kfc.client.activity.ShowGroup" alt="" coords="282,118,371,143"/>
+<area shape="rect" id="c449" href="./ShowGroup.html" title="hu.sch.kfc.client.activity.ShowGroup" alt="" coords="282,118,371,143"/>
 <area shape="rect" id="node4" href="./ShowGroup.html" title="&lt;TABLE&gt;" alt="" coords="272,107,381,155"/>
-<area shape="rect" id="c455" href="./MainActivityMapper.html" title="hu.sch.kfc.client.activity.MainActivityMapper" alt="" coords="491,19,627,45"/>
+<area shape="rect" id="c450" href="./MainActivityMapper.html" title="hu.sch.kfc.client.activity.MainActivityMapper" alt="" coords="491,19,627,45"/>
 <area shape="rect" id="node5" href="./MainActivityMapper.html" title="&lt;TABLE&gt;" alt="" coords="480,8,637,56"/>
-<area shape="rect" id="c456" href="./AbstractActivity.html" title="hu.sch.kfc.client.activity.AbstractActivity" alt="" coords="202,19,315,45"/>
+<area shape="rect" id="c451" href="./AbstractActivity.html" title="hu.sch.kfc.client.activity.AbstractActivity" alt="" coords="202,19,315,45"/>
 <area shape="rect" id="node6" href="./AbstractActivity.html" title="&lt;TABLE&gt;" alt="" coords="192,8,325,56"/>
-<area shape="rect" id="c457" href="./ShowProgram.html" title="hu.sch.kfc.client.activity.ShowProgram" alt="" coords="415,118,518,143"/>
+<area shape="rect" id="c452" href="./ShowProgram.html" title="hu.sch.kfc.client.activity.ShowProgram" alt="" coords="415,118,518,143"/>
 <area shape="rect" id="node7" href="./ShowProgram.html" title="&lt;TABLE&gt;" alt="" coords="405,107,528,155"/>
 </map>

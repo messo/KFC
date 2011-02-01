@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.server.JerseyTest
-	c1718 [label=<<table title="hu.sch.kfc.server.JerseyTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./JerseyTest.html">
+	c1612 [label=<<table title="hu.sch.kfc.server.JerseyTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./JerseyTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> JerseyTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="./JerseyTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.EMF
-	c1719 [label=<<table title="hu.sch.kfc.server.EMF" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EMF.html">
+	c1613 [label=<<table title="hu.sch.kfc.server.EMF" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EMF.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EMF </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EMF.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.EventsLogger
-	c1720 [label=<<table title="hu.sch.kfc.server.EventsLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EventsLogger.html">
+	c1614 [label=<<table title="hu.sch.kfc.server.EventsLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EventsLogger.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EventsLogger </td></tr>
 		</table></td></tr>

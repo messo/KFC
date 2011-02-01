@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.rebind.CachingServiceInterfaceProxyGenerator
-	c3360 [label=<<table title="hu.sch.kfc.rebind.CachingServiceInterfaceProxyGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CachingServiceInterfaceProxyGenerator.html">
+	c3236 [label=<<table title="hu.sch.kfc.rebind.CachingServiceInterfaceProxyGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CachingServiceInterfaceProxyGenerator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CachingServiceInterfaceProxyGenerator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CachingServiceInterfaceProxyGenerator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.rebind.CachingServiceInterfaceProxyGenerator extends com.google.gwt.user.rebind.rpc.ServiceInterfaceProxyGenerator
-	c3445:p -> c3360:p [dir=back,arrowtail=empty];
+	c3320:p -> c3236:p [dir=back,arrowtail=empty];
 	// com.google.gwt.user.rebind.rpc.ServiceInterfaceProxyGenerator
-	c3445 [label=<<table title="com.google.gwt.user.rebind.rpc.ServiceInterfaceProxyGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c3320 [label=<<table title="com.google.gwt.user.rebind.rpc.ServiceInterfaceProxyGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ServiceInterfaceProxyGenerator </td></tr>
 		</table></td></tr>

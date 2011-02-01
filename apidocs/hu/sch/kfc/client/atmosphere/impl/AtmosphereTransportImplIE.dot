@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.atmosphere.AtmosphereTransport
-	c2710 [label=<<table title="hu.sch.kfc.client.atmosphere.AtmosphereTransport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../AtmosphereTransport.html">
+	c2593 [label=<<table title="hu.sch.kfc.client.atmosphere.AtmosphereTransport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../AtmosphereTransport.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AtmosphereTransport </td></tr>
 		</table></td></tr>
 		</table>>, URL="../AtmosphereTransport.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.atmosphere.impl.AtmosphereTransportImplIE
-	c2711 [label=<<table title="hu.sch.kfc.client.atmosphere.impl.AtmosphereTransportImplIE" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AtmosphereTransportImplIE.html">
+	c2594 [label=<<table title="hu.sch.kfc.client.atmosphere.impl.AtmosphereTransportImplIE" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AtmosphereTransportImplIE.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AtmosphereTransportImplIE </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AtmosphereTransportImplIE.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.atmosphere.impl.AtmosphereTransportImplIE extends hu.sch.kfc.client.atmosphere.AtmosphereTransport
-	c2710:p -> c2711:p [dir=back,arrowtail=empty];
+	c2593:p -> c2594:p [dir=back,arrowtail=empty];
 }
 

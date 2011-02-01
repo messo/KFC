@@ -1,7 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="c4700" href="./EventService.html" title="hu.sch.kfc.client.service.EventService" alt="" coords="21,113,120,154"/>
+<area shape="rect" id="c4562" href="./EventService.html" title="hu.sch.kfc.client.service.EventService" alt="" coords="21,113,120,154"/>
 <area shape="rect" id="node1" href="./EventService.html" title="&lt;TABLE&gt;" alt="" coords="11,107,131,159"/>
-<area shape="rect" id="c4740" href="../../server/JerseyTest.html" title="hu.sch.kfc.server.JerseyTest" alt="" coords="28,219,113,245"/>
+<area shape="rect" id="c4601" href="../../server/JerseyTest.html" title="hu.sch.kfc.server.JerseyTest" alt="" coords="28,219,113,245"/>
 <area shape="rect" id="node2" href="../../server/JerseyTest.html" title="&lt;TABLE&gt;" alt="" coords="17,208,124,256"/>
 <area shape="rect" id="node3" href="null" title="&lt;TABLE&gt;" alt="" coords="5,6,136,58"/>
 </map>

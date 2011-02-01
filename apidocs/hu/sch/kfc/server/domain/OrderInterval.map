@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="c7558" href="./OrderInterval.html" title="hu.sch.kfc.server.domain.OrderInterval" alt="" coords="115,131,211,173"/>
+<area shape="rect" id="c7387" href="./OrderInterval.html" title="hu.sch.kfc.server.domain.OrderInterval" alt="" coords="115,131,211,173"/>
 <area shape="rect" id="node1" href="./OrderInterval.html" title="&lt;TABLE&gt;" alt="" coords="104,126,221,178"/>
-<area shape="rect" id="c7560" href="./Order.html" title="hu.sch.kfc.server.domain.Order" alt="" coords="16,11,83,53"/>
+<area shape="rect" id="c7389" href="./Order.html" title="hu.sch.kfc.server.domain.Order" alt="" coords="16,11,83,53"/>
 <area shape="rect" id="node2" href="./Order.html" title="&lt;TABLE&gt;" alt="" coords="5,6,93,58"/>
-<area shape="rect" id="c7566" href="./Program.html" title="hu.sch.kfc.server.domain.Program" alt="" coords="128,11,197,53"/>
+<area shape="rect" id="c7395" href="./Program.html" title="hu.sch.kfc.server.domain.Program" alt="" coords="128,11,197,53"/>
 <area shape="rect" id="node3" href="./Program.html" title="&lt;TABLE&gt;" alt="" coords="117,6,208,58"/>
-<area shape="rect" id="c7575" href="http://java.sun.com/javase/6/docs/api/java/lang/Comparable.html" title="java.lang.Comparable" alt="" coords="243,11,357,53"/>
+<area shape="rect" id="c7404" href="http://java.sun.com/javase/6/docs/api/java/lang/Comparable.html" title="java.lang.Comparable" alt="" coords="243,11,357,53"/>
 <area shape="rect" id="node4" href="http://java.sun.com/javase/6/docs/api/java/lang/Comparable.html" title="&lt;TABLE&gt;" alt="" coords="232,6,368,58"/>
 </map>

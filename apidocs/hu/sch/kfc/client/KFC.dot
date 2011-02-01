@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.KFC
-	c6146 [label=<<table title="hu.sch.kfc.client.KFC" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KFC.html">
+	c5991 [label=<<table title="hu.sch.kfc.client.KFC" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KFC.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> KFC </td></tr>
 		</table></td></tr>
 		</table>>, URL="./KFC.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.KFC implements com.google.gwt.core.client.EntryPoint
-	c6169:p -> c6146:p [dir=back,arrowtail=empty,style=dashed];
+	c6014:p -> c5991:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.core.client.EntryPoint
-	c6169 [label=<<table title="com.google.gwt.core.client.EntryPoint" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c6014 [label=<<table title="com.google.gwt.core.client.EntryPoint" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EntryPoint </td></tr>

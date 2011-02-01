@@ -10,23 +10,23 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.widget.ButtonBar
-	c2862 [label=<<table title="hu.sch.kfc.client.ui.widget.ButtonBar" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ButtonBar.html">
+	c2744 [label=<<table title="hu.sch.kfc.client.ui.widget.ButtonBar" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ButtonBar.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ButtonBar </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ButtonBar.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.widget.ButtonBar extends com.google.gwt.user.client.ui.Composite
-	c2916:p -> c2862:p [dir=back,arrowtail=empty];
+	c2797:p -> c2744:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.ui.widget.ButtonBar implements com.google.gwt.user.client.ui.HasWidgets
-	c2918:p -> c2862:p [dir=back,arrowtail=empty,style=dashed];
+	c2799:p -> c2744:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.ui.Composite
-	c2916 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c2797 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Composite </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// com.google.gwt.user.client.ui.HasWidgets
-	c2918 [label=<<table title="com.google.gwt.user.client.ui.HasWidgets" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c2799 [label=<<table title="com.google.gwt.user.client.ui.HasWidgets" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HasWidgets </td></tr>

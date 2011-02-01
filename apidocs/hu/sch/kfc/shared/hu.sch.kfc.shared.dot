@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.shared.Liked
-	c89 [label=<<table title="hu.sch.kfc.shared.Liked" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Liked.html">
+	c88 [label=<<table title="hu.sch.kfc.shared.Liked" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Liked.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Liked </td></tr>
 		</table></td></tr>

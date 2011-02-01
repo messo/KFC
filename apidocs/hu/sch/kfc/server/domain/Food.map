@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="c5097" href="./Order.html" title="hu.sch.kfc.server.domain.Order" alt="" coords="16,131,83,173"/>
+<area shape="rect" id="c4954" href="./Order.html" title="hu.sch.kfc.server.domain.Order" alt="" coords="16,131,83,173"/>
 <area shape="rect" id="node1" href="./Order.html" title="&lt;TABLE&gt;" alt="" coords="5,126,93,178"/>
-<area shape="rect" id="c5104" href="./Food.html" title="hu.sch.kfc.server.domain.Food" alt="" coords="129,251,196,293"/>
+<area shape="rect" id="c4961" href="./Food.html" title="hu.sch.kfc.server.domain.Food" alt="" coords="129,251,196,293"/>
 <area shape="rect" id="node4" href="./Food.html" title="&lt;TABLE&gt;" alt="" coords="119,246,207,298"/>
-<area shape="rect" id="c5100" href="./Group.html" title="hu.sch.kfc.server.domain.Group" alt="" coords="189,11,256,53"/>
+<area shape="rect" id="c4957" href="./Group.html" title="hu.sch.kfc.server.domain.Group" alt="" coords="189,11,256,53"/>
 <area shape="rect" id="node2" href="./Group.html" title="&lt;TABLE&gt;" alt="" coords="179,6,267,58"/>
-<area shape="rect" id="c5103" href="./Program.html" title="hu.sch.kfc.server.domain.Program" alt="" coords="128,131,197,173"/>
+<area shape="rect" id="c4960" href="./Program.html" title="hu.sch.kfc.server.domain.Program" alt="" coords="128,131,197,173"/>
 <area shape="rect" id="node3" href="./Program.html" title="&lt;TABLE&gt;" alt="" coords="117,126,208,178"/>
 </map>

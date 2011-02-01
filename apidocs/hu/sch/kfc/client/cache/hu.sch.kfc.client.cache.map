@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c1360" href="./Cache.html" title="hu.sch.kfc.client.cache.Cache" alt="" coords="16,19,75,45"/>
+<area shape="rect" id="c1258" href="./Cache.html" title="hu.sch.kfc.client.cache.Cache" alt="" coords="16,19,75,45"/>
 <area shape="rect" id="node1" href="./Cache.html" title="&lt;TABLE&gt;" alt="" coords="5,8,85,56"/>
-<area shape="rect" id="c1361" href="./Cacheable.html" title="hu.sch.kfc.client.cache.Cacheable" alt="" coords="120,11,227,53"/>
+<area shape="rect" id="c1259" href="./Cacheable.html" title="hu.sch.kfc.client.cache.Cacheable" alt="" coords="120,11,227,53"/>
 <area shape="rect" id="node2" href="./Cacheable.html" title="&lt;TABLE&gt;" alt="" coords="109,6,237,58"/>
-<area shape="rect" id="c1362" href="./CachingRemoteService.html" title="hu.sch.kfc.client.cache.CachingRemoteService" alt="" coords="271,11,430,53"/>
+<area shape="rect" id="c1260" href="./CachingRemoteService.html" title="hu.sch.kfc.client.cache.CachingRemoteService" alt="" coords="271,11,430,53"/>
 <area shape="rect" id="node3" href="./CachingRemoteService.html" title="&lt;TABLE&gt;" alt="" coords="261,6,440,58"/>
-<area shape="rect" id="c1363" href="./CachingAsyncCallback.html" title="hu.sch.kfc.client.cache.CachingAsyncCallback" alt="" coords="474,19,795,45"/>
+<area shape="rect" id="c1261" href="./CachingAsyncCallback.html" title="hu.sch.kfc.client.cache.CachingAsyncCallback" alt="" coords="474,19,795,45"/>
 <area shape="rect" id="node4" href="./CachingAsyncCallback.html" title="&lt;TABLE&gt;" alt="" coords="464,8,805,56"/>
-<area shape="rect" id="c1364" href="./UseCache.html" title="hu.sch.kfc.client.cache.UseCache" alt="" coords="840,19,923,45"/>
+<area shape="rect" id="c1262" href="./UseCache.html" title="hu.sch.kfc.client.cache.UseCache" alt="" coords="840,19,923,45"/>
 <area shape="rect" id="node5" href="./UseCache.html" title="&lt;TABLE&gt;" alt="" coords="829,8,933,56"/>
 </map>

@@ -10,16 +10,16 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.gin.KFCGinjector
-	c6284 [label=<<table title="hu.sch.kfc.client.gin.KFCGinjector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KFCGinjector.html">
+	c6128 [label=<<table title="hu.sch.kfc.client.gin.KFCGinjector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KFCGinjector.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> KFCGinjector </td></tr>
 		</table></td></tr>
 		</table>>, URL="./KFCGinjector.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.gin.KFCGinjector implements com.google.gwt.inject.client.Ginjector
-	c6345:p -> c6284:p [dir=back,arrowtail=empty,style=dashed];
+	c6188:p -> c6128:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.inject.client.Ginjector
-	c6345 [label=<<table title="com.google.gwt.inject.client.Ginjector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c6188 [label=<<table title="com.google.gwt.inject.client.Ginjector" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Ginjector </td></tr>

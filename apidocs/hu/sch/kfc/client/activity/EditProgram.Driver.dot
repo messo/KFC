@@ -10,16 +10,16 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.activity.EditProgram.Driver
-	c4078 [label=<<table title="hu.sch.kfc.client.activity.EditProgram.Driver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EditProgram.Driver.html">
+	c3946 [label=<<table title="hu.sch.kfc.client.activity.EditProgram.Driver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EditProgram.Driver.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Driver </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EditProgram.Driver.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.activity.EditProgram.Driver implements com.google.gwt.requestfactory.client.RequestFactoryEditorDriver<P, E extends com.google.gwt.editor.client.Editor<? super P>>
-	c4147:p -> c4078:p [dir=back,arrowtail=empty,style=dashed];
+	c4014:p -> c3946:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.requestfactory.client.RequestFactoryEditorDriver<P, E extends com.google.gwt.editor.client.Editor<? super P>>
-	c4147 [label=<<table title="com.google.gwt.requestfactory.client.RequestFactoryEditorDriver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c4014 [label=<<table title="com.google.gwt.requestfactory.client.RequestFactoryEditorDriver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestFactoryEditorDriver&lt;P, E extends Editor&lt;? super P&gt;&gt; </td></tr>

@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.shared.Liked
-	c6613 [label=<<table title="hu.sch.kfc.shared.Liked" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Liked.html">
+	c6453 [label=<<table title="hu.sch.kfc.shared.Liked" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Liked.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Liked </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Liked.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.shared.Liked implements java.io.Serializable
-	c6698:p -> c6613:p [dir=back,arrowtail=empty,style=dashed];
+	c6537:p -> c6453:p [dir=back,arrowtail=empty,style=dashed];
 	// java.io.Serializable
-	c6698 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/javase/6/docs/api/java/io/Serializable.html">
+	c6537 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/javase/6/docs/api/java/io/Serializable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Serializable </td></tr>

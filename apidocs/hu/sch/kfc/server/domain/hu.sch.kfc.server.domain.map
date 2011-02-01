@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="c1897" href="./OrderInterval.html" title="hu.sch.kfc.server.domain.OrderInterval" alt="" coords="139,251,235,293"/>
+<area shape="rect" id="c1789" href="./OrderInterval.html" title="hu.sch.kfc.server.domain.OrderInterval" alt="" coords="139,251,235,293"/>
 <area shape="rect" id="node1" href="./OrderInterval.html" title="&lt;TABLE&gt;" alt="" coords="128,246,245,298"/>
-<area shape="rect" id="c1899" href="./Order.html" title="hu.sch.kfc.server.domain.Order" alt="" coords="72,131,139,173"/>
+<area shape="rect" id="c1791" href="./Order.html" title="hu.sch.kfc.server.domain.Order" alt="" coords="72,131,139,173"/>
 <area shape="rect" id="node2" href="./Order.html" title="&lt;TABLE&gt;" alt="" coords="61,126,149,178"/>
-<area shape="rect" id="c1900" href="./User.html" title="hu.sch.kfc.server.domain.User" alt="" coords="16,251,83,293"/>
+<area shape="rect" id="c1792" href="./User.html" title="hu.sch.kfc.server.domain.User" alt="" coords="16,251,83,293"/>
 <area shape="rect" id="node3" href="./User.html" title="&lt;TABLE&gt;" alt="" coords="5,246,93,298"/>
-<area shape="rect" id="c1906" href="./Food.html" title="hu.sch.kfc.server.domain.Food" alt="" coords="291,251,357,293"/>
+<area shape="rect" id="c1798" href="./Food.html" title="hu.sch.kfc.server.domain.Food" alt="" coords="291,251,357,293"/>
 <area shape="rect" id="node6" href="./Food.html" title="&lt;TABLE&gt;" alt="" coords="280,246,368,298"/>
-<area shape="rect" id="c1902" href="./Group.html" title="hu.sch.kfc.server.domain.Group" alt="" coords="327,11,393,53"/>
+<area shape="rect" id="c1794" href="./Group.html" title="hu.sch.kfc.server.domain.Group" alt="" coords="327,11,393,53"/>
 <area shape="rect" id="node4" href="./Group.html" title="&lt;TABLE&gt;" alt="" coords="316,6,404,58"/>
-<area shape="rect" id="c1905" href="./Program.html" title="hu.sch.kfc.server.domain.Program" alt="" coords="265,131,335,173"/>
+<area shape="rect" id="c1797" href="./Program.html" title="hu.sch.kfc.server.domain.Program" alt="" coords="265,131,335,173"/>
 <area shape="rect" id="node5" href="./Program.html" title="&lt;TABLE&gt;" alt="" coords="255,126,345,178"/>
 </map>

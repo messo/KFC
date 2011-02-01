@@ -10,40 +10,40 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.server.domain.OrderInterval
-	c7822 [label=<<table title="hu.sch.kfc.server.domain.OrderInterval" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OrderInterval.html">
+	c7735 [label=<<table title="hu.sch.kfc.server.domain.OrderInterval" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OrderInterval.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> OrderInterval </td></tr>
 		</table></td></tr>
 		</table>>, URL="./OrderInterval.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Group
-	c7827 [label=<<table title="hu.sch.kfc.server.domain.Group" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Group.html">
+	c7740 [label=<<table title="hu.sch.kfc.server.domain.Group" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Group.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Group </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Group.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Program
-	c7830 [label=<<table title="hu.sch.kfc.server.domain.Program" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Program.html">
+	c7743 [label=<<table title="hu.sch.kfc.server.domain.Program" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Program.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Program </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Program.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Food
-	c7831 [label=<<table title="hu.sch.kfc.server.domain.Food" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Food.html">
+	c7744 [label=<<table title="hu.sch.kfc.server.domain.Food" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Food.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Food </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Food.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Group HAS hu.sch.kfc.server.domain.Food
-	c7827:p -> c7831:p [taillabel="1", label="produces", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c7740:p -> c7744:p [taillabel="1", label="produces", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// hu.sch.kfc.server.domain.Group COMPOSED hu.sch.kfc.server.domain.Program
-	c7827:p -> c7830:p [taillabel="", label="has", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c7740:p -> c7743:p [taillabel="", label="has", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	// hu.sch.kfc.server.domain.Program HAS hu.sch.kfc.server.domain.Food
-	c7830:p -> c7831:p [taillabel="*", label="provides", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c7743:p -> c7744:p [taillabel="*", label="provides", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// hu.sch.kfc.server.domain.Program COMPOSED hu.sch.kfc.server.domain.OrderInterval
-	c7830:p -> c7822:p [taillabel="1", label="consists of", headlabel="1..*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c7743:p -> c7735:p [taillabel="1", label="consists of", headlabel="1..*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 }
 

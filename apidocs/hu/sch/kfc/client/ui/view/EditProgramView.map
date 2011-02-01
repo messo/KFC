@@ -1,7 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c4360" href="./impl/EditProgramViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl" alt="" coords="16,219,163,245"/>
-<area shape="rect" id="node1" href="./impl/EditProgramViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="5,208,173,256"/>
-<area shape="rect" id="c4370" href="./EditProgramView.html" title="hu.sch.kfc.client.ui.view.EditProgramView" alt="" coords="29,113,150,154"/>
-<area shape="rect" id="node2" href="./EditProgramView.html" title="&lt;TABLE&gt;" alt="" coords="19,107,160,159"/>
-<area shape="rect" id="node4" href="null" title="&lt;TABLE&gt;" alt="" coords="36,6,143,58"/>
+<area shape="rect" id="c4223" href="./impl/EditProgramViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl" alt="" coords="51,219,197,245"/>
+<area shape="rect" id="node1" href="./impl/EditProgramViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="40,208,208,256"/>
+<area shape="rect" id="c4233" href="./EditProgramView.html" title="hu.sch.kfc.client.ui.view.EditProgramView" alt="" coords="63,113,185,154"/>
+<area shape="rect" id="node2" href="./EditProgramView.html" title="&lt;TABLE&gt;" alt="" coords="53,107,195,159"/>
+<area shape="rect" id="node4" href="null" title="&lt;TABLE&gt;" alt="" coords="5,6,112,58"/>
+<area shape="rect" id="node6" href="null" title="&lt;TABLE&gt;" alt="" coords="136,6,243,58"/>
 </map>

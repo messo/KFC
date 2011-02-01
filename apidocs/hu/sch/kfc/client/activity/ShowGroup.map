@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c8475" href="./ShowGroup.html" title="hu.sch.kfc.client.activity.ShowGroup" alt="" coords="99,118,189,143"/>
+<area shape="rect" id="c8206" href="./ShowGroup.html" title="hu.sch.kfc.client.activity.ShowGroup" alt="" coords="99,118,189,143"/>
 <area shape="rect" id="node1" href="./ShowGroup.html" title="&lt;TABLE&gt;" alt="" coords="89,107,199,155"/>
-<area shape="rect" id="c8477" href="./AbstractActivity.html" title="hu.sch.kfc.client.activity.AbstractActivity" alt="" coords="15,19,129,45"/>
+<area shape="rect" id="c8208" href="./AbstractActivity.html" title="hu.sch.kfc.client.activity.AbstractActivity" alt="" coords="15,19,129,45"/>
 <area shape="rect" id="node2" href="./AbstractActivity.html" title="&lt;TABLE&gt;" alt="" coords="5,8,139,56"/>
-<area shape="rect" id="c8501" href="../ui/view/ShowGroupView.Listener.html" title="hu.sch.kfc.client.ui.view.ShowGroupView.Listener" alt="" coords="173,11,259,53"/>
+<area shape="rect" id="c8230" href="../ui/view/ShowGroupView.Listener.html" title="hu.sch.kfc.client.ui.view.ShowGroupView.Listener" alt="" coords="173,11,259,53"/>
 <area shape="rect" id="node3" href="../ui/view/ShowGroupView.Listener.html" title="&lt;TABLE&gt;" alt="" coords="163,6,269,58"/>
 </map>

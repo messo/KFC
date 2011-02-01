@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="c7066" href="../../activity/ListGroups.html" title="hu.sch.kfc.client.activity.ListGroups" alt="" coords="17,118,101,143"/>
+<area shape="rect" id="c6901" href="../../activity/ListGroups.html" title="hu.sch.kfc.client.activity.ListGroups" alt="" coords="17,118,101,143"/>
 <area shape="rect" id="node1" href="../../activity/ListGroups.html" title="&lt;TABLE&gt;" alt="" coords="7,107,111,155"/>
-<area shape="rect" id="c7100" href="./ListGroupsView.Listener.html" title="hu.sch.kfc.client.ui.view.ListGroupsView.Listener" alt="" coords="16,11,101,53"/>
+<area shape="rect" id="c6933" href="./ListGroupsView.Listener.html" title="hu.sch.kfc.client.ui.view.ListGroupsView.Listener" alt="" coords="16,11,101,53"/>
 <area shape="rect" id="node2" href="./ListGroupsView.Listener.html" title="&lt;TABLE&gt;" alt="" coords="5,6,112,58"/>
 </map>

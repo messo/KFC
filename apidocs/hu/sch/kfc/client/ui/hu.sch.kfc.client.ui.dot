@@ -10,21 +10,21 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.DefaultBundle
-	c724 [label=<<table title="hu.sch.kfc.client.ui.DefaultBundle" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DefaultBundle.html">
+	c716 [label=<<table title="hu.sch.kfc.client.ui.DefaultBundle" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DefaultBundle.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DefaultBundle </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DefaultBundle.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.DefaultStyle
-	c725 [label=<<table title="hu.sch.kfc.client.ui.DefaultStyle" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DefaultStyle.html">
+	c717 [label=<<table title="hu.sch.kfc.client.ui.DefaultStyle" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DefaultStyle.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DefaultStyle </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DefaultStyle.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.Shell
-	c726 [label=<<table title="hu.sch.kfc.client.ui.Shell" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Shell.html">
+	c718 [label=<<table title="hu.sch.kfc.client.ui.Shell" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Shell.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Shell </td></tr>
 		</table></td></tr>

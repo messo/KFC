@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.activity.EditProgram
-	c3990 [label=<<table title="hu.sch.kfc.client.activity.EditProgram" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EditProgram.html">
+	c3859 [label=<<table title="hu.sch.kfc.client.activity.EditProgram" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EditProgram.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EditProgram </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EditProgram.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.AbstractActivity
-	c3994 [label=<<table title="hu.sch.kfc.client.activity.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractActivity.html">
+	c3863 [label=<<table title="hu.sch.kfc.client.activity.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractActivity.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractActivity </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AbstractActivity.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.EditProgramView.Listener
-	c4020 [label=<<table title="hu.sch.kfc.client.ui.view.EditProgramView.Listener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ui/view/EditProgramView.Listener.html">
+	c3887 [label=<<table title="hu.sch.kfc.client.ui.view.EditProgramView.Listener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ui/view/EditProgramView.Listener.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Listener </td></tr>
 		</table></td></tr>
 		</table>>, URL="../ui/view/EditProgramView.Listener.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.activity.EditProgram extends hu.sch.kfc.client.activity.AbstractActivity
-	c3994:p -> c3990:p [dir=back,arrowtail=empty];
+	c3863:p -> c3859:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.activity.EditProgram implements hu.sch.kfc.client.ui.view.EditProgramView.Listener
-	c4020:p -> c3990:p [dir=back,arrowtail=empty,style=dashed];
+	c3887:p -> c3859:p [dir=back,arrowtail=empty,style=dashed];
 }
 

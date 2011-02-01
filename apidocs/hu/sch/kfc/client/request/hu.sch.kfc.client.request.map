@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c361" href="./KFCRequestFactory.html" title="hu.sch.kfc.client.request.KFCRequestFactory" alt="" coords="16,11,157,53"/>
+<area shape="rect" id="c357" href="./KFCRequestFactory.html" title="hu.sch.kfc.client.request.KFCRequestFactory" alt="" coords="16,11,157,53"/>
 <area shape="rect" id="node1" href="./KFCRequestFactory.html" title="&lt;TABLE&gt;" alt="" coords="5,6,168,58"/>
-<area shape="rect" id="c362" href="./GroupRequest.html" title="hu.sch.kfc.client.request.GroupRequest" alt="" coords="202,11,307,53"/>
+<area shape="rect" id="c358" href="./GroupRequest.html" title="hu.sch.kfc.client.request.GroupRequest" alt="" coords="202,11,307,53"/>
 <area shape="rect" id="node2" href="./GroupRequest.html" title="&lt;TABLE&gt;" alt="" coords="192,6,317,58"/>
-<area shape="rect" id="c363" href="./ProgramRequest.html" title="hu.sch.kfc.client.request.ProgramRequest" alt="" coords="351,11,470,53"/>
+<area shape="rect" id="c359" href="./ProgramRequest.html" title="hu.sch.kfc.client.request.ProgramRequest" alt="" coords="351,11,470,53"/>
 <area shape="rect" id="node3" href="./ProgramRequest.html" title="&lt;TABLE&gt;" alt="" coords="341,6,480,58"/>
 </map>

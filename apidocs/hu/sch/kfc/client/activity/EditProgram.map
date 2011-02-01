@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c3990" href="./EditProgram.html" title="hu.sch.kfc.client.activity.EditProgram" alt="" coords="97,118,191,143"/>
+<area shape="rect" id="c3859" href="./EditProgram.html" title="hu.sch.kfc.client.activity.EditProgram" alt="" coords="97,118,191,143"/>
 <area shape="rect" id="node1" href="./EditProgram.html" title="&lt;TABLE&gt;" alt="" coords="87,107,201,155"/>
-<area shape="rect" id="c3994" href="./AbstractActivity.html" title="hu.sch.kfc.client.activity.AbstractActivity" alt="" coords="15,19,129,45"/>
+<area shape="rect" id="c3863" href="./AbstractActivity.html" title="hu.sch.kfc.client.activity.AbstractActivity" alt="" coords="15,19,129,45"/>
 <area shape="rect" id="node2" href="./AbstractActivity.html" title="&lt;TABLE&gt;" alt="" coords="5,8,139,56"/>
-<area shape="rect" id="c4020" href="../ui/view/EditProgramView.Listener.html" title="hu.sch.kfc.client.ui.view.EditProgramView.Listener" alt="" coords="173,11,259,53"/>
+<area shape="rect" id="c3887" href="../ui/view/EditProgramView.Listener.html" title="hu.sch.kfc.client.ui.view.EditProgramView.Listener" alt="" coords="173,11,259,53"/>
 <area shape="rect" id="node3" href="../ui/view/EditProgramView.Listener.html" title="&lt;TABLE&gt;" alt="" coords="163,6,269,58"/>
 </map>

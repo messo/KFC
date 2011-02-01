@@ -10,60 +10,60 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.server.domain.OrderInterval
-	c1897 [label=<<table title="hu.sch.kfc.server.domain.OrderInterval" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OrderInterval.html">
+	c1789 [label=<<table title="hu.sch.kfc.server.domain.OrderInterval" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OrderInterval.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> OrderInterval </td></tr>
 		</table></td></tr>
 		</table>>, URL="./OrderInterval.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Order
-	c1899 [label=<<table title="hu.sch.kfc.server.domain.Order" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Order.html">
+	c1791 [label=<<table title="hu.sch.kfc.server.domain.Order" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Order.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Order </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Order.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.User
-	c1900 [label=<<table title="hu.sch.kfc.server.domain.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./User.html">
+	c1792 [label=<<table title="hu.sch.kfc.server.domain.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./User.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> User </td></tr>
 		</table></td></tr>
 		</table>>, URL="./User.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Group
-	c1902 [label=<<table title="hu.sch.kfc.server.domain.Group" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Group.html">
+	c1794 [label=<<table title="hu.sch.kfc.server.domain.Group" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Group.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Group </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Group.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Program
-	c1905 [label=<<table title="hu.sch.kfc.server.domain.Program" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Program.html">
+	c1797 [label=<<table title="hu.sch.kfc.server.domain.Program" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Program.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Program </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Program.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Food
-	c1906 [label=<<table title="hu.sch.kfc.server.domain.Food" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Food.html">
+	c1798 [label=<<table title="hu.sch.kfc.server.domain.Food" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Food.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Food </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Food.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Order NAVASSOC hu.sch.kfc.server.domain.Food
-	c1899:p -> c1906:p [taillabel="*", label="what", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c1791:p -> c1798:p [taillabel="*", label="what", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// hu.sch.kfc.server.domain.Order NAVASSOC hu.sch.kfc.server.domain.User
-	c1899:p -> c1900:p [taillabel="*", label="who", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c1791:p -> c1792:p [taillabel="*", label="who", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// hu.sch.kfc.server.domain.Order NAVASSOC hu.sch.kfc.server.domain.OrderInterval
-	c1899:p -> c1897:p [taillabel="*", label="when", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c1791:p -> c1789:p [taillabel="*", label="when", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// hu.sch.kfc.server.domain.Group HAS hu.sch.kfc.server.domain.Food
-	c1902:p -> c1906:p [taillabel="1", label="produces", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c1794:p -> c1798:p [taillabel="1", label="produces", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// hu.sch.kfc.server.domain.Group COMPOSED hu.sch.kfc.server.domain.Program
-	c1902:p -> c1905:p [taillabel="", label="has", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c1794:p -> c1797:p [taillabel="", label="has", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	// hu.sch.kfc.server.domain.Program HAS hu.sch.kfc.server.domain.Food
-	c1905:p -> c1906:p [taillabel="*", label="provides", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c1797:p -> c1798:p [taillabel="*", label="provides", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// hu.sch.kfc.server.domain.Program COMPOSED hu.sch.kfc.server.domain.OrderInterval
-	c1905:p -> c1897:p [taillabel="1", label="consists of", headlabel="1..*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c1797:p -> c1789:p [taillabel="1", label="consists of", headlabel="1..*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 }
 

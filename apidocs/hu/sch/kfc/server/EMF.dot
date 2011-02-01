@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.server.EMF
-	c3952 [label=<<table title="hu.sch.kfc.server.EMF" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EMF.html">
+	c3821 [label=<<table title="hu.sch.kfc.server.EMF" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EMF.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EMF </td></tr>
 		</table></td></tr>

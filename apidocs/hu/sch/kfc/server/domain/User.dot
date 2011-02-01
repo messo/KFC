@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.server.domain.Order
-	c9757 [label=<<table title="hu.sch.kfc.server.domain.Order" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Order.html">
+	c9473 [label=<<table title="hu.sch.kfc.server.domain.Order" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Order.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> Order </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Order.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.User
-	c9758 [label=<<table title="hu.sch.kfc.server.domain.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./User.html">
+	c9474 [label=<<table title="hu.sch.kfc.server.domain.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./User.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;entity&#187; </td></tr>
 <tr><td align="center" balign="center"> User </td></tr>
 		</table></td></tr>
 		</table>>, URL="./User.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.server.domain.Order NAVASSOC hu.sch.kfc.server.domain.User
-	c9757:p -> c9758:p [taillabel="*", label="who", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c9473:p -> c9474:p [taillabel="*", label="who", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

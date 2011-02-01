@@ -10,24 +10,24 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl
-	c8936 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowGroupViewImpl.html">
+	c8660 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ShowGroupViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowGroupViewImpl </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowGroupViewImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.ShowGroupView
-	c8938 [label=<<table title="hu.sch.kfc.client.ui.view.ShowGroupView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ShowGroupView.html">
+	c8662 [label=<<table title="hu.sch.kfc.client.ui.view.ShowGroupView" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ShowGroupView.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ShowGroupView </td></tr>
 		</table></td></tr>
 		</table>>, URL="../ShowGroupView.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl extends com.google.gwt.user.client.ui.Composite
-	c8981:p -> c8936:p [dir=back,arrowtail=empty];
+	c8706:p -> c8660:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl implements hu.sch.kfc.client.ui.view.ShowGroupView
-	c8938:p -> c8936:p [dir=back,arrowtail=empty,style=dashed];
+	c8662:p -> c8660:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.user.client.ui.Composite
-	c8981 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c8706 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Composite </font></td></tr>
 		</table></td></tr>

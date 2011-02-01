@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="c2623" href="./AtmosphereTransport.html" title="hu.sch.kfc.client.atmosphere.AtmosphereTransport" alt="" coords="35,17,181,42"/>
+<area shape="rect" id="c2507" href="./AtmosphereTransport.html" title="hu.sch.kfc.client.atmosphere.AtmosphereTransport" alt="" coords="35,17,181,42"/>
 <area shape="rect" id="node1" href="./AtmosphereTransport.html" title="&lt;TABLE&gt;" alt="" coords="25,5,191,53"/>
-<area shape="rect" id="c2624" href="./impl/AtmosphereTransportImplIE.html" title="hu.sch.kfc.client.atmosphere.impl.AtmosphereTransportImplIE" alt="" coords="16,113,200,138"/>
+<area shape="rect" id="c2508" href="./impl/AtmosphereTransportImplIE.html" title="hu.sch.kfc.client.atmosphere.impl.AtmosphereTransportImplIE" alt="" coords="16,113,200,138"/>
 <area shape="rect" id="node2" href="./impl/AtmosphereTransportImplIE.html" title="&lt;TABLE&gt;" alt="" coords="5,101,211,149"/>
 </map>

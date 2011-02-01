@@ -10,52 +10,52 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl
-	c993 [label=<<table title="hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgramViewImpl.html">
+	c894 [label=<<table title="hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgramViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EditProgramViewImpl </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EditProgramViewImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl.MyUiBinder
-	c994 [label=<<table title="hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgramViewImpl.MyUiBinder.html">
+	c895 [label=<<table title="hu.sch.kfc.client.ui.view.impl.EditProgramViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgramViewImpl.MyUiBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MyUiBinder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EditProgramViewImpl.MyUiBinder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl
-	c995 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgramViewImpl.html">
+	c896 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgramViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowProgramViewImpl </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowProgramViewImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl.MyUiBinder
-	c996 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgramViewImpl.MyUiBinder.html">
+	c897 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowProgramViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgramViewImpl.MyUiBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MyUiBinder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowProgramViewImpl.MyUiBinder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl
-	c997 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroupsViewImpl.html">
+	c898 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroupsViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ListGroupsViewImpl </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ListGroupsViewImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl.MyUiBinder
-	c998 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroupsViewImpl.MyUiBinder.html">
+	c899 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ListGroupsViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroupsViewImpl.MyUiBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MyUiBinder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ListGroupsViewImpl.MyUiBinder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl
-	c999 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroupViewImpl.html">
+	c900 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroupViewImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowGroupViewImpl </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowGroupViewImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl.MyUiBinder
-	c1000 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroupViewImpl.MyUiBinder.html">
+	c901 [label=<<table title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl.MyUiBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroupViewImpl.MyUiBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MyUiBinder </td></tr>

@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.widget.ProgramBox
-	c7871 [label=<<table title="hu.sch.kfc.client.ui.widget.ProgramBox" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ProgramBox.html">
+	c7784 [label=<<table title="hu.sch.kfc.client.ui.widget.ProgramBox" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ProgramBox.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ProgramBox </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ProgramBox.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.widget.ProgramBox extends com.google.gwt.user.client.ui.Composite
-	c7926:p -> c7871:p [dir=back,arrowtail=empty];
+	c7838:p -> c7784:p [dir=back,arrowtail=empty];
 	// com.google.gwt.user.client.ui.Composite
-	c7926 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c7838 [label=<<table title="com.google.gwt.user.client.ui.Composite" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Composite </font></td></tr>
 		</table></td></tr>

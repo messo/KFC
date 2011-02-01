@@ -1,7 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="c8936" href="./ShowGroupViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" alt="" coords="75,118,218,143"/>
+<area shape="rect" id="c8660" href="./ShowGroupViewImpl.html" title="hu.sch.kfc.client.ui.view.impl.ShowGroupViewImpl" alt="" coords="75,118,218,143"/>
 <area shape="rect" id="node1" href="./ShowGroupViewImpl.html" title="&lt;TABLE&gt;" alt="" coords="65,107,228,155"/>
-<area shape="rect" id="c8938" href="../ShowGroupView.html" title="hu.sch.kfc.client.ui.view.ShowGroupView" alt="" coords="16,11,133,53"/>
+<area shape="rect" id="c8662" href="../ShowGroupView.html" title="hu.sch.kfc.client.ui.view.ShowGroupView" alt="" coords="16,11,133,53"/>
 <area shape="rect" id="node2" href="../ShowGroupView.html" title="&lt;TABLE&gt;" alt="" coords="5,6,144,58"/>
 <area shape="rect" id="node3" href="null" title="&lt;TABLE&gt;" alt="" coords="168,8,272,56"/>
 </map>

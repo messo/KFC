@@ -10,16 +10,16 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.ui.DefaultStyle
-	c3826 [label=<<table title="hu.sch.kfc.client.ui.DefaultStyle" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DefaultStyle.html">
+	c3697 [label=<<table title="hu.sch.kfc.client.ui.DefaultStyle" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DefaultStyle.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DefaultStyle </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DefaultStyle.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.ui.DefaultStyle implements com.google.gwt.resources.client.CssResource
-	c3885:p -> c3826:p [dir=back,arrowtail=empty,style=dashed];
+	c3755:p -> c3697:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.gwt.resources.client.CssResource
-	c3885 [label=<<table title="com.google.gwt.resources.client.CssResource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c3755 [label=<<table title="com.google.gwt.resources.client.CssResource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> CssResource </td></tr>

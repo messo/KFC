@@ -10,55 +10,55 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// hu.sch.kfc.client.activity.ListGroups
-	c451 [label=<<table title="hu.sch.kfc.client.activity.ListGroups" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroups.html">
+	c446 [label=<<table title="hu.sch.kfc.client.activity.ListGroups" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ListGroups.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ListGroups </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ListGroups.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.EditProgram
-	c452 [label=<<table title="hu.sch.kfc.client.activity.EditProgram" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgram.html">
+	c447 [label=<<table title="hu.sch.kfc.client.activity.EditProgram" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgram.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EditProgram </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EditProgram.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.EditProgram.Driver
-	c453 [label=<<table title="hu.sch.kfc.client.activity.EditProgram.Driver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgram.Driver.html">
+	c448 [label=<<table title="hu.sch.kfc.client.activity.EditProgram.Driver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EditProgram.Driver.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Driver </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EditProgram.Driver.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.ShowGroup
-	c454 [label=<<table title="hu.sch.kfc.client.activity.ShowGroup" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroup.html">
+	c449 [label=<<table title="hu.sch.kfc.client.activity.ShowGroup" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowGroup.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowGroup </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowGroup.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.MainActivityMapper
-	c455 [label=<<table title="hu.sch.kfc.client.activity.MainActivityMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MainActivityMapper.html">
+	c450 [label=<<table title="hu.sch.kfc.client.activity.MainActivityMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MainActivityMapper.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MainActivityMapper </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MainActivityMapper.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.AbstractActivity
-	c456 [label=<<table title="hu.sch.kfc.client.activity.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractActivity.html">
+	c451 [label=<<table title="hu.sch.kfc.client.activity.AbstractActivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractActivity.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractActivity </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AbstractActivity.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// hu.sch.kfc.client.activity.ShowProgram
-	c457 [label=<<table title="hu.sch.kfc.client.activity.ShowProgram" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgram.html">
+	c452 [label=<<table title="hu.sch.kfc.client.activity.ShowProgram" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShowProgram.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShowProgram </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShowProgram.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//hu.sch.kfc.client.activity.ListGroups extends hu.sch.kfc.client.activity.AbstractActivity
-	c456:p -> c451:p [dir=back,arrowtail=empty];
+	c451:p -> c446:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.activity.EditProgram extends hu.sch.kfc.client.activity.AbstractActivity
-	c456:p -> c452:p [dir=back,arrowtail=empty];
+	c451:p -> c447:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.activity.ShowGroup extends hu.sch.kfc.client.activity.AbstractActivity
-	c456:p -> c454:p [dir=back,arrowtail=empty];
+	c451:p -> c449:p [dir=back,arrowtail=empty];
 	//hu.sch.kfc.client.activity.ShowProgram extends hu.sch.kfc.client.activity.AbstractActivity
-	c456:p -> c457:p [dir=back,arrowtail=empty];
+	c451:p -> c452:p [dir=back,arrowtail=empty];
 }
 

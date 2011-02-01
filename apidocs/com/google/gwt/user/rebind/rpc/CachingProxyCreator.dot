@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.gwt.user.rebind.rpc.CachingProxyCreator
-	c3267 [label=<<table title="com.google.gwt.user.rebind.rpc.CachingProxyCreator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CachingProxyCreator.html">
+	c3144 [label=<<table title="com.google.gwt.user.rebind.rpc.CachingProxyCreator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CachingProxyCreator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CachingProxyCreator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CachingProxyCreator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//com.google.gwt.user.rebind.rpc.CachingProxyCreator extends com.google.gwt.user.rebind.rpc.ProxyCreator
-	c3268:p -> c3267:p [dir=back,arrowtail=empty];
+	c3145:p -> c3144:p [dir=back,arrowtail=empty];
 	// com.google.gwt.user.rebind.rpc.ProxyCreator
-	c3268 [label=<<table title="com.google.gwt.user.rebind.rpc.ProxyCreator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c3145 [label=<<table title="com.google.gwt.user.rebind.rpc.ProxyCreator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ProxyCreator </td></tr>
 		</table></td></tr>
