@@ -8,5 +8,4 @@ import com.google.gwt.inject.client.Ginjector;
 public interface KFCGinjector extends Ginjector {
 
     Application getApplication();
-
 }

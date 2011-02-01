@@ -23,7 +23,7 @@
 
 	<properties>
 		<!-- Verziók beállítása -->
-		<gwt.version>2.1.1</gwt.version>
+		<gwt.version>2.2-rc1</gwt.version>
 		<atmosphere.version>0.6</atmosphere.version>
 		<!-- Ez egyezzen meg a GWT-ben lévő Jetty verizójával, legalábbis szerintem 
 			úgy a tuti :) -->
@@ -118,9 +118,9 @@
 			<version>20090211</version>
 		</dependency>
 		<dependency>
-			<groupId>com.google.gwt.inject</groupId>
+			<groupId>com.googlecode.gwt.inject</groupId>
 			<artifactId>gin</artifactId>
-			<version>1.0</version>
+			<version>1.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -255,6 +255,11 @@
 		<repository>
 			<id>EclipseLink Repo</id>
 			<url>http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo</url>
+		</repository>
+		<repository>
+			<name>gin-repo</name>
+			<id>gin-repo</id>
+			<url>https://github.com/larsenje/google-gin-pom/raw/master/maven/snapshots</url>
 		</repository>
 	</repositories>
 

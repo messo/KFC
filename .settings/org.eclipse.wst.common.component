@@ -30,13 +30,19 @@
     <dependent-module archiveName="eclipselink-2.2.0-M6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/eclipse/persistence/eclipselink/2.2.0-M6/eclipselink-2.2.0-M6.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="gin-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/gwt/inject/gin/1.0/gin-1.0.jar">
+    <dependent-module archiveName="gin-1.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/googlecode/gwt/inject/gin/1.1-SNAPSHOT/gin-1.1-SNAPSHOT.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="guice-2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/inject/guice/2.0/guice-2.0.jar">
+    <dependent-module archiveName="guice-3.0-rc2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/inject/guice/3.0-rc2/guice-3.0-rc2.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="gwt-servlet-2.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/gwt/gwt-servlet/2.1.1/gwt-servlet-2.1.1.jar">
+    <dependent-module archiveName="guice-assistedinject-3.0-rc2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/inject/extensions/guice-assistedinject/3.0-rc2/guice-assistedinject-3.0-rc2.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="gwt-servlet-2.2-rc1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/gwt/gwt-servlet/2.2-rc1/gwt-servlet-2.2-rc1.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="javax.inject-1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <dependent-module archiveName="jersey-core-1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/sun/jersey/jersey-core/1.3/jersey-core-1.3.jar">

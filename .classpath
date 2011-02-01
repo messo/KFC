@@ -3,6 +3,11 @@
   <classpathentry kind="src" path="target/generated-sources/gwt" including="**/*.java"/>
   <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
   <classpathentry kind="output" path="target/KFC-0.1-SNAPSHOT/WEB-INF/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar" sourcepath="M2_REPO/javax/inject/javax.inject/1/javax.inject-1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/balint/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
   <classpathentry kind="var" path="M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" sourcepath="M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-sources.jar">
     <attributes>
       <attribute value="jar:file:/home/balint/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-javadoc.jar!/" name="javadoc_location"/>
@@ -40,15 +45,20 @@
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/eclipse/persistence/eclipselink/2.2.0-M6/eclipselink-2.2.0-M6.jar" sourcepath="M2_REPO/org/eclipse/persistence/eclipselink/2.2.0-M6/eclipselink-2.2.0-M6-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/geronimo-spec/geronimo-spec-jta/1.0.1B-rc4/geronimo-spec-jta-1.0.1B-rc4.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/google/gwt/inject/gin/1.0/gin-1.0.jar" sourcepath="M2_REPO/com/google/gwt/inject/gin/1.0/gin-1.0-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/com/googlecode/gwt/inject/gin/1.1-SNAPSHOT/gin-1.1-SNAPSHOT.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/google/inject/guice/3.0-rc2/guice-3.0-rc2.jar" sourcepath="M2_REPO/com/google/inject/guice/3.0-rc2/guice-3.0-rc2-sources.jar">
     <attributes>
-      <attribute value="jar:file:/home/balint/.m2/repository/com/google/gwt/inject/gin/1.0/gin-1.0-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/balint/.m2/repository/com/google/inject/guice/3.0-rc2/guice-3.0-rc2-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/google/inject/guice/2.0/guice-2.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/google/gwt/gwt-servlet/2.1.1/gwt-servlet-2.1.1.jar" sourcepath="M2_REPO/com/google/gwt/gwt-servlet/2.1.1/gwt-servlet-2.1.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/com/google/inject/extensions/guice-assistedinject/3.0-rc2/guice-assistedinject-3.0-rc2.jar" sourcepath="M2_REPO/com/google/inject/extensions/guice-assistedinject/3.0-rc2/guice-assistedinject-3.0-rc2-sources.jar">
     <attributes>
-      <attribute value="jar:file:/home/balint/.m2/repository/com/google/gwt/gwt-servlet/2.1.1/gwt-servlet-2.1.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/balint/.m2/repository/com/google/inject/extensions/guice-assistedinject/3.0-rc2/guice-assistedinject-3.0-rc2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/google/gwt/gwt-servlet/2.2-rc1/gwt-servlet-2.2-rc1.jar" sourcepath="M2_REPO/com/google/gwt/gwt-servlet/2.2-rc1/gwt-servlet-2.2-rc1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/balint/.m2/repository/com/google/gwt/gwt-servlet/2.2-rc1/gwt-servlet-2.2-rc1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/eclipse/persistence/javax.persistence/2.0.1/javax.persistence-2.0.1.jar" sourcepath="M2_REPO/org/eclipse/persistence/javax.persistence/2.0.1/javax.persistence-2.0.1-sources.jar"/>

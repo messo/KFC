@@ -31,7 +31,7 @@ public class MainActivityMapper implements ActivityMapper {
             return showProgramActivityProvider.get().withPlace((ShowProgramPlace) place);
         } else if (place instanceof EditProgramPlace) {
             return editProgramActivityProvider.get().withPlace((EditProgramPlace) place);
-        }  
+        }
 
         return null;
     }
