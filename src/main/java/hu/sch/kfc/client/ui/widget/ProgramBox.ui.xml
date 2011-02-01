@@ -13,7 +13,7 @@
 			margin-left: 200px;
 			overflow: visible;
 			position: relative;
-			min-height: 110px;
+			min-height: 120px;
 		}
 		
 		div.itemMain {

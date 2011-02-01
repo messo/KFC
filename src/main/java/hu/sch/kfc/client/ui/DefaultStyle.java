@@ -13,4 +13,6 @@ public interface DefaultStyle extends CssResource {
     String form();
     
     String formButtons();
+    
+    String longRow();
 }
