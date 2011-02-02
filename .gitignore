@@ -1,3 +1,4 @@
 target/
 .gwt
-src/main/webapp/kfc/
+kfc-war/src/main/webapp/kfc/
+kfc-war/src/main/webapp/WEB-INF/deploy/

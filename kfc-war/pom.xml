@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>hu.sch</groupId>
+		<artifactId>kfc</artifactId>
+		<version>0.1-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>hu.sch</groupId>
+	<artifactId>kfc-war</artifactId>
+	<name>KFC WAR (${project.version})</name>
+	<packaging>war</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>hu.sch</groupId>
+			<artifactId>kfc-ejb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.gwt.inject</groupId>
+			<artifactId>gin</artifactId>
+		</dependency>
+
+		<!-- GWT -->
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-servlet</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+		</dependency>
+		<!-- Home-made cache miatt; nem használjuk, szerintem majd vegyük ki -->
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-dev</artifactId>
+		</dependency>
+
+		<!-- Atmosphere -->
+		<dependency>
+			<groupId>org.atmosphere</groupId>
+			<artifactId>atmosphere-runtime</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.atmosphere</groupId>
+			<artifactId>atmosphere-jersey</artifactId>
+		</dependency>
+
+		<!-- RequestFactoryhoz kell, ez miért nincs a gwt-servlet artifactban?? -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20090211</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>gwt-maven-plugin</artifactId>
+				<version>2.1.1-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<id>async-gen</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>generateAsync</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>gwt-compile</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<runTarget>KFC.html</runTarget>
+					<module>hu.sch.kfc.KFC</module>
+					<!-- Explicit adjuk meg, hogy hol vannak az RPC service-k -->
+					<servicePattern>hu/sch/kfc/client/service/*Service.java</servicePattern>
+					<hostedWebapp>${project.build.directory}/${project.build.finalName}</hostedWebapp>
+					<logLevel>INFO</logLevel>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+					<buildOutputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</buildOutputDirectory>
+					<classpathContainers>
+						<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+						<classpathContainer>com.google.gwt.eclipse.core.GWT_CONTAINER</classpathContainer>
+					</classpathContainers>
+					<wtpversion>1.5</wtpversion>
+					<wtpContextName>KFC</wtpContextName>
+					<additionalProjectnatures>
+						<projectnature>com.google.gwt.eclipse.core.gwtNature</projectnature>
+					</additionalProjectnatures>
+					<additionalBuildcommands>
+						<buildcommand>com.google.gdt.eclipse.core.webAppProjectValidator</buildcommand>
+						<buildcommand>com.google.gwt.eclipse.core.gwtProjectValidator</buildcommand>
+					</additionalBuildcommands>
+					<additionalProjectFacets>
+						<sun.facet>9</sun.facet>
+					</additionalProjectFacets>
+					<excludes>
+						<!-- ezeket a GPE biztosítja -->
+						<exclude>com.google.gwt:gwt-user</exclude>
+						<exclude>com.google.gwt:gwt-bikeshed</exclude>
+						<exclude>com.google.gwt:gwt-dev</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
+
+					<docletPath>${project.baseUri}/doc/UmlGraph-5.4.jar</docletPath>
+					<additionalparam>-hide (.*?_) -views</additionalparam>
+					<!-- <useStandardDocletOptions>true</useStandardDocletOptions> -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+
+</project>

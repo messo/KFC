@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>hu.sch</groupId>
-	<artifactId>KFC</artifactId>
+	<artifactId>kfc</artifactId>
 	<name>KFC (${project.version})</name>
-	<packaging>war</packaging>
+	<packaging>pom</packaging>
 	<version>0.1-SNAPSHOT</version>
 	<url>http://messo.github.com/KFC</url>
 
@@ -21,10 +21,17 @@
 		</developer>
 	</developers>
 
+	<scm>
+		<url>http://github.com/messo/KFC</url>
+		<connection>scm:git:git://github.com/messo/KFC.git</connection>
+		<developerConnection>scm:git:git://github.com/messo/KFC.git</developerConnection>
+	</scm>
+
 	<properties>
 		<!-- Verziók beállítása -->
 		<gwt.version>2.2-rc1</gwt.version>
 		<atmosphere.version>0.6</atmosphere.version>
+		<gin.version>1.1-SNAPSHOT</gin.version>
 		<!-- Ez egyezzen meg a GWT-ben lévő Jetty verizójával, legalábbis szerintem 
 			úgy a tuti :) -->
 		<jetty.version>6.1.11</jetty.version>
@@ -35,212 +42,101 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>hu.sch</groupId>
+				<artifactId>kfc-ejb</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>hu.sch</groupId>
+				<artifactId>kfc-ejb</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 
-	<dependencies>
-		<!-- GWT -->
-		<dependency>
-			<groupId>com.google.gwt</groupId>
-			<artifactId>gwt-servlet</artifactId>
-			<version>${gwt.version}</version>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.google.gwt</groupId>
-			<artifactId>gwt-user</artifactId>
-			<version>${gwt.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<!-- Launcher miatt kell -->
-		<dependency>
-			<groupId>com.google.gwt</groupId>
-			<artifactId>gwt-dev</artifactId>
-			<version>${gwt.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<!-- Launcher miatt, ez nincs benne a gwt-devben -->
-		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jetty-plus</artifactId>
-			<version>${jetty.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jetty-naming</artifactId>
-			<version>${jetty.version}</version>
-			<scope>provided</scope>
-		</dependency>
+			<dependency>
+				<groupId>com.google.gwt</groupId>
+				<artifactId>gwt-servlet</artifactId>
+				<version>${gwt.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.google.gwt</groupId>
+				<artifactId>gwt-user</artifactId>
+				<version>${gwt.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.google.gwt</groupId>
+				<artifactId>gwt-dev</artifactId>
+				<version>${gwt.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.googlecode.gwt.inject</groupId>
+				<artifactId>gin</artifactId>
+				<version>${gin.version}</version>
+			</dependency>
 
-		<!-- Atmosphere -->
-		<dependency>
-			<groupId>org.atmosphere</groupId>
-			<artifactId>atmosphere-runtime</artifactId>
-			<version>${atmosphere.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.atmosphere</groupId>
-			<artifactId>atmosphere-jersey</artifactId>
-			<version>${atmosphere.version}</version>
-		</dependency>
+			<dependency>
+				<groupId>org.atmosphere</groupId>
+				<artifactId>atmosphere-runtime</artifactId>
+				<version>${atmosphere.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.atmosphere</groupId>
+				<artifactId>atmosphere-jersey</artifactId>
+				<version>${atmosphere.version}</version>
+			</dependency>
 
-		<!-- EclipseLink -->
-		<dependency>
-			<groupId>org.eclipse.persistence</groupId>
-			<artifactId>eclipselink</artifactId>
-			<version>2.2.0-M6</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.persistence</groupId>
-			<artifactId>javax.persistence</artifactId>
-			<version>2.0.1</version>
-			<scope>provided</scope>
-		</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>eclipselink</artifactId>
+				<version>2.2.0-RC3</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>javax.persistence</artifactId>
+				<version>2.0.1</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>6.0</version>
+				<scope>provided</scope>
+			</dependency>
 
-		<!-- test -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.7</version>
-			<scope>test</scope>
-		</dependency>
-
-		<!-- Ezek kellenek még a RequestFactoryhoz, amik a gwt-servlet-deps.jar-ban 
-			lennének -->
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>1.0.0.GA</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20090211</version>
-		</dependency>
-		<dependency>
-			<groupId>com.googlecode.gwt.inject</groupId>
-			<artifactId>gin</artifactId>
-			<version>1.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
-
-	<scm>
-		<url>http://github.com/messo/KFC</url>
-		<connection>scm:git:git://github.com/messo/KFC.git</connection>
-		<developerConnection>scm:git:git://github.com/messo/KFC.git</developerConnection>
-	</scm>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.7</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
-		<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>gwt-maven-plugin</artifactId>
-				<version>2.1.1-SNAPSHOT</version>
-				<executions>
-					<execution>
-						<id>async-gen</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>generateAsync</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>gwt-compile</id>
-						<phase>compile</phase>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<runTarget>KFC.html</runTarget>
-					<module>hu.sch.kfc.KFC</module>
-					<!-- Explicit adjuk meg, hogy hol vannak az RPC service-k -->
-					<servicePattern>hu/sch/kfc/client/service/*Service.java</servicePattern>
-					<hostedWebapp>${project.build.directory}/${project.build.finalName}</hostedWebapp>
-					<logLevel>INFO</logLevel>
-					<!-- Saját launcher használata -->
-					<server>hu.sch.kfc.dev.JettyLauncher</server>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.mortbay.jetty</groupId>
-				<artifactId>maven-jetty-plugin</artifactId>
-				<version>${jetty.version}</version>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3</version>
-				<configuration>
-					<source>${maven.compiler.source}</source>
-					<target>${maven.compiler.target}</target>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<configuration>
-					<downloadSources>true</downloadSources>
-					<downloadJavadocs>true</downloadJavadocs>
-					<buildOutputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</buildOutputDirectory>
-					<classpathContainers>
-						<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
-						<classpathContainer>com.google.gwt.eclipse.core.GWT_CONTAINER</classpathContainer>
-					</classpathContainers>
-					<wtpversion>1.5</wtpversion>
-					<additionalProjectnatures>
-						<projectnature>com.google.gwt.eclipse.core.gwtNature</projectnature>
-					</additionalProjectnatures>
-					<additionalBuildcommands>
-						<buildcommand>com.google.gdt.eclipse.core.webAppProjectValidator</buildcommand>
-						<buildcommand>com.google.gwt.eclipse.core.gwtProjectValidator</buildcommand>
-					</additionalBuildcommands>
-					<additionalProjectFacets>
-						<jpt.jpa>2.0</jpt.jpa>
-						<jst.web>3.0</jst.web>
-						<sun.facet>9</sun.facet>
-					</additionalProjectFacets>
-					<excludes>
-						<!-- ezeket a GPE biztosítja -->
-						<exclude>com.google.gwt:gwt-user</exclude>
-						<exclude>com.google.gwt:gwt-bikeshed</exclude>
-						<exclude>com.google.gwt:gwt-dev</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-				</configuration>
-			</plugin>
-		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.3</version>
+					<configuration>
+						<source>${maven.compiler.source}</source>
+						<target>${maven.compiler.target}</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.7</version>
-				<configuration>
-					<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
-
-					<docletPath>${project.baseUri}/doc/UmlGraph-5.4.jar</docletPath>
-					<additionalparam>-hide (.*?_) -views</additionalparam>
-					<!-- <useStandardDocletOptions>true</useStandardDocletOptions> -->
-				</configuration>
-			</plugin>
-		</plugins>
-	</reporting>
+	<modules>
+		<module>kfc-war</module>
+		<module>kfc-ejb</module>
+	</modules>
 
 	<repositories>
 		<repository>
@@ -271,6 +167,11 @@
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<name>messo-repo</name>
+			<id>messo-repo</id>
+			<url>https://github.com/messo/maven-repo/raw/master</url>
 		</pluginRepository>
 	</pluginRepositories>
 
