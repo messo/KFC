@@ -51,7 +51,7 @@
 			</dependency>
 			<dependency>
 				<groupId>hu.sch</groupId>
-				<artifactId>kfc-ejb</artifactId>
+				<artifactId>kfc-war</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
