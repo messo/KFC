@@ -27,7 +27,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>requestFactoryServlet</servlet-name>
-		<servlet-class>com.google.gwt.requestfactory.server.RequestFactoryServlet</servlet-class>
+		<servlet-class>com.google.web.bindery.requestfactory.server.RequestFactoryServlet</servlet-class>
 		<init-param>
 			<param-name>symbolMapsDirectory</param-name>
 			<param-value>WEB-INF/classes/symbolMaps/</param-value>

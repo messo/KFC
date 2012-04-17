@@ -2,8 +2,8 @@
   <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
   <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
   <classpathentry kind="output" path="target/classes"/>
-  <classpathentry kind="var" path="M2_REPO/org/eclipse/persistence/eclipselink/2.2.0-RC3/eclipselink-2.2.0-RC3.jar" sourcepath="M2_REPO/org/eclipse/persistence/eclipselink/2.2.0-RC3/eclipselink-2.2.0-RC3-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/persistence/eclipselink/2.3.2/eclipselink-2.3.2.jar" sourcepath="M2_REPO/org/eclipse/persistence/eclipselink/2.3.2/eclipselink-2.3.2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/javax/javaee-api/6.0/javaee-api-6.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/eclipse/persistence/javax.persistence/2.0.1/javax.persistence-2.0.1.jar" sourcepath="M2_REPO/org/eclipse/persistence/javax.persistence/2.0.1/javax.persistence-2.0.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/persistence/javax.persistence/2.0.0/javax.persistence-2.0.0.jar" sourcepath="M2_REPO/org/eclipse/persistence/javax.persistence/2.0.0/javax.persistence-2.0.0-sources.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 </classpath>

@@ -1,5 +1,5 @@
 <project-modules id="moduleCoreId" project-version="1.5.0">
-  <wb-module deploy-name="KFC WAR (0.1-SNAPSHOT)">
+  <wb-module deploy-name="kfc-war">
     <property name="context-root" value="KFC"/>
     <wb-resource deploy-path="/" source-path="src/main/webapp"/>
     <property name="java-output-path" value="/target/kfc-war-0.1-SNAPSHOT/WEB-INF/classes"/>
@@ -27,7 +27,7 @@
     <dependent-module archiveName="atmosphere-runtime-0.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/atmosphere/atmosphere-runtime/0.6/atmosphere-runtime-0.6.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="eclipselink-2.2.0-RC3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/eclipse/persistence/eclipselink/2.2.0-RC3/eclipselink-2.2.0-RC3.jar">
+    <dependent-module archiveName="eclipselink-2.3.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/eclipse/persistence/eclipselink/2.3.2/eclipselink-2.3.2.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <dependent-module archiveName="gin-1.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/googlecode/gwt/inject/gin/1.1-SNAPSHOT/gin-1.1-SNAPSHOT.jar">
@@ -39,7 +39,7 @@
     <dependent-module archiveName="guice-assistedinject-3.0-rc2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/inject/extensions/guice-assistedinject/3.0-rc2/guice-assistedinject-3.0-rc2.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="gwt-servlet-2.2-rc1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/gwt/gwt-servlet/2.2-rc1/gwt-servlet-2.2-rc1.jar">
+    <dependent-module archiveName="gwt-servlet-2.4.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/google/gwt/gwt-servlet/2.4.0/gwt-servlet-2.4.0.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <dependent-module archiveName="javax.inject-1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar">
@@ -57,7 +57,7 @@
     <dependent-module archiveName="jsr311-api-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="kfc-ejb-0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/hu/sch/kfc-ejb/0.1-SNAPSHOT/kfc-ejb-0.1-SNAPSHOT.jar">
+    <dependent-module archiveName="kfc-ejb.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/kfc-ejb/kfc-ejb">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>

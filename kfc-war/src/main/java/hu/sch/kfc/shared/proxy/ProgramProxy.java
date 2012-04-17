@@ -1,11 +1,11 @@
 package hu.sch.kfc.shared.proxy;
 
-import java.util.List;
 import hu.sch.kfc.domain.Program;
 import hu.sch.kfc.server.EntityLocator;
-import com.google.gwt.requestfactory.shared.EntityProxy;
-import com.google.gwt.requestfactory.shared.EntityProxyId;
-import com.google.gwt.requestfactory.shared.ProxyFor;
+import java.util.List;
+import com.google.web.bindery.requestfactory.shared.EntityProxy;
+import com.google.web.bindery.requestfactory.shared.EntityProxyId;
+import com.google.web.bindery.requestfactory.shared.ProxyFor;
 
 @ProxyFor(value = Program.class, locator = EntityLocator.class)
 public interface ProgramProxy extends EntityProxy {
@@ -22,7 +22,7 @@ public interface ProgramProxy extends EntityProxy {
 
     List<OrderIntervalProxy> getOrderIntervals();
     
-    void setOrderIntervals(List<DateIntervalProxy> list);
+    void setOrderIntervals(List<OrderIntervalProxy> list);
     
     DateIntervalProxy getOrderInterval();
 

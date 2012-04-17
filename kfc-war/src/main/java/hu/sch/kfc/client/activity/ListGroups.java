@@ -6,9 +6,9 @@ import hu.sch.kfc.shared.proxy.GroupProxy;
 import hu.sch.kfc.shared.service.KFCRequestFactory;
 import java.util.List;
 import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.requestfactory.shared.Receiver;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
+import com.google.web.bindery.requestfactory.shared.Receiver;
 
 /**
  * Ez az Activity felelős a körök kilistázásáért, tulajdonképpen ez az indító oldal, itt lehet

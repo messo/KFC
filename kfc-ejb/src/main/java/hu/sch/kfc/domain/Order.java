@@ -32,7 +32,7 @@ public class Order {
     private Food food;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "user")
+    @JoinColumn(name = "user_id")
     private User user;
 
     @ManyToOne(optional = false)

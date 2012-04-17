@@ -1,6 +1,6 @@
-#Tue Jan 18 11:31:00 CET 2011
 eclipse.preferences.version=1
 jarsExcludedFromWebInfLib=
+lastWarOutDir=E\:/dev/kfc/kfc-war/src/main/webapp
 launchConfigExternalUrlPrefix=http\://localhost\:8080/KFC
 warSrcDir=src/main/webapp
 warSrcDirIsOutput=false

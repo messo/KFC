@@ -1,10 +1,10 @@
 package hu.sch.kfc.shared.proxy;
 
-import java.util.Date;
 import hu.sch.kfc.domain.OrderInterval;
 import hu.sch.kfc.server.EntityLocator;
-import com.google.gwt.requestfactory.shared.EntityProxy;
-import com.google.gwt.requestfactory.shared.ProxyFor;
+import java.util.Date;
+import com.google.web.bindery.requestfactory.shared.EntityProxy;
+import com.google.web.bindery.requestfactory.shared.ProxyFor;
 
 @ProxyFor(value = OrderInterval.class, locator = EntityLocator.class)
 public interface OrderIntervalProxy extends EntityProxy {

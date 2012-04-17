@@ -1,8 +1,8 @@
 package hu.sch.kfc.shared.proxy;
 
 import hu.sch.kfc.misc.DateInterval;
-import com.google.gwt.requestfactory.shared.ProxyFor;
-import com.google.gwt.requestfactory.shared.ValueProxy;
+import com.google.web.bindery.requestfactory.shared.ProxyFor;
+import com.google.web.bindery.requestfactory.shared.ValueProxy;
 
 @ProxyFor(DateInterval.class)
 public interface DateIntervalProxy extends ValueProxy {

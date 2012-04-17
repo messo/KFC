@@ -9,11 +9,11 @@ import hu.sch.kfc.shared.service.ProgramRequestContext;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.editor.client.EditorError;
 import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.requestfactory.client.RequestFactoryEditorDriver;
-import com.google.gwt.requestfactory.shared.Receiver;
-import com.google.gwt.requestfactory.shared.RequestContext;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
+import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
+import com.google.web.bindery.requestfactory.shared.Receiver;
+import com.google.web.bindery.requestfactory.shared.RequestContext;
 
 /**
  * Egy rendezvény szerkesztése, át lehet nevezni, leírást lehet adni, és meg lehet mondani, hogy

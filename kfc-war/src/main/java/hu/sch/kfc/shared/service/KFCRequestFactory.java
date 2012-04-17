@@ -1,6 +1,6 @@
 package hu.sch.kfc.shared.service;
 
-import com.google.gwt.requestfactory.shared.RequestFactory;
+import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
 public interface KFCRequestFactory extends RequestFactory {
 

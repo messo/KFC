@@ -6,7 +6,7 @@ import hu.sch.kfc.domain.Program;
 import hu.sch.kfc.ejb.GroupManager;
 import hu.sch.kfc.ejb.ProgramManager;
 import hu.sch.kfc.misc.AbstractEntity;
-import com.google.gwt.requestfactory.shared.Locator;
+import com.google.web.bindery.requestfactory.shared.Locator;
 
 public class EntityLocator extends Locator<AbstractEntity, Long> {
 

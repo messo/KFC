@@ -1,7 +1,7 @@
 package hu.sch.kfc.server;
 
 import javax.naming.InitialContext;
-import com.google.gwt.requestfactory.shared.ServiceLocator;
+import com.google.web.bindery.requestfactory.shared.ServiceLocator;
 
 public class BeanLocator implements ServiceLocator {
 
