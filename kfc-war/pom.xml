@@ -32,11 +32,6 @@
 			<groupId>com.google.gwt</groupId>
 			<artifactId>gwt-user</artifactId>
 		</dependency>
-		<!-- Home-made cache miatt; nem használjuk, szerintem majd vegyük ki -->
-		<dependency>
-			<groupId>com.google.gwt</groupId>
-			<artifactId>gwt-dev</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>com.google.web.bindery</groupId>
 			<artifactId>requestfactory-server</artifactId>
@@ -140,18 +135,12 @@
 			</plugin>
 
 			<plugin>
-				<groupId>org.bsc.maven</groupId>
-				<artifactId>maven-processor-plugin</artifactId>
-				<version>2.0.5</version>
-				<executions>
-					<execution>
-						<id>process</id>
-						<goals>
-							<goal>process</goal>
-						</goals>
-						<phase>generate-sources</phase>
-					</execution>
-				</executions>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
 				<dependencies>
 					<dependency>
 						<groupId>com.google.web.bindery</groupId>

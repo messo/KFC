@@ -24,10 +24,10 @@
 		</any>
 	</replace-with>
 
-	<generate-with
+	<!-- <generate-with
 		class="hu.sch.kfc.rebind.CachingServiceInterfaceProxyGenerator">
 		<when-type-assignable class="hu.sch.kfc.client.cache.CachingRemoteService" />
-	</generate-with>
+	</generate-with>-->
 
 	<!--
 		Ha nagy tesztelés megy, akkor csak arra menjen a fordítás, amit
