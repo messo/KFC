@@ -29,6 +29,10 @@ public class ProgramManager {
     }
 
     public void persist(Program p) {
+        for(OrderInterval oi : p.getOrderIntervals()) {
+            em.merge(oi);
+        }
+        
         System.out.println(p);
         System.out.println(p.getName());
         if (p.getId() != null) {
