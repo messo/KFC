@@ -1,21 +1,22 @@
 <classpath>
   <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
   <classpathentry kind="src" path="target/generated-sources/gwt" including="**/*.java"/>
+  <classpathentry kind="src" path="target/generated-sources/annotations" including="**/*.java"/>
   <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
   <classpathentry kind="output" path="target/kfc-war-0.1-SNAPSHOT/WEB-INF/classes"/>
   <classpathentry kind="var" path="M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar" sourcepath="M2_REPO/javax/inject/javax.inject/1/javax.inject-1-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" sourcepath="M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar" sourcepath="M2_REPO/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar"/>
@@ -23,52 +24,57 @@
   <classpathentry kind="var" path="M2_REPO/asm/asm/3.1/asm-3.1.jar" sourcepath="M2_REPO/asm/asm/3.1/asm-3.1-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-annotations/0.6/atmosphere-annotations-0.6.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-annotations/0.6/atmosphere-annotations-0.6-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/org/atmosphere/atmosphere-annotations/0.6/atmosphere-annotations-0.6-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/org/atmosphere/atmosphere-annotations/0.6/atmosphere-annotations-0.6-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-compat-jbossweb/0.6/atmosphere-compat-jbossweb-0.6.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-compat-jbossweb/0.6/atmosphere-compat-jbossweb-0.6-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-compat-tomcat/0.6/atmosphere-compat-tomcat-0.6.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-compat-tomcat/0.6/atmosphere-compat-tomcat-0.6-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-compat-weblogic/0.6/atmosphere-compat-weblogic-0.6.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-compat-weblogic/0.6/atmosphere-compat-weblogic-0.6-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/org/atmosphere/atmosphere-compat-weblogic/0.6/atmosphere-compat-weblogic-0.6-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/org/atmosphere/atmosphere-compat-weblogic/0.6/atmosphere-compat-weblogic-0.6-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-jersey/0.6/atmosphere-jersey-0.6.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-jersey/0.6/atmosphere-jersey-0.6-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/org/atmosphere/atmosphere-jersey/0.6/atmosphere-jersey-0.6-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/org/atmosphere/atmosphere-jersey/0.6/atmosphere-jersey-0.6-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-runtime/0.6/atmosphere-runtime-0.6.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-runtime/0.6/atmosphere-runtime-0.6-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/org/atmosphere/atmosphere-runtime/0.6/atmosphere-runtime-0.6-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/org/atmosphere/atmosphere-runtime/0.6/atmosphere-runtime-0.6-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/eclipse/persistence/eclipselink/2.3.2/eclipselink-2.3.2.jar" sourcepath="M2_REPO/org/eclipse/persistence/eclipselink/2.3.2/eclipselink-2.3.2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/googlecode/gwt/inject/gin/1.1-SNAPSHOT/gin-1.1-SNAPSHOT.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/google/inject/guice/3.0-rc2/guice-3.0-rc2.jar" sourcepath="M2_REPO/com/google/inject/guice/3.0-rc2/guice-3.0-rc2-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/com/google/inject/guice/3.0-rc2/guice-3.0-rc2-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/com/google/inject/guice/3.0-rc2/guice-3.0-rc2-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/com/google/inject/extensions/guice-assistedinject/3.0-rc2/guice-assistedinject-3.0-rc2.jar" sourcepath="M2_REPO/com/google/inject/extensions/guice-assistedinject/3.0-rc2/guice-assistedinject-3.0-rc2-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/com/google/inject/extensions/guice-assistedinject/3.0-rc2/guice-assistedinject-3.0-rc2-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/com/google/inject/extensions/guice-assistedinject/3.0-rc2/guice-assistedinject-3.0-rc2-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/com/google/gwt/gwt-servlet/2.4.0/gwt-servlet-2.4.0.jar" sourcepath="M2_REPO/com/google/gwt/gwt-servlet/2.4.0/gwt-servlet-2.4.0-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/com/google/gwt/gwt-servlet/2.4.0/gwt-servlet-2.4.0-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/com/google/gwt/gwt-servlet/2.4.0/gwt-servlet-2.4.0-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/javax/javaee-api/6.0/javaee-api-6.0.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/sun/jersey/jersey-core/1.3/jersey-core-1.3.jar" sourcepath="M2_REPO/com/sun/jersey/jersey-core/1.3/jersey-core-1.3-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/sun/jersey/jersey-server/1.3/jersey-server-1.3.jar" sourcepath="M2_REPO/com/sun/jersey/jersey-server/1.3/jersey-server-1.3-sources.jar">
     <attributes>
-      <attribute value="jar:file:/C:/Users/Balint/.m2/repository/com/sun/jersey/jersey-server/1.3/jersey-server-1.3-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/messo/.m2/repository/com/sun/jersey/jersey-server/1.3/jersey-server-1.3-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/json/json/20090211/json-20090211.jar"/>
   <classpathentry kind="src" path="/kfc-ejb"/>
+  <classpathentry kind="var" path="M2_REPO/com/google/web/bindery/requestfactory-server/2.4.0/requestfactory-server-2.4.0.jar" sourcepath="M2_REPO/com/google/web/bindery/requestfactory-server/2.4.0/requestfactory-server-2.4.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/home/messo/.m2/repository/com/google/web/bindery/requestfactory-server/2.4.0/requestfactory-server-2.4.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
 </classpath>
