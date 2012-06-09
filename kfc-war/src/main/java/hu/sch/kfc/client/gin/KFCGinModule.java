@@ -2,9 +2,9 @@ package hu.sch.kfc.client.gin;
 
 import hu.sch.kfc.client.Application;
 import hu.sch.kfc.client.activity.EditProgram;
-import hu.sch.kfc.client.activity.ShowGroup;
 import hu.sch.kfc.client.activity.ListGroups;
 import hu.sch.kfc.client.activity.MainActivityMapper;
+import hu.sch.kfc.client.activity.ShowGroup;
 import hu.sch.kfc.client.place.AppPlaceHistoryMapper;
 import hu.sch.kfc.client.place.ListGroupsPlace;
 import hu.sch.kfc.client.ui.Shell;
@@ -20,8 +20,6 @@ import hu.sch.kfc.shared.service.KFCRequestFactory;
 import com.google.gwt.activity.shared.ActivityManager;
 import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.event.shared.SimpleEventBus;
 import com.google.gwt.inject.client.GinModule;
 import com.google.gwt.inject.client.binder.GinBinder;
 import com.google.gwt.place.shared.PlaceController;
@@ -29,10 +27,12 @@ import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.place.shared.PlaceHistoryMapper;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
+import com.google.web.bindery.event.shared.EventBus;
+import com.google.web.bindery.event.shared.SimpleEventBus;
 
 /**
- * A Dependency Injectionhöz itt mondjuk meg a szabályokat, hogy mely objektumokat, hogy injektáljon
- * be a megfelelő helyre.
+ * A Dependency Injectionhöz itt mondjuk meg a szabályokat, hogy mely objektumokat, hogy injektáljon be a megfelelő
+ * helyre.
  * 
  * @author messo
  * @since 0.1
@@ -73,8 +73,8 @@ public class KFCGinModule implements GinModule {
 
     @Provides
     @Singleton
-    public PlaceHistoryHandler getHistoryHandler(PlaceHistoryMapper historyMapper,
-            PlaceController placeController, EventBus eventBus) {
+    public PlaceHistoryHandler getHistoryHandler(PlaceHistoryMapper historyMapper, PlaceController placeController,
+            EventBus eventBus) {
         PlaceHistoryHandler historyHandler = new PlaceHistoryHandler(historyMapper);
         historyHandler.register(placeController, eventBus, new ListGroupsPlace());
         return historyHandler;
