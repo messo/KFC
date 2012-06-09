@@ -1,7 +1,0 @@
-com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException, true, true, true, true, 1, 3936916533
-hu.sch.kfc.client.service.EventService, false, false, false, false, _, 2330324389
-hu.sch.kfc.shared.event.LikeEvent, true, true, false, false, 2, 3388285839
-java.lang.Exception, true, false, true, false, 3, 1920171873
-java.lang.RuntimeException, true, false, true, false, 4, 515124647
-java.lang.String, true, true, true, true, 5, 2004016611
-java.lang.Throwable, true, false, true, false, 6, 2953622131
