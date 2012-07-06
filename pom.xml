@@ -31,7 +31,7 @@
 		<!-- Verziók beállítása -->
 		<gwt.version>2.4.0</gwt.version>
 		<atmosphere.version>0.6</atmosphere.version>
-		<gin.version>1.1-SNAPSHOT</gin.version>
+		<gin.version>1.5.0</gin.version>
 		<!-- Ez egyezzen meg a GWT-ben lévő Jetty verizójával, legalábbis szerintem 
 			úgy a tuti :) -->
 		<jetty.version>6.1.11</jetty.version>
@@ -74,7 +74,7 @@
 				<scope>runtime</scope>
 			</dependency>
 			<dependency>
-				<groupId>com.googlecode.gwt.inject</groupId>
+				<groupId>com.google.gwt.inject</groupId>
 				<artifactId>gin</artifactId>
 				<version>${gin.version}</version>
 			</dependency>

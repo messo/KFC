@@ -19,7 +19,7 @@
 			<artifactId>kfc-ejb</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.googlecode.gwt.inject</groupId>
+			<groupId>com.google.gwt.inject</groupId>
 			<artifactId>gin</artifactId>
 		</dependency>
 

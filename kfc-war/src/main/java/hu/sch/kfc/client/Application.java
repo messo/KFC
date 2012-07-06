@@ -3,12 +3,13 @@ package hu.sch.kfc.client;
 import hu.sch.kfc.client.gin.KFCGinjector;
 import hu.sch.kfc.client.ui.DefaultBundle;
 import hu.sch.kfc.client.ui.Shell;
+
 import com.google.gwt.activity.shared.ActivityManager;
 import com.google.gwt.dom.client.StyleInjector;
-import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.inject.Inject;
+import com.google.web.bindery.event.shared.EventBus;
 
 /**
  * Mivel a {@link KFC} modul példányát nem mi hozzuk létre, hiszen annak létre kell jönnie a
